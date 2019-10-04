@@ -7,7 +7,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: url('./pics/Dock Scene.png') center center/cover fixed no-repeat;
+    background: url('./pics/Dock Scene.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+	overflow: hidden;
 }
 a#port:before {
     content: '';
@@ -123,10 +129,4 @@ ul#soc-btns > li:nth-child(2) > a:hover .fa {
 
 ul#soc-btns > li:nth-child(3) > a:hover .fa {
 	color: #ff0000;
-}
-
-@media (max-width: 768px) {
-    html, body {
-        height: 100vh;
-    }
 }
