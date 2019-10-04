@@ -124,3 +124,9 @@ ul#soc-btns > li:nth-child(2) > a:hover .fa {
 ul#soc-btns > li:nth-child(3) > a:hover .fa {
 	color: #ff0000;
 }
+
+@media (max-width: 768px) {
+    html, body {
+        height: 100vh;
+    }
+}
