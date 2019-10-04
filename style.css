@@ -1,8 +1,10 @@
 /* Pitch why it is necessary for others to consult with myself.
    Work on my ability to go get clients. 
    3 1/2 weeks to work on this and presentation. */
+   
+/* This is only for the landing page, and shall be renamed, as such. */
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     background: url('./pics/Dock Scene.png') center center/cover fixed no-repeat;
