@@ -1,0 +1,85 @@
+/* For home page. Gotta see if it works properly. */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: arial, helvetica, sans-serif;
+    max-width: 100vw;
+}
+
+div#content {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div#t-ban {
+    background: url('../pics/HI34/Beginning of Journey.png') center center/cover fixed no-repeat;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+}
+
+div#t-ban > img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#t-ban:before {
+    content: 'Justin Mull';
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-family: arial, helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 3px 2px #000;
+}
+
+div#abt-hm {
+    height: 25vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+div#abt-hm > h2 {
+}
+
+div#abt-hm > p {
+    text-indent: 5%;
+    text-align: justify;
+    margin: 0 5%;
+}
+
+div#gal-hm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+div#gal-hm > div {
+    padding: 0 90px 100px;
+    background-color: #000;
+    margin: 8px;
+}
+
+@media (max-width: 391px) {
+    div#gal-hm > div:nth-child(1n+4) {
+        display: none;
+    }
+}
