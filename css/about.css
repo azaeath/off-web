@@ -73,6 +73,10 @@ div#info > p {
 }
 
 @media (max-width: 768px) {
+    html, body {
+        background: unset;
+    }
+
     body:before {
         content: '';
         display: block;
