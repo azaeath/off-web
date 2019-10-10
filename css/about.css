@@ -1,5 +1,5 @@
 /* 2019-10-09 - 19:13: I just listened to the professor for my anthropology class read my response essay aloud to the class as the answer key to the previous written quiz/exam. */
-body {
+html, body {
     background: url('../pics/HI34/Lightning Strike.png') center center/cover fixed no-repeat;
     color: #fff;
     font-family: arial, helvetica, sans-serif;
@@ -73,6 +73,23 @@ div#info > p {
 }
 
 @media (max-width: 768px) {
+    body:before {
+        content: '';
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url('../pics/HI34/Lightning Strike.png') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        will-change: transform;
+    }
+
     .content {
         flex-flow: column;
         width: 90%;
