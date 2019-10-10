@@ -1,0 +1,93 @@
+/* 2019-10-09 - 19:13: I just listened to the professor for my anthropology class read my response essay aloud to the class as the answer key to the previous written quiz/exam. */
+html, body {
+    background: url('../pics/HI34/Lightning Strike.png') center center/cover fixed no-repeat;
+    color: #fff;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 95%;
+    height: 42.5%;
+    background-color: #004983;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    border: solid 5px #afdaff;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, .8);
+}
+
+img#self-por {
+    padding: 0 100px 200px;
+    background-color: #afdaff;
+    border-radius: 30px;
+    border: 5px solid #afdaff;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
+}
+
+div#details, div#info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 3%;
+}
+
+div#details > h2 {
+    font-size: 28px;
+}
+
+div#info {
+    font-size: 16px;
+}
+
+div#info > p {
+    text-align: justify;
+    width: 85%;
+    text-indent: 2%;
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .content {
+        max-width: 70%;
+        max-height: 50%;
+        height: 100%
+    }
+}
+@media (max-width:768px) {
+    .content {
+        flex-flow: column;
+        width: 90%;
+        height: auto;
+        top: 400px;
+    }
+    img#self-por {
+        transform: translateY(-50%);
+    }
+    div#details {
+        transform: translateY(-105px);
+    }
+    div#details, div#info {
+        right: 0;
+    }
+    div#details {
+        max-width: 90%;
+    }
+}
+@media (max-width:425px) {
+    div#details > h2 {
+        font-size: 26px;
+    }
+    div#details > h3 {
+        font-size:14px;
+    }
+    div#info > p {
+        font-size:12px;
+    }
+}
