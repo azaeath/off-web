@@ -23,12 +23,21 @@ html, body {
     box-shadow: 0px 15px 10px rgba(0, 0, 0, .8);
 }
 
-img#self-por {
-    padding: 0 100px 200px;
+div#self-por {
+    width: 200px;
+    height: 200px;
     background-color: #afdaff;
     border-radius: 30px;
     border: 5px solid #afdaff;
     transform: translateX(-50%);
+}
+
+div#self-por > img {
+    object-fit: cover;
+    object-position: 50% 55%;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
 }
 
 div#details, div#info {
@@ -55,7 +64,7 @@ div#info > p {
 }
 
 @media (min-width: 769px) {
-    img#self-por {
+    div#self-por {
         box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.9);
     }
 
@@ -101,7 +110,7 @@ div#info > p {
         top: 400px;
     }
 
-    img#self-por {
+    div#self-por {
         transform: translateY(-50%);
         box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
     }

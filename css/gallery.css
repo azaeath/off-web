@@ -1,0 +1,31 @@
+/* SSoHPKC needs to return to YouTube. :C */
+html, body {
+	background-color: #004983;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+div#t-ban {
+	background: url('../pics/HI34/Hike Back.png') center center/cover fixed no-repeat;
+	will-change: transform;
+	height: 50vh;
+	width: 100%;
+	border-bottom: solid 5px #afdaff;
+}
+
+div#good-gal {
+	background-color: #afdaff;
+	display: flex;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	flex-flow: row wrap;
+}
+div#good-gal > div {
+	flex: auto;
+	width: 160px;
+	min-height: 200px;
+	margin: 1vw;
+	background-color: #004983;
+}
