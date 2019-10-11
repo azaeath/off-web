@@ -114,11 +114,10 @@ ul#mobiNav {
 	}
 	ul#mobiNav {
 		font-family: Arial, Helvetica, Sans-Serif;
-		background-color: #004983;
 		position: fixed;
 		left: -100%;
 		top: 0;
-		margin: 0;
+		margin-top: 44px;
 		padding: 0;
 		width: 100%;
 		list-style: none;
@@ -133,7 +132,8 @@ ul#mobiNav {
 		z-index: -1;
 		height: 100vh;
 		width: 100%;
-		background-color: rgba(0, 0, 0, .5);
+		top: -44px;
+		background-color: rgba(0, 0, 0, .8);
 	}
 	ul#mobiNav > li {
 		width: 100%;
@@ -145,6 +145,7 @@ ul#mobiNav {
 		text-align: center;
 		color: #fff;
 		text-decoration: none;
+		font-size: 36px;
 	}
 	ul#mobiNav > li > a:hover {
 		background-color: #afdaff;
@@ -174,7 +175,7 @@ ul#mobiNav {
 	}
 	ul#mSocBtns > li > a .fa {
 		color: #fff;
-		font-size: 24px;
+		font-size: 36px;
 		transition: color .5s;
 	}
 	ul#mSocBtns > li > a:hover {
@@ -190,5 +191,11 @@ ul#mobiNav {
 	
 	ul#mSocBtns > li:nth-child(3) > a:hover .fa {
 		color: #ff0000;
+	}
+}
+
+@media (max-height:450px) {
+	ul#mobiNav > li > a, ul#mSocBtns > li > a .fa {
+		font-size: 20px;
 	}
 }
