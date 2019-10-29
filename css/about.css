@@ -1,35 +1,35 @@
 /* 2019-10-09 - 19:13: I just listened to the professor for my anthropology class read my response essay aloud to the class as the answer key to the previous written quiz/exam. */
 html, body {
     background: url('../pics/HI34/Beginning of Journey.png') center center/cover fixed no-repeat;
-    color: #fff;
+    color: rgba(255,255,255, 0.87);
     font-family: arial, helvetica, sans-serif;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
+    width: 100%;
+    position: relative;
+    top: 40%;
+    background-color: #121212;
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
-    max-width: 800px;
-    width: 95%;
-    height: 42.5%;
-    background-color: #004983;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    border: solid 5px #afdaff;
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, .8);
+    justify-content: center;
+    height: auto;
+    border-top: 5px solid #afdaff;
 }
 
 div#self-por {
     width: 200px;
     height: 200px;
+    border-radius: 20px;
     background-color: #afdaff;
-    border-radius: 30px;
     border: 5px solid #afdaff;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
+    box-shadow: 0px 10px 10px rgba(0, 73, 131, 0.60);
 }
 
 div#self-por > img {
@@ -44,9 +44,10 @@ div#details, div#info {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    right: 3%;
+}
+
+div#details {
+    margin-top: -100px;
 }
 
 div#details > h2 {
@@ -58,34 +59,65 @@ div#info {
 }
 
 div#info > p {
-    text-align: justify;
     width: 85%;
-    text-indent: 2%;
+    text-indent: 5%;
 }
 
-@media (min-width: 769px) {
-    div#self-por {
-        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.9);
-    }
-
-    ul#aSocBtns {
-        display: none;
-    }
+ul#aSocBtns {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #afdaff;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .content {
-        max-width: 70%;
-        max-height: 50%;
-        height: 100%
-    }
+ul#aSocBtns > li {
+    width: 100%;
+}
+
+ul#aSocBtns > li > a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+ul#aSocBtns > li > a .fa {
+    color: #fff;
+    font-size: 24px;
+    transition: color .5s;
+}
+
+ul#aSocBtns > li > a:hover {
+    background-color: #afdaff;
+}
+
+ul#aSocBtns > li:nth-child(1) > a:hover .fa {
+    color: #e4405f;
+}
+
+ul#aSocBtns > li:nth-child(2) > a:hover .fa {
+    color: #9147ff;
+}
+
+ul#aSocBtns > li:nth-child(3) > a:hover .fa {
+	color: #ff0000;
+}
+
+ul#aSocBtns > li:nth-child(4) > a:hover .fa {
+	color: #004983;
+}
+
+ul#aSocBtns > li:first-child > a {
+    border-radius: 0 0 0 20px;
+}
+
+ul#aSocBtns > li:last-child > a {
+    border-radius: 0 0 20px 0;
 }
 
 @media (max-width: 768px) {
-    html, body {
-        background: unset;
-    }
-
     body:before {
         content: '';
         display: block;
@@ -95,7 +127,7 @@ div#info > p {
         width: 100%;
         height: 100%;
         z-index: -10;
-        background: url('../pics/HI34/Before the Journey.png') center center no-repeat;
+        background: url('../pics/HI34/Beginning of Journey.png') center center no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -104,66 +136,21 @@ div#info > p {
     }
 
     .content {
-        flex-flow: column;
-        width: 90%;
-        height: auto;
-        top: 400px;
-    }
-
-    div#self-por {
-        transform: translateY(-50%);
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, .8);
-    }
-
-    div#details {
-        transform: translateY(-105px);
-    }
-
-    div#details, div#info {
-        right: 0;
-    }
-
-    div#details {
-        max-width: 90%;
-    }
-
-    ul#aSocBtns {
-        list-style: none;
-        display: flex;
-        width: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border-top: 5px solid #afdaff;
-    }
-
-    ul#aSocBtns > li {
-        width: 100%;
-    }
-
-    ul#aSocBtns > li > a {
-        display: block;
-        text-align: center;
-        padding: 10px 15px;
-    }
-
-    ul#aSocBtns > li > a .fa {
-        color: #fff;
-        font-size: 24px;
-        transition: color .5s;
+        max-width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 25px;
+        border: 5px solid #afdaff;
     }
 }
 
-@media (max-width: 425px) {
-    div#details > h2 {
-        font-size: 26px;
+@media (max-width: 375px) {
+    html, body {
+        font-size: 90%;
     }
 
-    div#details > h3 {
-        font-size: 14px;
-    }
-
-    div#info > p {
-        font-size: 12px;
+    div#info {
+        font-size: 95%;
     }
 }
