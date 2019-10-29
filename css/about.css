@@ -118,6 +118,11 @@ ul#aSocBtns > li:last-child > a {
 }
 
 @media (max-width: 768px) {
+
+    html, body {
+        background: none;
+    }
+
     body:before {
         content: '';
         display: block;
