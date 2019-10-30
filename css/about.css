@@ -140,7 +140,7 @@ ul#aSocBtns > li:last-child > a {
         will-change: transform;
     }
 
-    .content {
+/*    .content {
         max-width: 80%;
         position: absolute;
         left: 50%;
@@ -148,7 +148,7 @@ ul#aSocBtns > li:last-child > a {
         border-radius: 25px;
         border: 5px solid #afdaff;
     }
-}
+} */
 
 @media (max-width: 375px) {
     html, body {
