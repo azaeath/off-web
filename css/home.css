@@ -31,6 +31,7 @@ div#t-ban {
     height: 75vh;
     position: relative;
     width: 100%;
+    border-bottom: solid 5px #afdaff;
 }
 
 div#t-ban > img {
