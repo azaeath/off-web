@@ -4,13 +4,15 @@
 		<title>AzM Designs | Gallery</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="site-nav.css">
+		<link rel="stylesheet" href="./css/site-nav.css">
 		<link rel="stylesheet" href="./css/gallery.css">
+		<link rel="stylesheet" href="./css/imgModal.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<script src="./tog.js"></script>
+		<script src="./js/tog.js"></script>
+		<script src="./js/imgModal.js"></script>
 	</head>
 	<body>
 		<ul id="deskNav">
@@ -43,16 +45,109 @@
 		<div id="t-ban"></div>
 		<div id="cntn">
 			<div id="good-gal">
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(1)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(2)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(3)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(4)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(5)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(6)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(7)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(8)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(9)" class="basicBitch"></div>
+				<div><img src="./pics/Dock Scene.png" onclick="openModal();currentSlide(10)" class="basicBitch"></div>
+			</div>
+		</div>
+		<!-- Modal for lightbox. -->
+		<div id="imgModal" class="modal" style="display: none;">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="slideHo">
+					<div class="noText">1 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">2 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">3 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">4 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">5 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">6 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">7 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">8 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">9 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<div class="slideHo">
+					<div class="noText">10 / 10</div>
+					<img src="./pics/Dock Scene.png" style="width: 100%;">
+				</div>
+				<!-- For new slides. -->
+				<!-- <div class="slideHo">
+					<div class="noText">n / n</div>
+					<img src="" style="width: 100%;">
+				</div> -->
+				<!-- Slideshow controls. -->
+				<a class="prev" onclick="plusSlides()">&#10094;</a>
+				<a class="next" onclick="plusSlides()">&#10095;</a>
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(1)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(2)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(3)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(4)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(5)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(6)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(7)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(8)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(9)">
+				</div>
+				<div class="column">
+					<img class="slideBitch" src="./pics/Dock Scene.png" onclick="currentSlide(10)">
+				</div>
+				<!-- For creating new slides in the future. -->
+				<!-- <div class="column">
+					<img class="slideBitch" src="" onclick="currentSlide()">
+				</div> -->
 			</div>
 		</div>
 	</body>
