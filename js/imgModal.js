@@ -1,11 +1,11 @@
 // Open the Modal
 function openModal() {
-  document.getElementById("imgModal").style.display = "block";
+  document.getElementById("myModal").style.display = "block";
 }
 
 // Close the Modal
 function closeModal() {
-  document.getElementById("imgModal").style.display = "none";
+  document.getElementById("myModal").style.display = "none";
 }
 
 var slideIndex = 1;
@@ -23,8 +23,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("slideHo");
-  var dots = document.getElementsByClassName("slideBitch");
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
