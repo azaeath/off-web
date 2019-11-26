@@ -13,6 +13,19 @@ div#t-ban {
 	border-bottom: solid 5px #afdaff;
 }
 
+div#t-ban:before {
+	content: 'Gallery';
+	font-family: sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0px 5px 0px #121212;
+}
+
 div#good-gal {
 	background-color: #121212;
 	display: flex;
@@ -58,8 +71,8 @@ div#good-gal > div > img {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 50px;
+  z-index: 10000;
+  padding-top: calc(40.67px * .5);
   left: 0;
   top: 0;
   width: 100%;
@@ -68,9 +81,9 @@ div#good-gal > div > img {
   background-color: rgba(18, 18, 18, 0.8);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 /* Modal Content */
 .modal-content {
@@ -86,7 +99,7 @@ div#good-gal > div > img {
 .close {
   color: white;
   position: absolute;
-  top: 50px;
+  top: calc(40.67px * .5);
   right: 25px;
   font-size: 35px;
   font-weight: bold;

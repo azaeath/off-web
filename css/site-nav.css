@@ -89,6 +89,11 @@ ul#dSocBtns > li:nth-child(2) > a:hover .fa {
 ul#dSocBtns > li:nth-child(3) > a:hover .fa {
 	color: #ff0000;
 }
+
+ul#dSocBtns > li:nth-child(4) > a:hover .fa {
+	color: rgb(0, 229, 155);
+}
+
 a.icon {
 	display: none;
 }
@@ -191,6 +196,9 @@ ul#mobiNav {
 	
 	ul#mSocBtns > li:nth-child(3) > a:hover .fa {
 		color: #ff0000;
+	}
+	ul#mSocBtns > li:nth-child(4) > a:hover .fa {
+	color: rgb(0, 229, 155);
 	}
 }
 

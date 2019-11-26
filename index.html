@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>AzM Designs | Landing Page</title>
+		<title>AzM Designs | Home</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/site-nav.css">
+		<link rel="stylesheet" href="./css/home.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="author" content="">
+		<script src="./js/tog.js"></script>
 	</head>
 	<body>
-		<a href="./home.html" id="port"><img src="./pics/logo.png"></a>
-		<div id="soc-wrap">
-			<ul id="soc-btns">
+		<ul id="deskNav">
+			<li><a href="./index.html" class="active">Home</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./gallery.html">Gallery</a></li>
+			<!-- <li><a href="./blog.html">Blog</a></li> -->
+			<!-- <li><a href="./contact.html">Contact</a></li> -->
+			<ul id="dSocBtns">
 				<li><a href="https://instagram.com/azaeath/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 				<li><a href="https://twitch.tv/azaeath" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
 				<li><a href="https://www.youtube.com/channel/UCiby-SjLSv_6JTQVcMRxIVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				<li><a href="https://azaeath.deviantart.com/" target="_blank"><i class="fa fa-deviantart" aria-hidden="true"></i></a></li>
 			</ul>
+		</ul>
+		<a href="javascript:void(0);" class="icon" onclick="mobiMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<ul id="mobiNav" style="left: -100%;">
+			<li><a href="./index.html" class="active">Home</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./gallery.html">Gallery</a></li>
+			<!-- <li><a href="./blog.html">Blog</a></li> -->
+			<!-- <li><a href="./contact.html">Contact</a></li> -->
+			<ul id="mSocBtns">
+				<li><a href="https://instagram.com/azaeath/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="https://twitch.tv/azaeath" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCiby-SjLSv_6JTQVcMRxIVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				<li><a href="https://azaeath.deviantart.com/" target="_blank"><i class="fa fa-deviantart" aria-hidden="true"></i></a></li>
+			</ul>
+		</ul>
+		<div id="content">
+			<div id="t-ban">
+				<img src="./pics/logo.png">
+			</div>
+			<div id="abt-hm">
+				<h2><a href="./about.html" style="text-decoration: none; font-weight: bold;">Who is he?</a></h2>
+				<p>An artist from Memphis, TN, Justin, better known as Azaeath online, considers himself a "jack of all trades, master of learning." With his affinity for learning new things, he has become proficient in different forms of art and prefers to dip his hand into any artistic project related to video games and those who create/utilize them for entertainment whether it be professionally or for hobby. <a href="./about.html">Read More...</a></p>
+			</div>
+			<div id="gal-hm">
+				<a href="./gallery.html"><div><img src="./pics/School/UIUX/genJockForIG.png"></div></a>
+				<a href="./gallery.html"><div><img src="./pics/Dock Scene.png"></div></a>
+				<a href="./gallery.html"><div><img src="./pics/HI35/HI35-Re-imaginedArtboard-8.png"></div></a>
+				<a href="./gallery.html"><div><img src="./pics/Commissions/sstvLogoFin.png"></div></a>
+			</div>
 		</div>
 	</body>
 </html>

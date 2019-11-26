@@ -82,14 +82,23 @@ div#gal-hm {
     margin: 20px 0;
 }
 
-div#gal-hm > div {
-    padding: 0 90px 100px;
+div#gal-hm div {
+    flex: auto;
+    height: 100px;
+    min-width: 20vw;
+    width: 40vw;
     background-color: rgba(64, 64, 64, 1);
     margin: 8px;
 }
 
+div#gal-hm div > img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
 @media (max-width: 391px) {
-    div#gal-hm > div:nth-child(1n+4) {
+    div#gal-hm div:nth-child(1n+4) {
         display: none;
     }
 }

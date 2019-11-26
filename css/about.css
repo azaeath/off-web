@@ -106,15 +106,11 @@ ul#aSocBtns > li:nth-child(3) > a:hover .fa {
 }
 
 ul#aSocBtns > li:nth-child(4) > a:hover .fa {
+	color: rgb(0, 229, 155);
+}
+
+ul#aSocBtns > li:nth-child(5) > a:hover .fa {
 	color: #004983;
-}
-
-ul#aSocBtns > li:first-child > a {
-    border-radius: 0 0 0 20px;
-}
-
-ul#aSocBtns > li:last-child > a {
-    border-radius: 0 0 20px 0;
 }
 
 @media (max-width: 768px) {
