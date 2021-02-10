@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Yusei Magic', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 a {
@@ -20,14 +20,17 @@ html, body {
 
 body:before {
     content: url("../pics/moreRecent/logo05.png");
+    display: block;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.15);
     background-color: #fff;
+    margin: 0;
     padding: 3.5em;
-    border-radius: 30em;
+    border-radius: 50%;
     border: solid 1.5em #2c2c2c;
+    box-shadow: .5em .5em rgb(0 0 0 / .8);
 }
 
 #wrap {
@@ -114,10 +117,11 @@ body:before {
 .expImgContain {
     position: relative;
     display: none;
+    text-align: center;
 }
 
 #expImg {
-	width: 100%;
+	height: 100vh;
 }
 
 .closeBtn {
@@ -230,6 +234,13 @@ body:before {
     }
     .tabs {
         width: 35%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #expImg {
+        width: 100%;
+        height: auto;
     }
 }
 
