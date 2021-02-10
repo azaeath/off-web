@@ -1,4 +1,4 @@
-// Toggle buttons and their functions. Hopefully, this goes well as my first attempt at JS.// Toggle buttons and their functions. Hopefully, this goes well as my first attempt at JS.
+// Toggles the mobile menu on or off screen.
 function mobiMenu() {
 	var x = document.getElementById("mobiNav");
 	if (x.style.left === "-100%") {
