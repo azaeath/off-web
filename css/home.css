@@ -133,6 +133,7 @@ body:before {
     cursor: pointer;
     background-color: rgb(13 17 23 / 65%);
     padding: 0 .5em;
+    border-radius: 50%;
 }
 
 #imgText {
