@@ -33,9 +33,20 @@ body:before {
     box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
 }
 
+:root {
+    --primaryBg: #0d1117;
+    --secondaryBg: #161b22;
+    --mainText: rgb(255 255 255 / 85%);
+    --secondaryText: rgb(255 255 255 / 65%);
+}
+
+p {
+    color: var(--secondaryText);
+}
+
 #wrap {
     width: 100%;
-    background-color: #0d1117;
+    background-color: var(--primaryBg);
     height: auto;
     margin: 0;
     padding: 0;
@@ -50,7 +61,7 @@ body:before {
 #siteNav {
     display: flex;
     flex-flow: row no-wrap;
-    background-color: #161b22;
+    background-color: var(--secondaryBg);
     padding: 0;
     margin: 0;
 }
@@ -62,7 +73,7 @@ body:before {
 
 #siteNav li a {
     text-decoration: none;
-    color: rgb(255 255 255 / 85%);
+    color: var(--mainText);
     padding: 1em;
 }
 
@@ -79,7 +90,7 @@ body:before {
     text-align: center;
     font-size: 2em;
     padding: 0;
-    color: rgb(255 255 255 / 85%);
+    color: var(--mainText);
 }
 
 .tabs {
@@ -128,7 +139,7 @@ body:before {
     position: absolute;
     top: 1em;
     right: 2em;
-    color: rgb(255 255 255 / 85%);
+    color: var(--mainText);
     font-size: 1em;
     cursor: pointer;
     background-color: rgb(13 17 23 / 65%);
@@ -140,7 +151,7 @@ body:before {
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: rgb(255 255 255 / 65%);
+    color: var(--secondaryText);
     font-size: 1em;
     background-color: #0d1117;
     padding: 0 .5em;
@@ -150,7 +161,7 @@ body:before {
     display: none;
 }
 
-#about p {
+.infoSec p {
     text-indent: 2em;
     margin: 0;
     padding: 0 4em;
@@ -167,7 +178,7 @@ body:before {
 }
 
 #about p, #gallery p {
-	color: rgb(255 255 255 / 65%);
+	color: var(--secondaryText);
 }
 
 #socLinks {
@@ -208,7 +219,7 @@ body:before {
     border-radius: 50%;
     line-height: 1.6em;
     font-size: 2em;
-    color: rgb(255 255 255 / 85%);
+    color: var(--mainText);
     transition: .5s;
 }
 
@@ -228,6 +239,47 @@ body:before {
     color: #9eab80;
 }
 
+#commPrice {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin-bottom: 2em;
+}
+
+#commission {
+    position: relative;
+    height: fit-content;
+}
+
+/* Table stuff for commission pricing. */
+.priceTable {
+    display: table;
+    color: var(--secondaryText);
+    position: relative;
+    top: 0;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondaryBg);
+}
+
+.coTabRow {
+    display: table-row;
+}
+
+.coTabCell {
+    display: table-cell;
+    border: solid .1em var(--mainText);
+    padding: .25em 1em;
+}
+
+.titleCell {
+    color: var(--mainText);
+}
+
 @media screen and (max-width: 1024px) {
     #imgRow {
         height: 15em;
@@ -240,6 +292,13 @@ body:before {
 
 @media screen and (max-width: 880px) {
     #expImg {
+        width: 100%;
+        height: auto;
+    }
+    .priceTable {
+        width: 100%;
+    }
+    #commPrice {
         width: 100%;
         height: auto;
     }
@@ -293,7 +352,7 @@ body:before {
         font-size: 4em;
         padding: .3em 0;
         text-decoration: none;
-        color: rgb(255 255 255 / 85%);
+        color: var(--mainText);
     }
     .fa-bars {
         display: block;
@@ -312,6 +371,9 @@ body:before {
     }
     .sections:first-of-type {
         padding-top: .01em;
+    }
+    .infoSec p {
+        padding: 0 2em;
     }
 }
 

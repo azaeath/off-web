@@ -31,6 +31,9 @@
 					<a href="#gallery">Gallery</a>
 				</li>
 				<li>
+					<a href="#commission">Commission</a>
+				</li>
+				<li>
 					<a href="mailto:azaeath@gmail.com">Contact</a>
 				</li>
 			</ul>
@@ -42,6 +45,9 @@
 					<a href="#gallery">Gallery</a>
 				</li>
 				<li>
+					<a href="#commission">Commission</a>
+				</li>
+				<li>
 					<a href="mailto:azaeath@gmail.com">Contact</a>
 				</li>
 			</ul>
@@ -50,7 +56,7 @@
 				<li><a href="https://twitch.tv/azaeath" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
 				<li><a href="mailto:azaeath@gmail.com"><i class="fa fa-envelope"></i></a></li>
 			</ul>
-			<div class="sections" id="about">
+			<div class="sections infoSec" id="about">
 				<h2>About</h2>
 				<p>As an artist of varied interests, I spend a lot of my time trying to learn new things that apply well to my work. Much of my time is now spent on Twitch streaming my process live, as I did while recreating this website. <i style="color: rgb(255 255 255);">If the email button does not work for you, my email is <a href="mailto:azaeath@gmail.com">azaeath@gmail.com</a>.</i></p>
 			</div>
@@ -59,6 +65,12 @@
 				<p>Click images to expand.</p>
 				<!-- Image tab previews. -->
 				<div id="imgRow">
+					<div class="tabs">
+						<img src="./pics/moreRecent/tanukiGirl.png" alt="Mascot Tanuki Girl by Justin 'Azzy' Mull" onclick="expGallery(this);">
+					</div>
+					<div class="tabs">
+						<img src="./pics/moreRecent/tanukiBadgeIG.png" alt="Tanuki Loyalty Badges by Justin 'Azzy' Mull" onclick="expGallery(this);">
+					</div>
 					<div class="tabs">
 						<img src="./pics/moreRecent/sassyyEmote1.png" alt="SassyyDragon Emote 1 by Justin 'Azzy' Mull" onclick="expGallery(this);">
 					</div>
@@ -101,7 +113,8 @@
 					<!-- For adding new images later.
 					<div class="tabs">
 						<img src="" alt="" onclick="expGallery(this);">
-					</div> -->
+					</div>
+					-->
 				</div>
 				<!-- Expansion container. -->
 				<div class="expImgContain">
@@ -122,9 +135,76 @@
 					}
 				</script>
 			</div>
-			<!-- <div class="sections" id="contact">
+			<div class="sections infoSec" id="commission">
+				<h2>Commission Info</h2>
+				<div>
+					<img id="commPrice" src="./pics/moreRecent/commissionPricing.png" alt="Azzy commission pricing info image.">
+					<div class="priceTable">
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Type</span>
+							<span class="coTabCell titleCell">Sketch</span>
+							<span class="coTabCell titleCell">Line</span>
+							<span class="coTabCell titleCell">Color/Full</span>
+						</div>
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Bust</span>
+							<span class="coTabCell">$12</span>
+							<span class="coTabCell">$18</span>
+							<span class="coTabCell">$60</span>
+						</div>
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Waist Up</span>
+							<span class="coTabCell">$24</span>
+							<span class="coTabCell">$36</span>
+							<span class="coTabCell">$90</span>
+						</div>
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Full Body</span>
+							<span class="coTabCell">$36</span>
+							<span class="coTabCell">$54</span>
+							<span class="coTabCell">$120</span>
+						</div>
+						<!-- For adding table rows.
+						<div class="coTabRow">
+							<span class="coTabCell titleCell"></span>
+							<span class="coTabCell"></span>
+							<span class="coTabCell"></span>
+							<span class="coTabCell"></span>
+						</div>
+						-->
+					</div>
+					<br>
+					<p>Pricing for emotes and badges differ from the way other illustrations are priced.</p>
+					<br>
+					<div class="priceTable">
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Type</span>
+							<span class="coTabCell titleCell">Base</span>
+							<span class="coTabCell titleCell">Color Change</span>
+							<span class="coTabCell titleCell">Revisions*</span>
+						</div>
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Emotes</span>
+							<span class="coTabCell">$25</span>
+							<span class="coTabCell">$10/change</span>
+							<span class="coTabCell">$15</span>
+						</div>
+						<div class="coTabRow">
+							<span class="coTabCell titleCell">Badges</span>
+							<span class="coTabCell">$30</span>
+							<span class="coTabCell">$10/change</span>
+							<span class="coTabCell">$15</span>
+						</div>
+					</div>
+					<br>
+					<p>Additional information coming soon. For now, if you have any questions, shoot me an email or come by my Twitch stream. I'm typically live from approximately 13:00 CST (GMT -6) and onward.</p>
+				</div>
+			</div>
+			<!-- For adding new sections later.
+			<div class="sections" id="contact">
 				<h2>Contact Me</h2>
-			</div> -->
+			</div>
+			-->
 		</div>
 	</body>
 </html>
