@@ -22,810 +22,408 @@
 <head>
 <body>
 	<div id="wrap">
+		<i class="fa fa-bars" onclick="mobiMenu();"></i>
+		<ul id="siteNav">
+			<li>
+				<a href="#grades">Grade Breakdown</a>
+			</li>
+			<li>
+				<a href="#syllabus">Syllabus</a>
+			</li>
+			<li>
+				<a href="#resources">Resources</a>
+			</li>
+			<li>
+				<a href="mailto:mulljk@scsk12.org">Contact</a>
+			</li>
+		</ul>
+		<ul id="mobiMenu" style="left: -100%;">
+			<li>
+				<a href="#grades">Grade Breakdown</a>
+			</li>
+			<li>
+				<a href="#syllabus">Syllabus</a>
+			</li>
+			<li>
+				<a href="#resources">Resources</a>
+			</li>
+			<li>
+				<a href="mailto:mulljk@scsk12.org">Contact</a>
+			</li>
+		</ul>
+		<ul id="socLinks">
+			<li><a href="https://instagram.com/azaeath" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="https://twitch.tv/azaeath" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+			<li><a href="mailto:mulljk@scsk12.org"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+		<p style=" text-align: center; padding: 0 2em;"><i style="color: var(--mainText);">This page is being regularly maintained. If there is a section or info missing, it may be rolled out when the page's next updates are published.</i></p>
 		<!-- <div class="tabLinks">
 			<!-- Class links
 			<button class="tabLinks"onclick="open(event, 'Digital Arts I')">Digital Arts I</button>
 			<button class="tabLinks"onclick="open(event, 'Digital Arts II')">Digital Arts II</button>
 			<button class="tabLinks"onclick="open(event, 'Digital Arts III')">Digital Arts III</button>
 		</div> -->
-		<!-- Content tables. -->
-		<div class="contentTable">
-			<div id="da1" class="conTable active">
+		<div class="sections infoSec">
+			<h2 id="grades">Quarterly Grade Break Down</h2>
+			<p>Students in grades 9 - 12, per MSCS standards, are required to have a minimum of 17 grades per quarter, broken down as follows:</p>
+			<div class="contentTable">
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Date</span>
-					<span class="conTabCell titleCell">Description</span>
-					<span class="conTabCell titleCell">Due Date</span>
+					<div class="conTabCell titleCell">Type</div>
+					<div class="conTabCell titleCell">Min. Amount</div>
+					<div class="conTabCell titleCell">Grade Weight (%)</div>
 				</div>
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 8 - 12</span>
-					<span class="conTabCell">Intro week.</span>
-					<span class="conTabCell">N/A</span>
+					<div class="conTabCell">Assessments</div>
+					<div class="conTabCell">4</div>
+					<div class="conTabCell">40%</div>
 				</div>
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 15 - 19</span>
-					<span class="conTabCell">
-						Logo Week
-						<ul>
-							<li>Students will learn the difference between a logotype and a logomark.</li>
-							<li>Students will learn the five traits that make up a successful logo.</li>
-							<li>Students will learn the seven Gestalt principles of design.</li>
-							<li>Students will learn the difference between plagiarism and appropriation.</li>
-							<li>Main Assignment: Students will sketch an idea for a logo.</li>
-							<li>Secondary Assignment: Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: 2nd day of class for the week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
+					<div class="conTabCell">Classwork</div>
+					<div class="conTabCell">4</div>
+					<div class="conTabCell">35%</div>
 				</div>
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 22 - 26</span>
-					<span class="conTabCell">
-						Typography Week
-						<ul>
-							<li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
-							<li>Students will define kerning and spacing as it relates to typography and design.</li>
-							<li>Students will learn the basics of typographical arrangements.</li>
-							<li>Main Assignment: <i>Unable to assign due to lack of software access. Will be moved to a later date, TBD.</i></li>
-							<li>Secondary Assignment: Students will sketch at least three different typographical arrangments.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: First class of the next week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
+					<div class="conTabCell">Homework</div>
+					<div class="conTabCell">4</div>
+					<div class="conTabCell">10%</div>
 				</div>
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
-					<span class="conTabCell">
-						Color Week
-						<ul>
-							<li>Students will learn the basics of color theory.</li>
-							<li>Students will learn the difference between tints, shades, and chromatic grays.</li>
-							<li>Students will learn the difference between the color models: RGB, Hex, HSB/HSL/HSV, and CMYK.</li>
-							<li>Students will learn the difference between the various color schemes: complementary, analagous, harmonious, etc.</li>
-							<li>Main Assignment: Students will demonstrate an understanding of basic color theory by creating a series of three (3) separate posters/photos</li>
-							<li>Secondary Assignment:</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: First class of the next week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
+					<div class="conTabCell">Projects</div>
+					<div class="conTabCell">1</div>
+					<div class="conTabCell">10%</div>
 				</div>
 				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
-					<span class="conTabCell">
-						Basics of Photoshop
-						<br>
-						<ul>
-							<li>Students will learn the names and functions of the basic tools in Adobe Photoshop.</li>
-							<li>Students will learn the basics of Photoshop features.</li>
-							<li>Students will learn how to implement Photoshop's layering features to compose imagery.</li>
-							<li>Students will learn the use of the opacity features in Photoshop.</li>
-							<li>Main Assignment: Students will create an image composition demonstrating the use of layers.</li>
-							<li>Secondary Assignment: Students will create a sketch demonstrating the basics of layering.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: First class of the next week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 12 - 16</span>
-					<span class="conTabCell">
-						Blend Modes Week
-						<br>
-						<ul>
-							<li>Students will learn how to utilize the overlay, multiply, and subtract layer blending modes.</li>
-							<li>Students will learn the application of blending modes to achieve a variety of color and shading effects.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 19 - 23</span>
-					<span class="conTabCell">
-						Layer Effects Week
-						<br>
-						<ul>
-							<li>Students will learn to utilize three basic layer effects: border, glow, and drop shadow.</li>
-							<li>Utilizing text as the primary subjects, students will experiment with the different learned layer effects to create typographical art.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 26 - 30</span>
-					<span class="conTabCell">
-						Photo Effects Week
-						<br>
-						<ul>
-							<li>Students will learn to manipulate photos utilizing the blur, vignette, posterize, and sharpen effects.</li>
-							<li>Utilizing a photo of themselves or a chosen subject, students will demonstrate their capability to use photo effects to enhance or alter photos for visual appeal.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 3 - 7</span>
-					<span class="conTabCell">
-						Selections and Masking Week
-						<br>
-						<ul>
-							<li>Students will learn how to use the marquee tools, magic wand, selection layers, and selection paths in order to manipulate specific areas or colors within a project.</li>
-							<li>Students will learn to hide or show specific parts of an image using layer masks.</li>
-							<li>Students will learn to manipulate specifics elements on a layer by using the alpha lock option.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 10 - 14</span>
-					<span class="conTabCell">Fall Break</span>
-					<span class="conTabCell">N/A</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 17 - 21</span>
-					<span class="conTabCell">
-						Editing and Correction Tools
-						<br>
-						<ul>
-							<li>Students will learn to utilize the different photo correction tools, dodge, burn, smudge, and blur to edit photographs.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 24 - 28</span>
-					<span class="conTabCell">
-						Tonal Correction
-						<br>
-						<ul>
-							<li>Students will learn to utilize tonal correction sliders to adjust different properties about an image.</li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<!-- <div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 7 - 11</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 14 - 18</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 21 - 25</span>
-					<span class="conTabCell">Thanksgiving Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 5 - 9</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 12 - 16</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 19 - 30</span>
-					<span class="conTabCell">Winter Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 2 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 9 - 13</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 17 - 20</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 23 - 27</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 13 - 17</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 13 - 17</span>
-					<span class="conTabCell">Spring Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 27 - 31</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 3 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 10 - 14</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 17 - 21</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 24 - 28</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 1 - 5</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 8 - 12</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 15 - 19</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 22 - 26</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
+					<div class="conTabCell">Class Participation</div>
+					<div class="conTabCell">4</div>
+					<div class="conTabCell">5%</div>
 				</div>
 			</div>
-			<div id="da2" class="conTable active">
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Date</span>
-					<span class="conTabCell titleCell">Description</span>
-					<span class="conTabCell titleCell">Due Date</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 8 - 12</span>
-					<span class="conTabCell">Intro week.</span>
-					<span class="conTabCell">N/A</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 15 - 19</span>
-					<span class="conTabCell">
-						Logo Week
-						<ul>
-							<li>Students will learn the difference between a logotype and a logomark.</li>
-							<li>Students will learn the five traits that make up a successful logo.</li>
-							<li>Students will learn the seven Gestalt principles of design.</li>
-							<li>Students will learn the difference between plagiarism and appropriation.</li>
-							<li>Main Assignment: Students will sketch an idea for a logo.</li>
-							<li>Secondary Assignment: Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: 2nd day of class for the week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 22 - 26</span>
-					<span class="conTabCell">
-						Typography Week
-						<ul>
-							<li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
-							<li>Students will define kerning and spacing as it relates to typography and design.</li>
-							<li>Students will learn the basics of typographical arrangements.</li>
-							<li>Main Assignment: Students will demonstrate a basic understanding of typography by creating an arrangement of words utilizing the typography methods they have learned.</li>
-							<li>Secondary Assignment: Students will sketch at least two different typographical arrangments.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: First class of the next week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 12 - 16</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 19 - 23</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 26 - 30</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 3 - 7</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 10 - 14</span>
-					<span class="conTabCell">Fall Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 17 - 21</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 24 - 28</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 7 - 11</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 14 - 18</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 21 - 25</span>
-					<span class="conTabCell">Thanksgiving Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 5 - 9</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 12 - 16</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 19 - 30</span>
-					<span class="conTabCell">Winter Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 2 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 9 - 13</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 17 - 20</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 23 - 27</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 13 - 17</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 13 - 17</span>
-					<span class="conTabCell">Spring Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 27 - 31</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 3 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 10 - 14</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 17 - 21</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 24 - 28</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 1 - 5</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 8 - 12</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 15 - 19</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 22 - 26</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
+			<p>Following this model, as of 2022-08-28, all assignments given will have an indicator of what type of grade they account for. However, all students should note that the <b style="color: var(--mainText);">sketchbook assignments will account for both homework and assessment grades</b>, resulting in being 50% of your total grade for each quarter. Because there is a long time between when I first announced the requirement of the sketchbook and the first official due date for sketchbook assignments, <b style="color: var(--mainText);">there will be no leniency</b> for anyone who doesn't have it by September 30. Furthermore, as far as this class page is concerned, all week-long assignments will be referred to as the <i style="color: var(--mainText);">Main Assignment</i> in the syllabus table. All sketchbook assignments will be referred to as the <i style="color: var(--mainText);">Secondary Assignment.</i></p>
+		</div>
+		<div class="sections infoSec" id="syllabus">
+			<h2>Syllabus</h2>
+			<!-- Content tables. -->
+			<div class="contentTable">
+				<div id="da1" class="conTable active">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Date</span>
+						<span class="conTabCell titleCell">Description</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Aug. 8 - 12</span>
+						<span class="conTabCell">Intro week.</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Aug. 15 - 19</span>
+						<span class="conTabCell">
+							Logo Week
+							<ul>
+								<li>Students will learn the difference between a logotype and a logomark.</li>
+								<li>Students will learn the five traits that make up a successful logo.</li>
+								<li>Students will learn the seven Gestalt principles of design.</li>
+								<li>Students will learn the difference between plagiarism and appropriation.</li>
+								<li>Main Assignment: Students will sketch an idea for a logo.</li>
+								<li>Secondary Assignment: Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design.</li>
+							</ul>
+						</span>
+						<span class="conTabCell">
+							Main Assignment: 2nd day of class for the week.
+							<br>
+							Secondary Assignment: Sep. 30
+						</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Aug. 22 - 26</span>
+						<span class="conTabCell">
+							Typography Week
+							<ul>
+								<li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
+								<li>Students will define kerning and spacing as it relates to typography and design.</li>
+								<li>Students will learn the basics of typographical arrangements.</li>
+								<li>Main Assignment: <i>Unable to assign due to lack of software access. Will be moved to a later date, TBD.</i></li>
+								<li>Secondary Assignment: Students will sketch at least three different typographical arrangments.</li>
+							</ul>
+						</span>
+						<span class="conTabCell">
+							Main Assignment: N/A
+							<br>
+							Secondary Assignment: Sep. 30
+						</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
+						<span class="conTabCell">
+							Color Week
+							<ul>
+								<li>Students will learn the basics of color theory.</li>
+								<li>Students will learn the difference between tints, shades, and chromatic grays.</li>
+								<li>Students will learn the difference between the color models: RGB, Hex, HSB/HSL/HSV, and CMYK.</li>
+								<li>Students will learn the difference between the various color schemes: complementary, analagous, harmonious, etc.</li>
+								<li>Main Assignment: Students will demonstrate an understanding of basic color theory by creating a series of three (3) separate posters/photos</li>
+								<li>Secondary Assignment:</li>
+							</ul>
+						</span>
+						<span class="conTabCell">
+							Main Assignment: First class of the next week.
+							<br>
+							Secondary Assignment: Sep. 30
+						</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
+						<span class="conTabCell">
+							Basics of Photoshop
+							<br>
+							<ul>
+								<li>Students will learn the names and functions of the basic tools in Adobe Photoshop.</li>
+								<li>Students will learn the basics of Photoshop features.</li>
+								<li>Students will learn how to implement Photoshop's layering features to compose imagery.</li>
+								<li>Students will learn the use of the opacity features in Photoshop.</li>
+								<li>Main Assignment: Students will create an image composition demonstrating the use of layers.</li>
+								<li>Secondary Assignment: Students will create a sketch demonstrating the basics of layering.</li>
+							</ul>
+						</span>
+						<span class="conTabCell">
+							Main Assignment: First class of the next week.
+							<br>
+							Secondary Assignment: Sep. 30
+						</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Sep. 12 - 16</span>
+						<span class="conTabCell">
+							Blend Modes Week
+							<br>
+							<ul>
+								<li>Students will learn how to utilize the overlay, multiply, and subtract layer blending modes.</li>
+								<li>Students will learn the application of blending modes to achieve a variety of color and shading effects.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Sep. 19 - 23</span>
+						<span class="conTabCell">
+							Layer Effects Week
+							<br>
+							<ul>
+								<li>Students will learn to utilize three basic layer effects: border, glow, and drop shadow.</li>
+								<li>Utilizing text as the primary subjects, students will experiment with the different learned layer effects to create typographical art.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Sep. 26 - 30</span>
+						<span class="conTabCell">
+							Photo Effects Week
+							<br>
+							<ul>
+								<li>Students will learn to manipulate photos utilizing the blur, vignette, posterize, and sharpen effects.</li>
+								<li>Utilizing a photo of themselves or a chosen subject, students will demonstrate their capability to use photo effects to enhance or alter photos for visual appeal.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Oct. 3 - 7</span>
+						<span class="conTabCell">
+							Selections and Masking Week
+							<br>
+							<ul>
+								<li>Students will learn how to use the marquee tools, magic wand, selection layers, and selection paths in order to manipulate specific areas or colors within a project.</li>
+								<li>Students will learn to hide or show specific parts of an image using layer masks.</li>
+								<li>Students will learn to manipulate specifics elements on a layer by using the alpha lock option.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Oct. 10 - 14</span>
+						<span class="conTabCell">Fall Break</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Oct. 17 - 21</span>
+						<span class="conTabCell">
+							Editing and Correction Tools
+							<br>
+							<ul>
+								<li>Students will learn to utilize the different photo correction tools, dodge, burn, smudge, and blur to edit photographs.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Oct. 24 - 28</span>
+						<span class="conTabCell">
+							Tonal Correction
+							<br>
+							<ul>
+								<li>Students will learn to utilize tonal correction sliders to adjust different properties about an image.</li>
+							</ul>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<!-- <div class="conTabRow">
+						<span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Nov. 7 - 11</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Nov. 14 - 18</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Nov. 21 - 25</span>
+						<span class="conTabCell">Thanksgiving Break</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Dec. 5 - 9</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Dec. 12 - 16</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Dec. 19 - 30</span>
+						<span class="conTabCell">Winter Break</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Jan. 2 - 6</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Jan. 9 - 13</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Jan. 17 - 20</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Jan. 23 - 27</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Feb. 6 - 10</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Feb. 13 - 17</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Feb. 20 - 24</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Mar. 6 - 10</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Mar. 13 - 17</span>
+						<span class="conTabCell">Spring Break</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Mar. 20 - 24</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Mar. 27 - 31</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Apr. 3 - 6</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Apr. 10 - 14</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Apr. 17 - 21</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Apr. 24 - 28</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">May 1 - 5</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">May 8 - 12</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">May 15 - 19</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">May 22 - 26</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div> -->
 				</div>
 			</div>
-			<div id="da3" class="conTable active">
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Date</span>
-					<span class="conTabCell titleCell">Description</span>
-					<span class="conTabCell titleCell">Due Date</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 8 - 12</span>
-					<span class="conTabCell">Intro week.</span>
-					<span class="conTabCell">N/A</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 15 - 19</span>
-					<span class="conTabCell">
-						Logo Week
-						<ul>
-							<li>Students will learn the difference between a logotype and a logomark.</li>
-							<li>Students will learn the five traits that make up a successful logo.</li>
-							<li>Students will learn the seven Gestalt principles of design.</li>
-							<li>Students will learn the difference between plagiarism and appropriation.</li>
-							<li>Main Assignment: Students will sketch an idea for a logo.</li>
-							<li>Secondary Assignment: Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: 2nd day of class for the week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 22 - 26</span>
-					<span class="conTabCell">
-						Typography Week
-						<ul>
-							<li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
-							<li>Students will define kerning and spacing as it relates to typography and design.</li>
-							<li>Students will learn the basics of typographical arrangements.</li>
-							<li>Main Assignment: Students will demonstrate a basic understanding of typography by creating an arrangement of words utilizing the typography methods they have learned.</li>
-							<li>Secondary Assignment: Students will sketch at least two different typographical arrangments.</li>
-						</ul>
-					</span>
-					<span class="conTabCell">
-						Main Assignment: First class of the next week.
-						<br>
-						Secondary Assignment: Sep. 30
-					</span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
-					<span class="conTabCell">
-						Color Week
-						<ul>
-							<li>Students will learn the basics of color theory.</li>
-							<li>Students will learn the difference between the color models: RGB, Hex, HSB/HSL/HSV, and CMYK.</li>
-							<li>Students </li>
-							<li>Main Assignment: </li>
-							<li>Secondary Assignment: </li>
-						</ul>
-					</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 12 - 16</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 19 - 23</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Sep. 26 - 30</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 3 - 7</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 10 - 14</span>
-					<span class="conTabCell">Fall Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 17 - 21</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 24 - 28</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 7 - 11</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 14 - 18</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 21 - 25</span>
-					<span class="conTabCell">Thanksgiving Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 5 - 9</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 12 - 16</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Dec. 19 - 30</span>
-					<span class="conTabCell">Winter Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 2 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 9 - 13</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 17 - 20</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 23 - 27</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 13 - 17</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 6 - 10</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 13 - 17</span>
-					<span class="conTabCell">Spring Break</span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 20 - 24</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Mar. 27 - 31</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 3 - 6</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 10 - 14</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 17 - 21</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">Apr. 24 - 28</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 1 - 5</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 8 - 12</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 15 - 19</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-				<div class="conTabRow">
-					<span class="conTabCell titleCell">May 22 - 26</span>
-					<span class="conTabCell"></span>
-					<span class="conTabCell"></span>
-				</div>
-			</div> -->
+		</div>
+		<div class="sections infoSec" id="resources">
+			<h2>Resources</h2>
+			<div class="coPriDets">
+				<h3>For anyone who is struggling to acquire a sketchbook:</h3>
+				<ul>
+					<li><a href="https://youtu.be/S2FRKbQI2kY">How to Make a Sketchbook | DIY Coptic Stitch Bookbinding Tutorial | Sea Lemon</a></li>
+					<li><a href="https://youtu.be/j-r6c_trSxY">4-Hole Japanese Bookbinding Tutorial | Sea Lemon</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>

@@ -16,6 +16,7 @@ html, body {
     height: 100vh;
     margin: 0;
     overflow-X: hidden;
+	color: var(--secondaryText);
 }
 
 body:before {
