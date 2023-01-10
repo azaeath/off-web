@@ -16,7 +16,7 @@ html, body {
     height: 100vh;
     margin: 0;
     overflow-X: hidden;
-	color: var(--secondaryText);
+    color: var(--secondaryText);
 }
 
 body:before {
@@ -39,6 +39,8 @@ body:before {
     --secondaryBg: #161b22;
     --mainText: rgb(255 255 255 / 85%);
     --secondaryText: rgb(255 255 255 / 65%);
+    --skillText: rgb(255 255 0 / 85%);
+    --knowText: rgb(128 127 255 / 85%);
 }
 
 p, .coPriDets {
@@ -86,6 +88,16 @@ h6 {
 .fa-bars {
     display: none;
 }
+b.impt {
+    color: var(--mainText);
+}
+span.skill {
+    color: var(--skillText);
+}
+
+span.know {
+    color: var(--knowText);
+}
 
 #siteNav {
     display: flex;
@@ -120,6 +132,10 @@ h6 {
     font-size: 2em;
     padding: 0;
     color: var(--mainText);
+}
+
+.sections h3 {
+    text-align: center;
 }
 
 .tabs {
@@ -161,7 +177,7 @@ h6 {
 }
 
 #expImg {
-	height: 100vh;
+    height: 100vh;
 }
 
 .closeBtn {
@@ -207,7 +223,7 @@ h6 {
 }
 
 #about p, #gallery p {
-	color: var(--secondaryText);
+    color: var(--secondaryText);
 }
 
 #socLinks {
@@ -312,14 +328,38 @@ h6 {
 .coPriDets {
     padding: 0 4em;
 }
+/* Tab controls and display */
+.tabs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.tabs input {
+    position: absolute;
+    left: -100vw;
+}
+.tabs label {
+    display: inline-block;
+    background-color: var(--secondaryBg);
+    position: relative;
+    margin: 0;
+    padding: .25em .5em;
+}
+#tabCon1, #tabCon2,#tabCon3, #tabCon4 {
+    display: none;
+}
+#tab1:checked ~ .tabCon:nth-of-type(1), #tab2:checked ~ .tabCon:nth-of-type(2), #tab3:checked ~ .tabCon:nth-of-type(3), #tab4:checked ~ .tabCon:nth-of-type(4) {
+    display: table;
+}
+#tab1:checked ~ label:nth-of-type(1), #tab2:checked ~ label:nth-of-type(2), #tab3:checked ~ label:nth-of-type(3), #tab4:checked ~ label:nth-of-type(4) {
+    background-color: var(--mainText);
+    color: #000;
+}
 @media screen and (max-width: 1024px) {
     #imgRow {
         height: 15em;
         overflow-y: hidden;
-    }
-    .tabs {
-        width: 35%;
     }
 }
 
@@ -353,12 +393,9 @@ h6 {
         border-radius: 90em;
         border: solid 3em #2c2c2c;
     }
-    .tabs {
-        width: 50%;
+    #siteNav {
+        display: none;
     }
-	#siteNav {
-		display: none;
-	}
     #mobiMenu {
         display: flex;
         position: fixed;
@@ -397,7 +434,7 @@ h6 {
         z-index: 900;
         padding: .1em .3em;
     }
-	.closeBtn {
+    .closeBtn {
         font-size: 3em;
         top: 1.2em;
         right: 1.2em;
