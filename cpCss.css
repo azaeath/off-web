@@ -40,7 +40,7 @@ body:before {
     --mainText: rgb(255 255 255 / 85%);
     --secondaryText: rgb(255 255 255 / 65%);
     --skillText: rgb(255 255 0 / 85%);
-    --knowText: rgb(128 127 255 / 85%);
+    --knowText: rgb(255 0 255 / 85%);
 }
 
 p, .coPriDets {
@@ -136,24 +136,6 @@ span.know {
 
 .sections h3 {
     text-align: center;
-}
-
-.tabs {
-    flex: 1 0 auto;
-    width: 25%;
-    padding: 0 .5em;
-}
-
-.tabs img {
-    opacity: 0.8;
-    cursor: pointer;
-    height: 15em;
-    width: 100%;
-    object-fit: cover;
-}
-
-.tabs img:hover {
-    opacity: 1;
 }
 
 #imgRow {
@@ -301,7 +283,7 @@ span.know {
 
 /* Table stuff for commission pricing. */
 .contentTable {
-    display: table;
+    display: none;
     color: var(--secondaryText);
     position: relative;
     top: 0;
@@ -328,34 +310,34 @@ span.know {
 .coPriDets {
     padding: 0 4em;
 }
-/* Tab controls and display */
-.tabs {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.tabs input {
-    position: absolute;
-    left: -100vw;
-}
-.tabs label {
-    display: inline-block;
-    background-color: var(--secondaryBg);
+/* Tab styling */
+.tab {
+    display: flex;
+    flex-flow: row no-wrap;
     position: relative;
-    margin: 0;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondaryBg);
+}
+.tab button {
+    display: inline-flex;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
     padding: .25em .5em;
+    color: var(--secondaryText);
 }
-#tabCon1, #tabCon2,#tabCon3, #tabCon4 {
-    display: none;
+.tab button:hover {
+    background-color: var(--secondaryText);
+    color: #000;
 }
-#tab1:checked ~ .tabCon:nth-of-type(1), #tab2:checked ~ .tabCon:nth-of-type(2), #tab3:checked ~ .tabCon:nth-of-type(3), #tab4:checked ~ .tabCon:nth-of-type(4) {
-    display: table;
-}
-#tab1:checked ~ label:nth-of-type(1), #tab2:checked ~ label:nth-of-type(2), #tab3:checked ~ label:nth-of-type(3), #tab4:checked ~ label:nth-of-type(4) {
+.tab button.active {
     background-color: var(--mainText);
     color: #000;
 }
+
 @media screen and (max-width: 1024px) {
     #imgRow {
         height: 15em;

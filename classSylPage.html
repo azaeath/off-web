@@ -157,58 +157,98 @@
             </p>
             <br>
             <!-- Content tables. -->
-            <div class="tabs">
-                <!-- Tab Buttons -->
-                <input type="radio" name="tabs" id="tab1" checked="checked">
-                <input type="radio" name="tabs" id="tab2">
-                <input type="radio" name="tabs" id="tab3">
-                <input type="radio" name="tabs" id="tab4">
-                <!-- Tab Labels -->
-                <label for="tab1" class="tabLabel">Quarter 1</label>
-                <label for="tab2">Quarter 2</label>
-                <label for="tab3">Quarter 3</label>
-                <label for="tab4">Quarter 4</label>
-                <!-- Tab Content -->
-                <div class="contentTable tabCon" id="tabCon1">
-                    <div class="conTabRow">
-                        <span class="conTabCell titleCell">Date</span>
-                        <span class="conTabCell titleCell">Description</span>
-                        <span class="conTabCell titleCell">Due Date</span>
-                    </div>
-                    <div class="conTabRow">
-                        <span class="conTabCell titleCell">Aug. 8 - 12</span>
-                        <span class="conTabCell">Intro week.</span>
-                        <span class="conTabCell">N/A</span>
-                    </div>
-                    <div class="conTabRow">
-                        <span class="conTabCell titleCell">Aug. 15 - 19</span>
-                        <span class="conTabCell">
-                            Logo Week
-                            <ul>
-                                <li>Students will learn the difference between a logotype and a logomark.</li>
-                                <li>Students will learn the five traits that make up a successful logo.</li>
-                                <li>Students will learn the seven Gestalt principles of design.</li>
-                                <li>Students will learn the difference between plagiarism and appropriation.</li>
-                                <li><b class="impt">Main Assignment:</b> Students will sketch an idea for a logo.</li>
-                                <li><b class="impt">Secondary Assignment:</b> Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design. <b class="impt">(Homework/Assessment)</b></li>
+            <!-- Tab Buttons -->
+            <div class="tab">
+                <button id="defOpen" class="tablinks" onclick="showTable(event, 'tabCon1')">Quarter 1</button>
+                <button class="tablinks" onclick="showTable(event, 'tabCon2')">Quarter 2</button>
+                <button class="tablinks" onclick="showTable(event, 'tabCon3')">Quarter 3</button>
+                <button class="tablinks" onclick="showTable(event, 'tabCon4')">Quarter 4</button>
+            </div>
+            <!-- Tab Content -->
+            <div class="contentTable tabCon" id="tabCon1">
+                <div class="conTabRow">
+                    <span class="conTabCell titleCell">Date</span>
+                    <span class="conTabCell titleCell">Description</span>
+                    <span class="conTabCell titleCell">Due Date</span>
+                </div>
+                <div class="conTabRow">
+                    <span class="conTabCell titleCell">Aug. 8 - 12</span>
+                    <span class="conTabCell">Intro week.</span>
+                    <span class="conTabCell">N/A</span>
+                </div>
+                <div class="conTabRow">
+                    <span class="conTabCell titleCell">Aug. 15 - 19</span>
+                    <span class="conTabCell">
+                        Logo Week
+                        <ul>
+                            <li>Students will learn the difference between a logotype and a logomark.</li>
+                            <li>Students will learn the five traits that make up a successful logo.</li>
+                            <li>Students will learn the seven Gestalt principles of design.</li>
+                            <li>Students will learn the difference between plagiarism and appropriation.</li>
+                            <li><b class="impt">Main Assignment:</b> Students will sketch an idea for a logo.</li>
+                            <li><b class="impt">Secondary Assignment:</b> Students will define the seven Gestalt principles of design and create a sketch representing at least two of the seven Gestalt principles of design. <b class="impt">(Homework/Assessment)</b></li>
+                        </ul>
+                    </span>
+                    <span class="conTabCell">
+                        <b class="impt">Main Assignment:</b> 2nd day of class for the week.
+                        <br>
+                        <b class="impt">Secondary Assignment:</b> Sep. 30
+                    </span>
+                </div>
+                <div class="conTabRow">
+                    <span class="conTabCell titleCell">Aug. 22 - 26</span>
+                    <span class="conTabCell">
+                        Typography Week
+                        <ul>
+                            <li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
+                            <li>Students will define kerning and spacing as it relates to typography and design.</li>
+                            <li>Students will learn the basics of typographical arrangements.</li>
+                            <li><b class="impt">Main Assignment:</b> <i>Unable to assign due to lack of software access. Will be moved to a later date, TBD.</i></li>
+                            <li><b class="impt">Secondary Assignment:</b> Students will sketch at least three different typographical arrangments in the form of simple shapes. <b class="impt">(Homework/Assessment)</b></li>
+                        </ul>
+                    </span>
+                    <span class="conTabCell">
+                        <b class="impt">Main Assignment:</b> N/A
+                        <br>
+                        <b class="impt">Secondary Assignment:</b> Sep. 30
+                    </span>
+                </div>
+                <div class="conTabRow">
+                    <span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
+                    <span class="conTabCell">
+                        Color Week
+                        <ul>
+                            <li>Students will learn the basics of color theory.</li>
+                            <li>Students will learn the difference between tints, shades, and chromatic grays.</li>
+                            <li>Students will learn the difference between the color models: RGB, Hex, HSB/HSL/HSV, and CMYK.</li>
+                            <li>Students will learn the difference between the various color schemes: complementary, analagous, harmonious, etc.</li>
+                            <li><b class="impt">Main Assignment:</b>
+                                <ul>
+                                    <li>Students will demonstrate a basic understanding of digital art tools by creating a color <s>palette</s> wheel that shows primary colors, <s>the RGB color model,</s> secondary colors,<s>chromatic grays</s> tints, and shades. <b class="impt">(Classwork)</b></li>
+                                    <li>Students will demonstrate an understanding of basic color usage by creating a series of three (3) abstract designs that utilize the primary, secondary, and chromatic gray color schemes discussed in class. <b class="impt">(Classwork)</b></li>
+                                    <li><b class="impt">In order to complete these assignments, students will need to make use of digital art software. <i>Ibis Paint X</i> is currently the one in use for assignment tutorials as of right now, as it is free on the iOS and Android app stores. However, if you are familiar with and are currently able to use a similar software to achieve the goals of the assignment, you are free to use another software.</b> For instruction this week, refer to the class resources at the end of the page. If the videos are not up by Monday morning, 8/29, refer to your secondary assignment, and be on the lookout for the main assignment on this page later in the day. As of writing this, there is currently a technical error going on with the video editing software that needs to be addressed.</li>
+                                </ul>
+                                <li><b class="impt">Secondary Assignment:</b> Students will define color vocabulary in their sketchbooks. Vocabulary to be included in the assignment are: hue, saturation, value, tint, shade, chromatic, achromatic, monochromatic, primary colors, secondary colors, chromatic gray, complement, split complement, analogous colors, harmony, dissonance, triad, tetrad, CMYK, RGB, HSV, and hex codes. <b class="impt">(Homework/Assessment)</b></li>
                             </ul>
                         </span>
                         <span class="conTabCell">
-                            <b class="impt">Main Assignment:</b> 2nd day of class for the week.
+                            <b class="impt">Main Assignment:</b> First class of the next week.
                             <br>
                             <b class="impt">Secondary Assignment:</b> Sep. 30
                         </span>
                     </div>
                     <div class="conTabRow">
-                        <span class="conTabCell titleCell">Aug. 22 - 26</span>
+                        <span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
                         <span class="conTabCell">
-                            Typography Week
+                            Basics of Photoshop
+                            <br>
                             <ul>
-                                <li>Students will learn the difference between serif, sans-serif, and script fonts.</li>
-                                <li>Students will define kerning and spacing as it relates to typography and design.</li>
-                                <li>Students will learn the basics of typographical arrangements.</li>
-                                <li><b class="impt">Main Assignment:</b> <i>Unable to assign due to lack of software access. Will be moved to a later date, TBD.</i></li>
-                                <li><b class="impt">Secondary Assignment:</b> Students will sketch at least three different typographical arrangments in the form of simple shapes. <b class="impt">(Homework/Assessment)</b></li>
+                                <li>Students will learn the names and functions of the basic tools in Adobe Photoshop.</li>
+                                <li>Students will learn the basics of Photoshop features.</li>
+                                <li>Students will learn how to implement Photoshop's layering features to compose imagery.</li>
+                                <li>Students will learn the use of the opacity features in Photoshop.</li>
+                                <li><b class="impt">Main Assignment:</b> <s>Students will create an image composition demonstrating the use of layers.</s> Combined with previous assignment due to students being behind on work.</li>
+                                <li><b class="impt">Secondary Assignment:</b> Students will create a sketch demonstrating the basic idea of layering. <b class="impt">(Homework/Assessment)</b></li>
                             </ul>
                         </span>
                         <span class="conTabCell">
@@ -218,369 +258,324 @@
                         </span>
                     </div>
                     <div class="conTabRow">
-                        <span class="conTabCell titleCell">Aug. 29 - Sep 2</span>
+                        <span class="conTabCell titleCell">Sep. 12 - 16</span>
                         <span class="conTabCell">
-                            Color Week
+                            Blend Modes Week
+                            <br>
                             <ul>
-                                <li>Students will learn the basics of color theory.</li>
-                                <li>Students will learn the difference between tints, shades, and chromatic grays.</li>
-                                <li>Students will learn the difference between the color models: RGB, Hex, HSB/HSL/HSV, and CMYK.</li>
-                                <li>Students will learn the difference between the various color schemes: complementary, analagous, harmonious, etc.</li>
-                                <li><b class="impt">Main Assignment:</b>
-                                    <ul>
-                                        <li>Students will demonstrate a basic understanding of digital art tools by creating a color <s>palette</s> wheel that shows primary colors, <s>the RGB color model,</s> secondary colors,<s>chromatic grays</s> tints, and shades. <b class="impt">(Classwork)</b></li>
-                                        <li>Students will demonstrate an understanding of basic color usage by creating a series of three (3) abstract designs that utilize the primary, secondary, and chromatic gray color schemes discussed in class. <b class="impt">(Classwork)</b></li>
-                                        <li><b class="impt">In order to complete these assignments, students will need to make use of digital art software. <i>Ibis Paint X</i> is currently the one in use for assignment tutorials as of right now, as it is free on the iOS and Android app stores. However, if you are familiar with and are currently able to use a similar software to achieve the goals of the assignment, you are free to use another software.</b> For instruction this week, refer to the class resources at the end of the page. If the videos are not up by Monday morning, 8/29, refer to your secondary assignment, and be on the lookout for the main assignment on this page later in the day. As of writing this, there is currently a technical error going on with the video editing software that needs to be addressed.</li>
-                                    </ul>
-                                    <li><b class="impt">Secondary Assignment:</b> Students will define color vocabulary in their sketchbooks. Vocabulary to be included in the assignment are: hue, saturation, value, tint, shade, chromatic, achromatic, monochromatic, primary colors, secondary colors, chromatic gray, complement, split complement, analogous colors, harmony, dissonance, triad, tetrad, CMYK, RGB, HSV, and hex codes. <b class="impt">(Homework/Assessment)</b></li>
-                                </ul>
-                            </span>
-                            <span class="conTabCell">
-                                <b class="impt">Main Assignment:</b> First class of the next week.
-                                <br>
-                                <b class="impt">Secondary Assignment:</b> Sep. 30
-                            </span>
-                        </div>
-                        <div class="conTabRow">
-                            <span class="conTabCell titleCell">Sep. 6 - Sep. 9</span>
-                            <span class="conTabCell">
-                                Basics of Photoshop
-                                <br>
-                                <ul>
-                                    <li>Students will learn the names and functions of the basic tools in Adobe Photoshop.</li>
-                                    <li>Students will learn the basics of Photoshop features.</li>
-                                    <li>Students will learn how to implement Photoshop's layering features to compose imagery.</li>
-                                    <li>Students will learn the use of the opacity features in Photoshop.</li>
-                                    <li><b class="impt">Main Assignment:</b> <s>Students will create an image composition demonstrating the use of layers.</s> Combined with previous assignment due to students being behind on work.</li>
-                                    <li><b class="impt">Secondary Assignment:</b> Students will create a sketch demonstrating the basic idea of layering. <b class="impt">(Homework/Assessment)</b></li>
-                                </ul>
-                            </span>
-                            <span class="conTabCell">
-                                <b class="impt">Main Assignment:</b> N/A
-                                <br>
-                                <b class="impt">Secondary Assignment:</b> Sep. 30
-                            </span>
-                        </div>
-                        <div class="conTabRow">
-                            <span class="conTabCell titleCell">Sep. 12 - 16</span>
-                            <span class="conTabCell">
-                                Blend Modes Week
-                                <br>
-                                <ul>
-                                    <li>Students will learn how to utilize the overlay, multiply, and subtract layer blending modes.</li>
-                                    <li>Students will learn the application of blending modes to achieve a variety of color and shading effects.</li>
-                                    <li><b class="impt">Main Assignment:</b> Delayed due to students being behind on color theory lessons.</li>
-                                    <li><b class="impt">Secondary Assignment:</b> Students will research and define blending modes in their own terms and make note of where to find them in Photoshop and Ibis Paint X. <b class="impt">(Homework/Assessment)</b></li>
+                                <li>Students will learn how to utilize the overlay, multiply, and subtract layer blending modes.</li>
+                                <li>Students will learn the application of blending modes to achieve a variety of color and shading effects.</li>
+                                <li><b class="impt">Main Assignment:</b> Delayed due to students being behind on color theory lessons.</li>
+                                <li><b class="impt">Secondary Assignment:</b> Students will research and define blending modes in their own terms and make note of where to find them in Photoshop and Ibis Paint X. <b class="impt">(Homework/Assessment)</b></li>
+                            </ul>
+                        </span>
+                        <span class="conTabCell"></span>
+                    </div>
+                    <div class="conTabRow">
+                        <span class="conTabCell titleCell">Sep. 19 - 23</span>
+                        <span class="conTabCell">
+                            Masking and Layer Effects Week
+                            <br>
+                            <ul>
+                                <li>Students will learn to utilize three basic layer effects: border, glow, and drop shadow.</li>
+                                <li>Students will learn how to use the marquee tools, magic wand, selection layers, and selection paths in order to manipulate specific areas or colors within a project.</li>
+                                <li>Students will learn to hide or show specific parts of an image using layer masks.</li>
+                                <li>Students will learn to manipulate specifics elements on a layer by using the alpha lock option.</li>
+                                <li>Utilizing text as the primary subjects, students will experiment with the different learned layer effects to create typographical art.</li>
+                                <li><b class="impt">Main Assignment:</b> Utilizing Photoshop or something similar, students will import two (2) images of their own choosing and demonstrate their ability to implement masking effects with shapes as a base. <b class="impt">(Classwork)</b></li>
+                                <li><b class="impt">Secondary Assignment:</b> Students will make note of the differences between clipping masks, layer masks, and alpha locking.
                                 </ul>
                             </span>
                             <span class="conTabCell"></span>
                         </div>
                         <div class="conTabRow">
-                            <span class="conTabCell titleCell">Sep. 19 - 23</span>
+                            <span class="conTabCell titleCell">Sep. 26 - 30</span>
                             <span class="conTabCell">
-                                Masking and Layer Effects Week
+                                Photo Effects Week
                                 <br>
                                 <ul>
-                                    <li>Students will learn to utilize three basic layer effects: border, glow, and drop shadow.</li>
-                                    <li>Students will learn how to use the marquee tools, magic wand, selection layers, and selection paths in order to manipulate specific areas or colors within a project.</li>
-                                    <li>Students will learn to hide or show specific parts of an image using layer masks.</li>
-                                    <li>Students will learn to manipulate specifics elements on a layer by using the alpha lock option.</li>
-                                    <li>Utilizing text as the primary subjects, students will experiment with the different learned layer effects to create typographical art.</li>
-                                    <li><b class="impt">Main Assignment:</b> Utilizing Photoshop or something similar, students will import two (2) images of their own choosing and demonstrate their ability to implement masking effects with shapes as a base. <b class="impt">(Classwork)</b></li>
-                                    <li><b class="impt">Secondary Assignment:</b> Students will make note of the differences between clipping masks, layer masks, and alpha locking.
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Sep. 26 - 30</span>
-                                <span class="conTabCell">
-                                    Photo Effects Week
-                                    <br>
-                                    <ul>
-                                        <li>Students will learn to manipulate photos utilizing the blur, vignette, posterize, and sharpen effects.</li>
-                                        <li>Utilizing a photo of themselves or a chosen subject, students will demonstrate their capability to use photo effects to enhance or alter photos for visual appeal.</li>
-                                        <li><b class="impt">Main Assignment:</b> Acquire a sketchbook. <b class="impt">(Homework)</b></li>
-                                        <li><b class="impt">Secondary Assignment:</b> Catch up on the previous seven sketchbook assignments. <i>This is essentially a freebie. You might wanna make use of it.</i> <b class="impt">(Homework/Assessment)</b></li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell">N/A</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Oct. 3 - 7</span>
-                                <span class="conTabCell">
-                                    Mandated Make-Up Week
-                                    <br>
-                                    <ul>
-                                        <li>Use the time the principal has mandated that you be given in order to raise your grade. This time should be utilized to complete any work that you have yet to do for any reason, other than not having time because you all know that I gave you more than enough time for every assignment, considering the average time it takes to complete any one of the previous things is <b class="impt">15 minutes</b>.</li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell">N/A</span>
-                            </div>
+                                    <li>Students will learn to manipulate photos utilizing the blur, vignette, posterize, and sharpen effects.</li>
+                                    <li>Utilizing a photo of themselves or a chosen subject, students will demonstrate their capability to use photo effects to enhance or alter photos for visual appeal.</li>
+                                    <li><b class="impt">Main Assignment:</b> Acquire a sketchbook. <b class="impt">(Homework)</b></li>
+                                    <li><b class="impt">Secondary Assignment:</b> Catch up on the previous seven sketchbook assignments. <i>This is essentially a freebie. You might wanna make use of it.</i> <b class="impt">(Homework/Assessment)</b></li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell">N/A</span>
                         </div>
-                        <!-- Quarter 2 Table -->
-                        <div class="contentTable tabCon" id="tabCon2">
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Date</span>
-                                <span class="conTabCell titleCell">Description</span>
-                                <span class="conTabCell titleCell">Due Date</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Oct. 10 - 14</span>
-                                <span class="conTabCell">Fall Break</span>
-                                <span class="conTabCell">N/A</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Oct. 17 - 21</span>
-                                <span class="conTabCell">
-                                    Intro to Perspective Week
-                                    <ul>
-                                        <li>Students will create a "baseline," preliminary drawing that establishes their initial skill level before learning the technical approach to perspective illustration. This drawing will then be used to compare their progress as we move forward through the second quarter of the academic year.</li>
-                                        <li>Students will be given feedback in order to address what they are doing well compared to areas in which they can improve. After addressing what the students strengths and weaknesses are, they will be instructed in the methodology used to draw from sight with more accuracy, in order to create a more believable illustration.</li>
-                                        <li>Following instructions about the methods to create a believable illustration, the students will then use the techniques demonstrated to them to create a secondary illustration with the aim of improving, even if only to a minor degree, their drawing accuracy.</li>
-                                        <li><b class="impt">Main Assignment:</b> Using the methods demonstrated to you in class, create a drawing that establishes the location of the objects in the <a href="./pics/daMedia/stillLife1.jpg" target="_blank">given image</a> with as much accuracy as you're able to at this point in time. <b class="impt">(Classwork)</b></li>
-                                        <ul>
-                                            <li><i style="color: var(--mainText);">Note that this is not a freehand drawing. To do this properly, you will need to use a ruler or a straight edge tool of some kind to estabilsh your lines.</i></li>
-                                        </ul>
-                                        <li><b class="impt">Secondary Assignment:</b> Create your initial drawing of the given subject matter, preferably in your sketchbook, and provide it in some manner that allows for feedback to be given. <b class="impt">(Class Participation)</b></li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"><b class="impt">Main Assignment:</b> Oct. 21, 2022
-                                    <br>
-                                    <b class="impt">Secondary Assignment:</b> Oct. 21, 2022</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Oct. 24 - 28</span>
-                                <span class="conTabCell">
-                                    One-Point Perspective Week
-                                    <br>
-                                    <ul>
-                                        <li>Students will be provided a demonstration on the basics of one point perspective. This will include the explanations of any relevant terms, such as <i>vanishing point, horizon line, and radial lines,</i> and their relevance to the subject matter.</li>
-                                        <li>Following the demonstration, students will be given an <a href="./pics/daMedia/onePoint1.jpg" target="_blank">image prompt</a> that they will then use to practice a one-point perspective drawing.</li>
-                                        <li>After being provided feedback on their initial illustration, students will then be given the opportunity to create a second illustation, with the aim of showing improvement compared to the first one.</li>
-                                        <li><b class="impt">Main Assignment:</b> Students will use the feedback given to them after their initial attempt at one-point perspective to recreate the hallway scene given to them in their image prompt. <b class="impt">For homework</b>, students will create a one-point perspective illustration of a real world location of their own choosing. <b class="impt">(Classwork/Homework)</b></li>
-                                        <li><b class="impt">Secondary Assignment:</b> Students will practice one-point perspective techniques using the information given to them and the image prompt in order to identify areas of artistic strength and weakness.</li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"><b class="impt">Main Assignment:</b> Oct. 28, 2022 (Classwork), Nov. 4, 2022 (Homework)
-                                    <br>
-                                    <b class="impt">Secondary Assignment:</b> Oct. 28, 2022</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
-                                <span class="conTabCell">
-                                    Two-Point Perspective Week
-                                    <br>
-                                    <ul>
-                                        <li>Students will be introduced to the two-point perspective drawing technique. A demonstration will be given that illustrates how to use two point perspective for both interior and exterior drawings.</li>
-                                        <li>Following the demonstration, students will be given the opportunity to practice two-point perspective based on the <a href="./pics/daMedia/twoPoint1.jpg" target="_blank">image prompt</a> given. Feedback will be given after this point.</li>
-                                        <li>After being provided feedback, students will utilize the information provided to them in order to create a more accurate illustration.</li>
-                                        <li>Students will then be tasked with drawing a location of their own choosing that demonstrates two-point perspective from an interior viewpoint in order to show their understanding.</li>
-                                        <li><b class="impt">Main Assignment:</b> Students will create two (2) two-point perspective drawings demonstrating their understanding of the artistic method. One of the drawings will be done in class, based on the given image prompt. The other will be done for homework, based on a location of each student's individual choosing. <b class="impt">(Classwork/Homework)</b></li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"><b class="impt">Main Assignment:</b> Nov. 4, 2022 (Classwork), Nov. 11, 2022 (Homework)</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Nov. 7 - 11</span>
-                                <span class="conTabCell">
-                                    Continuation of Perspective (3-Point)
-                                    <br>
-                                    <ul>
-                                        <li>Students will be introduced to the basics of three-point perspective drawing, concluding the lessons on perspective as it relates to how our eyes perceive things.</li>
-                                        <li><b class="impt">Main Assignment:</b> Students will create a sketch of any two (2) objects that are arranged in such a way that they visually overlap. (Homework)</li>
-                                        <li><b class="impt">Secondary Assignment:</b> Students will be given the opportunity to make-up any outstanding assignments in preparation for the upcoming holiday break.</li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Nov. 14 - 18</span>
-                                <span class="conTabCell">
-                                    Continuation of Perspective (Conclusion)
-                                    <br>
-                                    <ul>
-                                        <li>Basically the same as last week, however...</li>
-                                        <li><b class="impt">Main Assignment:</b> Students will create a sketch of any three (3) objects that are arranged in such a way that they visually overlap. (Homework)</li>
-                                    </ul>
-                                </span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Nov. 21 - 25</span>
-                                <span class="conTabCell">Thanksgiving Break</span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
-                                <span class="conTabCell">TBA</span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Dec. 5 - 9</span>
-                                <span class="conTabCell">TBA</span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Dec. 12 - 16</span>
-                                <span class="conTabCell">TBA</span>
-                                <span class="conTabCell"></span>
-                            </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Oct. 3 - 7</span>
+                            <span class="conTabCell">
+                                Mandated Make-Up Week
+                                <br>
+                                <ul>
+                                    <li>Use the time the principal has mandated that you be given in order to raise your grade. This time should be utilized to complete any work that you have yet to do for any reason, other than not having time because you all know that I gave you more than enough time for every assignment, considering the average time it takes to complete any one of the previous things is <b class="impt">15 minutes</b>.</li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell">N/A</span>
                         </div>
-                        <!-- Quarter 3 Content -->
-                        <div class="contentTable tabCon" id="tabCon3">
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Date</span>
-                                <span class="conTabCell titleCell">Description</span>
-                                <span class="conTabCell titleCell">Due Date</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Dec. 19 - 30</span>
-                                <span class="conTabCell">Winter Break</span>
-                                <span class="conTabCell">N/A</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Jan. 2 - 6</span>
-                                <span class="conTabCell">
-                                    <ol>
-                                        <li>Students will prepare for a long term project by creating a wireframe, a sketched mock-up of the pages and features on a website and how they interact with one another, as demonstrated in class. <b class="impt">(Classwork)</b></li>
-                                        <ul>
-                                            <li>The wireframe should depict how the students want their portfolio sites to look by the end of school in May.</li>
-                                            <li>The wireframe should show how students want to present their names, their about me sections, and their gallery of work.</li>
-                                            <li>It can be altered as the students learn more about web coding, and is encouraged going forward.</li>
-                                        </ul>
-                                        <li>Students will create a web page, dividing it logically using <b class="impt">div</b> tags where appropriate, an <b class="impt">h1</b> tag for their name (as the title), at least one <b class="impt">p</b> tag for their about me section, and three <b class="impt">img</b> tags for their mock gallery. <b class="impt">(Classwork)</b></li>
-                                        <ul>
-                                            <li>The page must contain the student's name.</li>
-                                            <li>The page must include a brief paragraph about the student.</li>
-                                            <li>The page must include at least 3 images of the student's work.</li>
-                                        </ul>
-                                    </ol>
-                                    <b class="impt">PBO:</b> SWBAT apply the design process in order to create a wireframe that shows the general idea of the site map for their own personal portfolio site, and use their wireframes in order to create a simple web page consisting of a title, a paragraph, and three (3) images of student work.
-                                </span>
-                                <span class="conTabCell">2023-01-06</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Jan. 9 - 13</span>
-                                <span class="conTabCell">
-                                    <ol>
-                                        <li>Students will research and apply CSS styling to their webpages in order to reposition and/or resize elements as appropriate in order to create a logical page layout. <b class="impt">(Classwork)</b></li>
-                                        <ul>
-                                            <li>Students must change the background of the webpage, position of the elements, and if desired, the color of the type used on the page.</li>
-                                            <li>At this point in time, if any student desires, they can proceed to go beyond the limitations of the assignment, so long as the minimum requirements are met.</li>
-                                        </ul>
-                                        <li>Students will provide and receive feedback from their peers in order to refine their web pages during future assignments. <b class="impt">(Assessment)</b></li>
-                                        <ul>
-                                            <li>During critique students should note any areas they are not very successful in, as well as areas of success.</li>
-                                        </ul>
-                                    </ol>
-                                    <b class="impt">PBO:</b> SWBAT apply styling to their websites, present their preliminary sketches (wireframes) alongside their websites, and both provide and receive constructive criticism within their peer groups.
-                                </span>
-                                <span class="conTabCell">2022-01-12 (Tentative)</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Jan. 17 - 20</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Jan. 23 - 27</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Feb. 6 - 10</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Feb. 13 - 17</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Feb. 20 - 24</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Mar. 6 - 10</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
+                    </div>
+                    <!-- Quarter 2 Table -->
+                    <div class="contentTable tabCon" id="tabCon2">
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Date</span>
+                            <span class="conTabCell titleCell">Description</span>
+                            <span class="conTabCell titleCell">Due Date</span>
                         </div>
-                        <!-- Quarter 4 Content -->
-                        <div class="contentTable tabCon" id="tabCon4">
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Date</span>
-                                <span class="conTabCell titleCell">Description</span>
-                                <span class="conTabCell titleCell">Due Date</span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Mar. 13 - 17</span>
-                                <span class="conTabCell">Spring Break</span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Mar. 20 - 24</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Mar. 27 - 31</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Apr. 3 - 6</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Apr. 10 - 14</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Apr. 17 - 21</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">Apr. 24 - 28</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">May 1 - 5</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">May 8 - 12</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">May 15 - 19</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
-                            <div class="conTabRow">
-                                <span class="conTabCell titleCell">May 22 - 26</span>
-                                <span class="conTabCell"></span>
-                                <span class="conTabCell"></span>
-                            </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Oct. 10 - 14</span>
+                            <span class="conTabCell">Fall Break</span>
+                            <span class="conTabCell">N/A</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Oct. 17 - 21</span>
+                            <span class="conTabCell">
+                                Intro to Perspective Week
+                                <ul>
+                                    <li>Students will create a "baseline," preliminary drawing that establishes their initial skill level before learning the technical approach to perspective illustration. This drawing will then be used to compare their progress as we move forward through the second quarter of the academic year.</li>
+                                    <li>Students will be given feedback in order to address what they are doing well compared to areas in which they can improve. After addressing what the students strengths and weaknesses are, they will be instructed in the methodology used to draw from sight with more accuracy, in order to create a more believable illustration.</li>
+                                    <li>Following instructions about the methods to create a believable illustration, the students will then use the techniques demonstrated to them to create a secondary illustration with the aim of improving, even if only to a minor degree, their drawing accuracy.</li>
+                                    <li><b class="impt">Main Assignment:</b> Using the methods demonstrated to you in class, create a drawing that establishes the location of the objects in the <a href="./pics/daMedia/stillLife1.jpg" target="_blank">given image</a> with as much accuracy as you're able to at this point in time. <b class="impt">(Classwork)</b></li>
+                                    <ul>
+                                        <li><i style="color: var(--mainText);">Note that this is not a freehand drawing. To do this properly, you will need to use a ruler or a straight edge tool of some kind to estabilsh your lines.</i></li>
+                                    </ul>
+                                    <li><b class="impt">Secondary Assignment:</b> Create your initial drawing of the given subject matter, preferably in your sketchbook, and provide it in some manner that allows for feedback to be given. <b class="impt">(Class Participation)</b></li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell"><b class="impt">Main Assignment:</b> Oct. 21, 2022
+                                <br>
+                                <b class="impt">Secondary Assignment:</b> Oct. 21, 2022</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Oct. 24 - 28</span>
+                            <span class="conTabCell">
+                                One-Point Perspective Week
+                                <br>
+                                <ul>
+                                    <li>Students will be provided a demonstration on the basics of one point perspective. This will include the explanations of any relevant terms, such as <i>vanishing point, horizon line, and radial lines,</i> and their relevance to the subject matter.</li>
+                                    <li>Following the demonstration, students will be given an <a href="./pics/daMedia/onePoint1.jpg" target="_blank">image prompt</a> that they will then use to practice a one-point perspective drawing.</li>
+                                    <li>After being provided feedback on their initial illustration, students will then be given the opportunity to create a second illustation, with the aim of showing improvement compared to the first one.</li>
+                                    <li><b class="impt">Main Assignment:</b> Students will use the feedback given to them after their initial attempt at one-point perspective to recreate the hallway scene given to them in their image prompt. <b class="impt">For homework</b>, students will create a one-point perspective illustration of a real world location of their own choosing. <b class="impt">(Classwork/Homework)</b></li>
+                                    <li><b class="impt">Secondary Assignment:</b> Students will practice one-point perspective techniques using the information given to them and the image prompt in order to identify areas of artistic strength and weakness.</li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell"><b class="impt">Main Assignment:</b> Oct. 28, 2022 (Classwork), Nov. 4, 2022 (Homework)
+                                <br>
+                                <b class="impt">Secondary Assignment:</b> Oct. 28, 2022</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Oct. 31 - Nov. 4</span>
+                            <span class="conTabCell">
+                                Two-Point Perspective Week
+                                <br>
+                                <ul>
+                                    <li>Students will be introduced to the two-point perspective drawing technique. A demonstration will be given that illustrates how to use two point perspective for both interior and exterior drawings.</li>
+                                    <li>Following the demonstration, students will be given the opportunity to practice two-point perspective based on the <a href="./pics/daMedia/twoPoint1.jpg" target="_blank">image prompt</a> given. Feedback will be given after this point.</li>
+                                    <li>After being provided feedback, students will utilize the information provided to them in order to create a more accurate illustration.</li>
+                                    <li>Students will then be tasked with drawing a location of their own choosing that demonstrates two-point perspective from an interior viewpoint in order to show their understanding.</li>
+                                    <li><b class="impt">Main Assignment:</b> Students will create two (2) two-point perspective drawings demonstrating their understanding of the artistic method. One of the drawings will be done in class, based on the given image prompt. The other will be done for homework, based on a location of each student's individual choosing. <b class="impt">(Classwork/Homework)</b></li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell"><b class="impt">Main Assignment:</b> Nov. 4, 2022 (Classwork), Nov. 11, 2022 (Homework)</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Nov. 7 - 11</span>
+                            <span class="conTabCell">
+                                Continuation of Perspective (3-Point)
+                                <br>
+                                <ul>
+                                    <li>Students will be introduced to the basics of three-point perspective drawing, concluding the lessons on perspective as it relates to how our eyes perceive things.</li>
+                                    <li><b class="impt">Main Assignment:</b> Students will create a sketch of any two (2) objects that are arranged in such a way that they visually overlap. (Homework)</li>
+                                    <li><b class="impt">Secondary Assignment:</b> Students will be given the opportunity to make-up any outstanding assignments in preparation for the upcoming holiday break.</li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Nov. 14 - 18</span>
+                            <span class="conTabCell">
+                                Continuation of Perspective (Conclusion)
+                                <br>
+                                <ul>
+                                    <li>Basically the same as last week, however...</li>
+                                    <li><b class="impt">Main Assignment:</b> Students will create a sketch of any three (3) objects that are arranged in such a way that they visually overlap. (Homework)</li>
+                                </ul>
+                            </span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Nov. 21 - 25</span>
+                            <span class="conTabCell">Thanksgiving Break</span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Nov. 28 - Dec. 2</span>
+                            <span class="conTabCell">TBA</span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Dec. 5 - 9</span>
+                            <span class="conTabCell">TBA</span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Dec. 12 - 16</span>
+                            <span class="conTabCell">TBA</span>
+                            <span class="conTabCell"></span>
+                        </div>
+                    </div>
+                    <!-- Quarter 3 Content -->
+                    <div class="contentTable tabCon" id="tabCon3">
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Date</span>
+                            <span class="conTabCell titleCell">Description</span>
+                            <span class="conTabCell titleCell">Due Date</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Dec. 19 - 30</span>
+                            <span class="conTabCell">Winter Break</span>
+                            <span class="conTabCell">N/A</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Jan. 2 - 6</span>
+                            <span class="conTabCell">
+                                <ol>
+                                    <li>Students will prepare for a long term project by creating a wireframe, a sketched mock-up of the pages and features on a website and how they interact with one another, as demonstrated in class. <b class="impt">(Classwork)</b></li>
+                                    <ul>
+                                        <li>The wireframe should depict how the students want their portfolio sites to look by the end of school in May.</li>
+                                        <li>The wireframe should show how students want to present their names, their about me sections, and their gallery of work.</li>
+                                        <li>It can be altered as the students learn more about web coding, and is encouraged going forward.</li>
+                                    </ul>
+                                    <li>Students will create a web page, dividing it logically using <b class="impt">div</b> tags where appropriate, an <b class="impt">h1</b> tag for their name (as the title), at least one <b class="impt">p</b> tag for their about me section, and three <b class="impt">img</b> tags for their mock gallery. <b class="impt">(Classwork)</b></li>
+                                    <ul>
+                                        <li>The page must contain the student's name.</li>
+                                        <li>The page must include a brief paragraph about the student.</li>
+                                        <li>The page must include at least 3 images of the student's work.</li>
+                                    </ul>
+                                </ol>
+                                <b class="impt">PBO:</b> SWBAT apply the design process in order to create a wireframe that shows the general idea of the site map for their own personal portfolio site, and use their wireframes in order to create a simple web page consisting of a title, a paragraph, and three (3) images of student work.
+                            </span>
+                            <span class="conTabCell">2023-01-06</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Jan. 9 - 13</span>
+                            <span class="conTabCell">
+                                <ol>
+                                    <li>Students will research and apply CSS styling to their webpages in order to reposition and/or resize elements as appropriate in order to create a logical page layout. <b class="impt">(Classwork)</b></li>
+                                    <ul>
+                                        <li>Students must change the background of the webpage, position of the elements, and if desired, the color of the type used on the page.</li>
+                                        <li>At this point in time, if any student desires, they can proceed to go beyond the limitations of the assignment, so long as the minimum requirements are met.</li>
+                                    </ul>
+                                    <li>Students will provide and receive feedback from their peers in order to refine their web pages during future assignments. <b class="impt">(Assessment)</b></li>
+                                    <ul>
+                                        <li>During critique students should note any areas they are not very successful in, as well as areas of success.</li>
+                                    </ul>
+                                </ol>
+                                <b class="impt">PBO:</b> SWBAT apply styling to their websites, present their preliminary sketches (wireframes) alongside their websites, and both provide and receive constructive criticism within their peer groups.
+                            </span>
+                            <span class="conTabCell">2022-01-12 (Tentative)</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Jan. 17 - 20</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Jan. 23 - 27</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Jan. 30 - Feb. 3</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Feb. 6 - 10</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Feb. 13 - 17</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Feb. 20 - 24</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Feb 27 - Mar. 3</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Mar. 6 - 10</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                    </div>
+                    <!-- Quarter 4 Content -->
+                    <div class="contentTable tabCon" id="tabCon4">
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Date</span>
+                            <span class="conTabCell titleCell">Description</span>
+                            <span class="conTabCell titleCell">Due Date</span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Mar. 13 - 17</span>
+                            <span class="conTabCell">Spring Break</span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Mar. 20 - 24</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Mar. 27 - 31</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Apr. 3 - 6</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Apr. 10 - 14</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Apr. 17 - 21</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">Apr. 24 - 28</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">May 1 - 5</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">May 8 - 12</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">May 15 - 19</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
+                        </div>
+                        <div class="conTabRow">
+                            <span class="conTabCell titleCell">May 22 - 26</span>
+                            <span class="conTabCell"></span>
+                            <span class="conTabCell"></span>
                         </div>
                     </div>
                 </div>
@@ -617,5 +612,27 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript" charset="utf-8">
+                function showTable(event, quarter) {
+                    // Declare variables.
+                    var i,
+                    tabcontent,
+                    tablinks;
+                    // Get tabContent class and hide it.
+                    tabcontent = document.getElementsByClassName("tabCon");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    // Get tablinks class and remove active.
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    // Show current tab and add active class to button.
+                    document.getElementById(quarter).style.display = "table";
+                    event.currentTarget.className += " active";
+                }
+                document.getElementById("defOpen").click();
+            </script>
         </body>
     </html>
