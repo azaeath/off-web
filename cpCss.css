@@ -283,7 +283,7 @@ span.know {
 
 /* Table stuff for commission pricing. */
 .contentTable {
-    display: none;
+    display: table;
     color: var(--secondaryText);
     position: relative;
     top: 0;
@@ -291,6 +291,10 @@ span.know {
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--secondaryBg);
+}
+
+.tabCon {
+    display: none;
 }
 
 .conTabRow {
@@ -350,7 +354,7 @@ span.know {
         width: 100%;
         height: auto;
     }
-    .contentTable {
+    .contentTable, .tab {
         width: 95%;
     }
     #commPrice {
