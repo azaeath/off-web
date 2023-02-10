@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     padding: 0 4em;
+    margin-bottom: 4em;
 }
 
 /* Styling for top box */
