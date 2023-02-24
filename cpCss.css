@@ -1,22 +1,30 @@
+/* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
-* {
-    font-family: 'Yusei Magic', sans-serif;
-    font-size: 16px;
+:root {
+	--bgPri: #212619;
+	--bgSec: #395232;
+	--bgTer: #63663E;
+	--bgQuat: #4F8254;
+	--bgQuin: #A39E64;
+	--textMain: rgba(255 255 255 / 85%);
+	--textSec: rgba(255 255 255 / 65%);
+	--skillText: rgb(255 255 0 / 85%);
+    --knowText: rgb(255 0 255 / 85%);
 }
 
-a {
-    text-decoration: none;
-    color: #58a6ff;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Yusei Magic', sans-serif;
 }
 
 html, body {
-    background: url("./pics/moreRecent/AT with Azzy the Great_20200413031258.png") center 15%/cover no-repeat;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    overflow-X: hidden;
-    color: var(--secondaryText);
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	background: url("./pics/moreRecent/AT with Azzy the Great_20200413031258.png") center 15%/cover no-repeat;
+	color: var(--textSec);
 }
 
 body:before {
@@ -34,63 +42,31 @@ body:before {
     box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
 }
 
-:root {
-    --primaryBg: #0d1117;
-    --secondaryBg: #161b22;
-    --mainText: rgb(255 255 255 / 85%);
-    --secondaryText: rgb(255 255 255 / 65%);
-    --skillText: rgb(255 255 0 / 85%);
-    --knowText: rgb(255 0 255 / 85%);
-}
-
-p, .coPriDets {
-    color: var(--secondaryText);
-}
-
 h1, h2, h3, h4, h5, h6 {
-    color: var(--mainText);
+	text-align: center;
+	color: var(--textMain);
+	
 }
 
-h1 {
-    font-size: 2.2em;
+a {
+	text-decoration: none;
+	color: deepskyblue;
 }
 
-h2 {
-    font-size: 2em;
+a:hover {
+	color: blue;
 }
 
-h3 {
-    font-size: 1.8em;
+p {
+	text-indent: 3em;
+	margin: 1em 3.5em;
+	text-align: justify;
 }
 
-h4 {
-    font-size: 1.5em;
+ul {
+	padding: 0 2em;
 }
 
-h5 {
-    font-size: 1.3em;
-}
-
-h6 {
-    font-size: 1.2em;
-}
-
-#wrap {
-    width: 100%;
-    background-color: var(--primaryBg);
-    height: auto;
-    margin: 0;
-    padding: 0 0 3em 0;
-    position: relative;
-    top: calc(100vh - 3em);
-}
-
-.fa-bars {
-    display: none;
-}
-b.impt {
-    color: var(--mainText);
-}
 span.skill {
     color: var(--skillText);
 }
@@ -99,114 +75,11 @@ span.know {
     color: var(--knowText);
 }
 
-#siteNav {
-    display: flex;
-    flex-flow: row no-wrap;
-    background-color: var(--secondaryBg);
-    padding: 0;
-    margin: 0;
+.impt {
+	color: var(--textMain);
 }
 
-#siteNav li {
-    display: inline-flex;
-    height: 100%;
-}
-
-#siteNav li a {
-    text-decoration: none;
-    color: var(--mainText);
-    padding: 1em;
-}
-
-#siteNav li a:hover {
-    background-color: #fff;
-    color: rgb(0 0 0 / 85%);
-}
-
-.sections {
-    width: 100%;
-}
-
-.sections h2 {
-    text-align: center;
-    font-size: 2em;
-    padding: 0;
-    color: var(--mainText);
-}
-
-.sections h3 {
-    text-align: center;
-}
-
-#imgRow {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0 1em;
-    overflow-x: scroll;
-    width: 100%;
-}
-
-#imgRow:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.expImgContain {
-    position: relative;
-    display: none;
-    text-align: center;
-}
-
-#expImg {
-    height: 100vh;
-}
-
-.closeBtn {
-    position: absolute;
-    top: 1em;
-    right: 2em;
-    color: var(--mainText);
-    font-size: 1em;
-    cursor: pointer;
-    background-color: rgb(13 17 23 / 65%);
-    padding: 0 .5em;
-    border-radius: 50%;
-}
-
-#imgText {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: var(--secondaryText);
-    font-size: 1em;
-    background-color: #0d1117;
-    padding: 0 .5em;
-}
-
-#mobiMenu {
-    display: none;
-}
-
-.infoSec p {
-    text-indent: 2em;
-    margin: 0;
-    padding: 0 4em;
-}
-
-#about p > i > a:hover {
-    text-decoration: underline;
-}
-
-#gallery p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-#about p, #gallery p {
-    color: var(--secondaryText);
-}
+/* Social Links */
 
 #socLinks {
     display: inline-flex;
@@ -236,6 +109,7 @@ span.know {
     text-decoration: none;
     box-shadow: 0 .7em 1em rgba(0, 0, 0, 0.8);
     transition: .5s;
+	color: var(--textMain);
 }
 
 #socLinks > li > a .fa {
@@ -266,187 +140,157 @@ span.know {
     color: #9eab80;
 }
 
-#commPrice {
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    margin-bottom: 2em;
+/* Page content */
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	top: calc(100vh - 2em);
+	background-color: var(--bgPri);
 }
 
-#commission {
-    position: relative;
-    height: fit-content;
+/* Navigation */
+
+#navBar {
+	width: 100%;
+	background-color: var(--bgQuat);
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin-bottom: 2em;
+}
+.secLinks {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: var(--textMain);
+	display: inline-flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	padding: .5em 0;
+}
+.secLinks:hover {
+	background-color: var(--bgSec);
+}
+#navBar .active {
+	background-color: var(--bgPri);
 }
 
-/* Table stuff for commission pricing. */
-.contentTable {
-    display: table;
-    color: var(--secondaryText);
-    position: relative;
-    top: 0;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--secondaryBg);
+/* Section styling */
+.section {
+	width: 100%;
+	height: auto;
+}
+.infoSec {
+	margin: 2em 0;
 }
 
-.tabCon {
-    display: none;
-}
-
-.conTabRow {
-    display: table-row;
-}
-
-.conTabCell {
-    display: table-cell;
-    border: solid .1em var(--mainText);
-    padding: .25em 1em;
-}
-
-.titleCell {
-    color: var(--mainText);
-}
-
-.coPriDets {
-    padding: 0 4em;
-}
-/* Tab styling */
+/* Syllabus tab styling */
 .tab {
-    display: flex;
-    flex-flow: row no-wrap;
-    position: relative;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--secondaryBg);
-}
-.tab button {
-    display: inline-flex;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: .25em .5em;
-    color: var(--secondaryText);
-}
-.tab button:hover {
-    background-color: var(--secondaryText);
-    color: #000;
-}
-.tab button.active {
-    background-color: var(--mainText);
-    color: #000;
+	width: calc(90% - .2em);
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0 auto;
+	background-color: var(--bgQuin);
+	border: .1em solid;
 }
 
-@media screen and (max-width: 1024px) {
-    #imgRow {
-        height: 15em;
-        overflow-y: hidden;
-    }
+.tablinks {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: .5em 0;
+	color: var(--textMain);
+	flex: 1 1 auto;
+	display: inline-flex;
+	justify-content: center;
 }
 
-@media screen and (max-width: 880px) {
-    #expImg {
-        width: 100%;
-        height: auto;
-    }
-    .contentTable, .tab {
-        width: 95%;
-    }
-    #commPrice {
-        width: 100%;
-        height: auto;
-    }
+.tablinks:hover {
+	background-color: var(--bgPri);
 }
 
-@media screen and (max-width: 768px) {
-    * {
-        font-size: 12px;
-    }
-    #wrap {
-        top: 100%;
-    }
-    body:before {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(0.15);
-        background-color: #fff;
-        padding: 4em;
-        border-radius: 90em;
-        border: solid 3em #2c2c2c;
-    }
-    #siteNav {
-        display: none;
-    }
-    #mobiMenu {
-        display: flex;
-        position: fixed;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(22 27 34 / 70%);
-        flex-flow: column wrap;
-        z-index: 1;
-        transition: left 1s ease;
-        list-style: none;
-    }
-    #mobiMenu li {
-        display: inline-flex;
-        height: min-content;
-        width: 100%;
-        position: relative;
-        top: 25%;
-        justify-content: center;
-    }
-    #mobiMenu li a {
-        font-size: 4em;
-        padding: .3em 0;
-        text-decoration: none;
-        color: var(--mainText);
-    }
-    .fa-bars {
-        display: block;
-        color: #fff;
-        position: fixed;
-        top: 0.7em;
-        left: 0.7em;
-        font-size: 4em;
-        z-index: 900;
-        padding: .1em .3em;
-    }
-    .closeBtn {
-        font-size: 3em;
-        top: 1.2em;
-        right: 1.2em;
-    }
-    .sections:first-of-type {
-        padding-top: .01em;
-    }
-    .infoSec p {
-        padding: 0 2em;
-    }
+.tab .active {
+	background-color: var(--textMain);
+	color: black;
 }
 
-@media screen and (max-width: 425px) {
-    body:before {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
-        background-color: #fff;
-        padding: 4em;
-        border-radius: 90em;
-        border: solid 3em #2c2c2c;
-    }
-    .fa-bars {
-        font-size: 3em;
-    }
-    .closeBtn {
-        font-size: 2em;
-    }
+/* Table styling */
+
+.contentTable {
+	display: table;
+	margin: 0 auto;
+	width: 90%;
+}
+.conTabRow {
+	display: table-row;
+}
+.conTabCell {
+	display: table-cell;
+	padding: .25em 2em;
+	min-width: fit-content;
+	border: .1em solid;
+}
+.titleCell {
+	background-color: var(--bgTer);
+	color: var(--textMain);
+}
+
+/* Resources section styling */
+
+.quote {
+	width: 90%;
+	margin: 0 auto;
+	border: .1em solid var(--textMain);
+	padding: 1em 0;
+	background-color: var(--bgQuat);
+}
+
+.quote span {
+	display: block;
+	text-align: right;
+	margin-right: 4em;
+	color: var(--textMain);
+	font-weight: bold;
+}
+
+.resourceLinks {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Video styling */
+
+#videoBox {
+	width: 100%;
+}
+#videoBox iframe {
+	width: calc(2 * 16em);
+	height: calc(2 * 9em);
+	display: block;
+	margin: 1.5em auto;
+}
+
+/* Footer styling */
+
+#footer {
+	height: 6em;
+	width: 100vw;
+	background-color: var(--bgQuin);
+	margin-top: 4em;
+}
+#footerLinks {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	height: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#footerLinks a {
+	color: var(--textMain);
+	display: inline-flex;
+}
+#footerLinks a:hover {
+	color: var(--bgTer);
 }
