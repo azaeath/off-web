@@ -43,8 +43,15 @@ body:before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	text-align: center;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	padding: .5em 0;
+	flex: 1 1 auto;
 	color: var(--textMain);
+	min-width: fit-content;
+	width: 100%;
 	
 }
 
@@ -176,7 +183,49 @@ span.know {
 	background-color: var(--bgPri);
 }
 
+/* Mobile Menu */
+
+#mobiMenu {
+	background-color: rgba(0 0 0 / 75%);
+	display: none;
+	flex-flow: row nowrap;
+	align-items: center;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+#menuBtn {
+	min-width: 3em;
+	width: 3em;
+	text-align: center;
+	flex: 1 0 auto;
+}
+#mobiMenu a {
+	padding: .5em 0;
+	color: var(--textMain);
+}
+#mobiLinks {
+	display: flex;
+	flex-flow: row nowrap;
+	transition: width .75s ease;
+}
+#mobiLinks a {
+	display: inline-flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	transition: background .5s;
+}
+#mobiLinks a:hover {
+	background-color: var(--bgSec);
+}
+#mobiLinks a.active {
+	background-color: var(--bgQuat);
+}
+
 /* Section styling */
+
 .section {
 	width: 100%;
 	height: auto;
@@ -293,4 +342,27 @@ span.know {
 }
 #footerLinks a:hover {
 	color: var(--bgTer);
+}
+
+@media screen and (max-width: 880px) {
+	#mobiMenu {
+		display: flex;
+	}
+	#navBar {
+		display: none;
+	}
+	#wrapper {
+		top: 100vh;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	html, body {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 325px) {
+	html, body {
+		font-size: 12px;
+	}
 }

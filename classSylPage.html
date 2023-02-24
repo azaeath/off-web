@@ -12,17 +12,29 @@
 <meta name="wot-verification" content="801474f9f2e0dfcad6b8">
 <script>
         function mobiMenu() {
-            var x = document.getElementById('mobiMenu');
-            if (x.style.left === "-100%") {
-                x.style.left = "0%";
+            var x = document.getElementById('mobiLinks');
+            if (x.style.width === "0%") {
+                x.style.width = "100%";
             } else {
-                x.style.left = "-100%";
+                x.style.width = "0%";
             }
         }
+	function footNav(btn) {
+		document.getElementById(btn).click();
+	}
     </script>
 </head>
 
 <body>
+	<div id="mobiMenu">
+		<a href="#" id="menuBtn" onClick="mobiMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<div id="mobiLinks" style="width: 0%;">
+			<a id="mobi1" class="mobiBtn active" href="#announce" onclick="showSecMobi('defSec')">Announcements</a>
+			<a id="mobi2" class="mobiBtn" href="#syllabus" onclick="showSecMobi('tabSec2')">Syllabus</a>
+			<a id="mobi3" class="mobiBtn" href="#resources" onclick="showSecMobi('tabSec3')">Resources</a>
+			<a id="mobi4" class="mobiBtn" href="#videos" onclick="showSecMobi('tabSec4')">Videos</a>
+		</div>
+	</div>
 <div id="wrapper">
 	<ul id="socLinks">
 		<li><a href="https://instagram.com/azaeath" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -30,10 +42,10 @@
 		<li><a href="mailto:azaeath@gmail.com"><i class="fa fa-envelope"></i></a></li>
 	</ul>
     <div id="navBar">
-        <button id="defSec" class="secLinks" onclick="showSection(event, 'announce')">Announcements</button>
-        <button class="secLinks" onclick="showSection(event, 'syllabus')">Syllabus</button>
-        <button class="secLinks" onclick="showSection(event, 'resources')">Resources</button>
-        <button class="secLinks" onclick="showSection(event, 'videos')">Videos</button>
+        <button id="defSec" class="secLinks" onclick="showSection(event, 'announce', 'footLink1')">Announcements</button>
+        <button id="tabSec2" class="secLinks" onclick="showSection(event, 'syllabus', 'footLink2')">Syllabus</button>
+        <button id="tabSec3" class="secLinks" onclick="showSection(event, 'resources', 'footLink3')">Resources</button>
+        <button id="tabSec4" class="secLinks" onclick="showSection(event, 'videos', 'footLink4')">Videos</button>
     </div>
     <div class="section" id="announce">
         <div class="infoSec">
@@ -430,29 +442,46 @@
     </div>
     <div id="footer">
         <div id="footerLinks">
-			<a href="#announce" onclick="showSection(event, 'announce')">Announcements</a>
-			<a href="#syllabus" onclick="showSection(event, 'syllabus')">Syllabus</a>
-			<a href="#resources" onclick="showSection(event, 'resources')">Resources</a>
-			<a href="#videos" onclick="showSection(event, 'videos')">Videos</a>
+			<a id="footLink1" class="footLink" href="#announce" onclick="footNav('mobi1')">Announcements</a>
+			<a id="footLink2" class="footLink" href="#syllabus" onclick="footNav('mobi2')">Syllabus</a>
+			<a id="footLink3" class="footLink" href="#resources" onclick="footNav('mobi3')">Resources</a>
+			<a id="footLink4" class="footLink" href="#videos" onclick="footNav('mobi4')">Videos</a>
 		</div>
     </div>
 </div>
     <script>
         function showSection(event, section) {
-            var i, x, y;
-            var x = document.getElementsByClassName('section');
+            var i,
+				x = document.getElementsByClassName('section'),
+				y = document.getElementsByClassName('secLinks'),
+				n = document.getElementsByClassName('mobiBtn');
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            var y = document.getElementsByClassName('secLinks');
             for (i = 0; i < y.length; i++) {
                 y[i].className = y[i].className.replace(' active', '');
             }
+			for (i = 0; i < n.length; i++) {
+				n[i].className = n[i].className.replace(' active', '');
+			}
             document.getElementById(section).style.display = "block";
             event.currentTarget.className += ' active';
+			if (y[0].classList.contains('active')) {
+				n[0].className += ' active';
+			} else if (y[1].classList.contains('active')) {
+				n[1].className += ' active';
+			} else if (y[2].classList.contains('active')) {
+				n[2].className += ' active';
+			} else if (y[3].classList.contains('active')) {
+				n[3].className += ' active';
+			}
         }
         document.getElementById('defSec').click();
         
+		function showSecMobi(section) {
+			document.getElementById(section).click();
+		}
+		
         function showTable(event, quarter) {
             var i, x, y;
             var x = document.getElementsByClassName('tabCon');
