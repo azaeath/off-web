@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Student Portfolio Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Color variables */
+		:root {
+			--bgPri: #212619;
+			--bgSec: #395232;
+			--bgTer: #63663E;
+			--bgQuat: #4F8254;
+			--bgQuin: #A39E64;
+			--textMain: rgba(255 255 255 / 85%);
+			--textSec: rgba(255 255 255 / 65%);
+		}
+		/* Styling applied to all elements */
+		* {
+			margin: 0;
+			padding: 0;
+			color: var(--textSec);
+			font-family: 'Helvetica', sans-serif;
+		}
+		/* Styling for the body of the document */
+		html, body {
+			background: var(--bgSec);
+		}
+		/* Styling for all header types */
+		h1, h2, h3, h4, h5, h6 {
+			margin: .5em auto;
+			text-align: center;
+		}
+		/* Styling for all paragraphs */
+		p {
+			text-indent: 3em;
+			margin: 0 4em;
+		}
+		/* Styling for all unordered lists */
+		ul {
+			margin: 0 4em;
+		}
+		/* Styling for the content wrapper */
+		#wrapper {
+			background: var(--bgPri);
+			min-height: 50vh;
+			position: relative;
+			top: 50vh;
+			padding-bottom: 4em;
+		}
+		#name {
+			position: absolute;
+			top: 25vh;
+			left: 50vw;
+			z-index: 5;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+		}
+		/* Styling for the navigation bar */
+		.navBar {
+			background: var(--bgQuat);
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+		}
+		/* Styling for the navigation buttons */
+		.tablinks {
+			display: inline-flex;
+			flex: 1 1 auto;
+			justify-content: center;
+			padding: .5em 0;
+			border: none;
+			outline: none;
+			background: transparent;
+			text-transform: uppercase;
+		}
+		/* Hover state for navigation buttons */
+		.tablinks:hover {
+			background-color: var(--bgQuin);
+		}
+		/* Styling for currently active button */
+		button.active {
+			background: var(--bgPri);
+		}
+		/* Styling for all elements with the class name "section" */
+		.section {
+			margin: 0 1.5em;
+		}
+		/* Styling for the image gallery */
+		.imgGallery {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+		}
+		/* Styling for placeholder images */
+		.plHoldImg {
+			width: 10em;
+			height: 10em;
+			background: var(--bgTer);
+			flex: 0 1 auto;
+			margin: 1em .25em;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Name Header -->
+	<h1 id="name">Name Here</h1>
+	<!-- Content wrapper -->
+	<div id="wrapper">
+		<!-- Navigation Bar with Buttons -->
+		<div class="navBar">
+			<button class="tablinks active">About</button>
+			<button class="tablinks">Gallery</button>
+			<button class="tablinks">Contact</button>
+		</div>
+		<!-- "About Me" Section -->
+		<div id="about" class="section">
+			<!-- About Section Header -->
+			<h1>About</h1>
+			<!-- "About Me" Paragraph -->
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae cumque doloremque eligendi iusto, molestias commodi fuga quidem voluptatem animi nobis, laborum nesciunt, rerum sit facilis harum reprehenderit explicabo vitae autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo a odio, ipsa beatae rem voluptas officiis deleniti natus veniam, similique voluptatibus, ut molestiae quod autem consequatur accusamus architecto nobis est?
+			</p>
+		</div>
+		<!-- Gallery Section -->
+		<div id="gallery" class="section">
+			<!-- Gallery Header -->
+			<h1>Gallery</h1>
+			<!-- Image Gallery -->
+			<div class="imgGallery">
+				<!-- Placeholder Images -->
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+				<div class="plHoldImg"></div>
+			</div>
+		</div>
+		<!-- Contact Section -->
+		<div id="contact" class="section">
+			<!-- Contact Header -->
+			<h1>Contact</h1>
+			<!-- Contact Links -->
+			<ul>
+				<li><a href="mailto:#">Email</a></li>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
