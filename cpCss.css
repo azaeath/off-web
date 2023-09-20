@@ -86,6 +86,11 @@ span.know {
 	color: var(--textMain);
 }
 
+.highlight {
+	background-color: var(--textMain);
+	color: black;
+}
+
 /* Social Links */
 
 #socLinks {
