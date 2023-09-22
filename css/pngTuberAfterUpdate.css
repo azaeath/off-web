@@ -1,0 +1,242 @@
+/*
+	Holy Realm Link
+	https://streamkit.discord.com/overlay/voice/812816799585271878/825735587913924649?icon=true&online=true&logo=white&text_color=%23ffffff&text_size=14&text_outline_color=%23000000&text_outline_size=0&text_shadow_color=%23000000&text_shadow_size=0&bg_color=%231e2124&bg_opacity=0.95&bg_shadow_color=%23000000&bg_shadow_size=0&invite_code=&limit_speaking=false&small_avatars=false&hide_names=false&fade_chat=0
+	
+	Solo Rec Link
+	https://streamkit.discord.com/overlay/voice/812816799585271878/1067601270568915036?icon=true&online=true&logo=white&text_color=%23ffffff&text_size=14&text_outline_color=%23000000&text_outline_size=0&text_shadow_color=%23000000&text_shadow_size=0&bg_color=%231e2124&bg_opacity=0.95&bg_shadow_color=%23000000&bg_shadow_size=0&invite_code=&limit_speaking=false&small_avatars=false&hide_names=false&fade_chat=0
+ */
+
+body {
+    font-size: 16px !important;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+}
+ul[class*="voiceStates"] {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+li>img[class^="Voice_avatar"] {
+    display: none;
+}
+
+li.[class^="Voice_voiceState"] {
+    position: static;
+}
+
+div[class^="Voice_user"] {
+    width: 100%;
+    text-align: center;
+}
+
+span[class^="Voice_name"] {
+    font-size: 1em !important;
+    position: relative;
+    bottom: 2.3em;
+    right: .3em;
+    text-align: center;
+}
+
+/* Input new avatars with code below:
+
+li>img[class^="Voice_avatar"][src*="ID HERE"] {
+    display: block;
+}
+img[class^="Voice_avatar"][src*="ID HERE"] {
+    content: url(NOT SPEAKING IMAGE LINK);
+    height: auto !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(100%);
+}
+img[class*="Speaking"][src*="ID HERE"] {
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation-name: speak-now;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    content: url(SPEAKING IMAGE LINK HERE);
+}
+
+*/
+/* Azaeath */
+
+li>img[class^="Voice_avatar"][src*="129332200171634688"] {
+    display: block;
+}
+img[class^="Voice_avatar"][src*="129332200171634688"] {
+    content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+    height: 10em !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(100%);
+}
+
+img[class*="Speaking"][src*="129332200171634688"] {
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation: speak-now 1s forwards, talkLoopAzzy .75s infinite;
+    content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+}
+
+/* Soup */
+
+li>img[class^="Voice_avatar"][src*="671882898961596446"] {
+    display: block;
+}
+img[class^="Voice_avatar"][src*="671882898961596446"] {
+    content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+    height: 10em !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(100%);
+}
+
+img[class*="Speaking"][src*="671882898961596446"] {
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation: speak-now 1s forwards, talkLoopSoup .75s infinite;
+    content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+}
+
+/* Mango */
+
+li>img[class^="Voice_avatar"][src*="307401876423311372"] {
+    display: block;
+}
+img[class^="Voice_avatar"][src*="307401876423311372"] {
+    content: url(https://media.discordapp.net/attachments/825739144852144128/853870040356880384/Mango.png);
+    height: 10em !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(100%);
+}
+
+img[class*="Speaking"][src*="307401876423311372"] {
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation: speak-now 1s forwards, talkLoopMango .75s infinite;
+    content: url(https://media.discordapp.net/attachments/825739144852144128/853870040419008542/MangoSpeaking.png);
+}
+
+/* PanAddict */
+li>img[class^="Voice_avatar"][src*="1058571060842348574"] {
+    display: block;
+    height: 10em !important;
+    width: auto !important;
+}
+img[class*="Speaking"][src*="1058571060842348574"] {
+    animation: speak-now 1s forwards;
+    border-color: pink;
+    position: relative;
+}
+/* Chat order */
+
+/* Azzy */
+li:has(> img[class^="Voice_avatar"][src*="129332200171634688"]) {
+    order: 1;
+}
+/* Soup */
+li:has(> img[class^="Voice_avatar"][src*="671882898961596446"]) {
+    order: 2;
+}
+li:has(> img[class^="Voice_avatar"][src*="124202936044748800"]) {
+    order: 3;
+}
+/* Lucy */
+li:has(> img[class^="Voice_avatar"][src*="1058571060842348574"]) {
+    order: 4;
+}
+li:has(> :not([src*="129332200171634688"]):not([src*="671882898961596446"])) {
+    order: 9;
+}
+/* Talking animations */
+@keyframes talkLoopAzzy {
+	/* Remember to swap the images here. */
+	/* Open */
+    0% {
+        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+    }
+	/* Close */
+    25% {
+        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+    }
+	/* Open */
+    50% {
+        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+    }
+	/* Close */
+    75% {
+        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+    }
+}
+
+@keyframes talkLoopSoup {
+	/* Remember to swap the images here. */
+	/* Open */
+    0% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+    }
+	/* Close */
+    25% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+    }
+	/* Open */
+    50% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+    }
+	/* Close */
+    75% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+    }
+}
+
+@keyframes talkLoopMango {
+	/* Remember to swap the images here. */
+	/* Open */
+    0% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870040419008542/MangoSpeaking.png);
+    }
+	/* Close */
+    25% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870040356880384/Mango.png);
+    }
+	/* Open */
+    50% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870040419008542/MangoSpeaking.png);
+    }
+	/* Close */
+    75% {
+        content: url(https://media.discordapp.net/attachments/825739144852144128/853870040356880384/Mango.png);
+    }
+}
+
+@keyframes speak-now {
+    0% {
+        bottom: 0px;
+    }
+
+    15% {
+        bottom: 10px;
+    }
+
+    30% {
+        bottom: 0px;
+    }
+}
+li>img:not([src*="129332200171634688"]) {
+    display: block;
+    height: 10em !important;
+    width: auto !important;
+}
+img[class*="Speaking"] {
+    animation: speak-now 1s forwards;
+    border: .2em solid #71E07B;
+}
+div[class*="voiceContainer"] {
+	position: absolute;
+	bottom: 4.75em;
+	right: 0;
+}
