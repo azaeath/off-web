@@ -273,12 +273,38 @@ span.know {
 	color: black;
 }
 
+/* Accordion styling */
+
+div.accContainer {
+	width: 90%;
+	margin: 0 auto;
+}
+button.accordion {
+    border: none;
+    padding: .25em .5em;
+    width: 100%;
+	background-color: var(--bgQuin);
+	color: var(--textMain);
+}
+button.accordion:hover {
+	background-color: var(--bgPri);
+}
+button.currentWk {
+	background-color: var(--bgQuat);
+}
+div.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	border: 1px var(--textMain) solid;
+}
+
 /* Table styling */
 
 .contentTable {
 	display: table;
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 }
 .conTabRow {
 	display: table-row;
@@ -292,6 +318,7 @@ span.know {
 .titleCell {
 	background-color: var(--bgTer);
 	color: var(--textMain);
+	text-align: center;
 }
 
 /* Resources section styling */

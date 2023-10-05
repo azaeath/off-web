@@ -86,12 +86,19 @@
         </div>
         <div class="infoSec">
             <h2>Announcements</h2>
+			<div class="quote">
+				<h3>Important Update</h3>
+				<p>In the near future, we will be operating in Photoshop via a virtual lab, meaning, so long as you have computer access, whether your issued laptop or a computer in the classroom, you'll be able to do the work without needing to install anything in particular.</p>
+			</div>
             <ul style ="padding: 0 4em;">
-				<!-- General Announcments -->
-				<li><b class="impt">I am currently putting placeholder assignments in the gradebook. They will gradually be updated throughout the day to reflect what assignments were actually given for each week. Digital Arts I and II are current. DA III is being worked on. 2023-09-29</b></li>
-				<li><b class="impt">New tutorials will be uploaded over the weekend. Be sure to keep an eye on the videos section!</b></li>
+				<!-- General Announcements -->
+				<li><b class="impt">DA III still has placeholder names in the gradebook, however, if you need to know what you should be working on, please reach out to me or speak to me in class before the break.</b></li>
+				<li>I haven't been able to spare the time for the tutorial videos due to the fact that I'm currently doing an information overhaul on this web page. 2023-10-05</li>
 				<ul>
-					<li>Ideally, these will be done by midnight tonight, Sep. 29, but if not, they will go up some time on Saturday.</li>
+					<li>The Syllabus section now shows assignments in a collapsed, accordion menu. The current week is still highlighted green, similarly to the previous full table layout.</li>
+					<li>Assignment tables now differentiate between class sections: DA I, DA II, and DA III.</li>
+					<li>The Syllabus section now contains a table showing which class section you're in based on which period you take me.</li>
+					<li></li>
 				</ul>
 				<li><b class="impt">Changes are continually being implemented on this page based on feedback. If you find something difficult to do on this page - ideally, something that isn't for lack of you <i>actually</i> trying - be sure to tell me in the class. I will do my best to facilitate that change, if it's possible. Additionally, if something is wrong on this page, remember that it is currently being updated, so there may be errors. 2023-09-28</b></li>
 				<li>I am currently behind on uploading the study materials for DA I's upcoming quiz. Do note that it is an open notes quiz, therefore, you don't have to worry about it, so long as you do come to this page when the materials are uploaded. 2023-09-28</li>
@@ -146,8 +153,26 @@
 				</ul>
 			</li>
 		</ul>
+		<div class="contentTable" style="width: 90%;">
+			<div class="conTabRow">
+				<span class="conTabCell titleCell">Class Level</span>
+				<span class="conTabCell titleCell">Class Period</span>
+			</div>
+			<div class="conTabRow">
+				<span class="conTabCell">Digital Arts I (DA I)</span>
+				<span class="conTabCell">Periods 1, 6, and 8</span>
+			</div>
+			<div class="conTabRow">
+				<span class="conTabCell">Digital Arts II (DA II)</span>
+				<span class="conTabCell">Periods 2, 4, and 7</span>
+			</div>
+			<div class="conTabRow">
+				<span class="conTabCell">Digital Arts III (DA III)</span>
+				<span class="conTabCell">5th Period</span>
+			</div>
+		</div>
         <!-- Content tables. -->
-        <p style="text-align: center;"><b class="impt">Click the appropriate quarter for the assignments you are seeking.</b></p>
+        <p style="text-align: center;"><b class="impt">Click the appropriate quarter for the assignments you are seeking. The current quarter will be selected by default.</b></p>
         <!-- Tab Buttons -->
         <div class="tab">
             <button id="defQt" class="tablinks" onclick="showTable(event, 'tabCon1')">Quarter 1</button>
@@ -156,334 +181,1018 @@
             <button class="tablinks" onclick="showTable(event, 'tabCon4')">Quarter 4</button>
         </div>
         <!-- Quarter 1 Table -->
-        <div class="contentTable tabCon" id="tabCon1">
-            <div class="conTabRow">
-				<span class="conTabCell titleCell">Date</span>
-				<span class="conTabCell titleCell">Description</span>
-				<span class="conTabCell titleCell">Due Date</span>
+        <div class="accContainer tabCon" id="tabCon1">
+			<button class="accordion">Week 1: Aug. 7-11</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">All</span>
+						<span class="conTabCell">Mr. Mull absent due to death in the household.</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Aug. 7-11</span>
-				<span class="conTabCell"><i class="impt">Mr. Mull absent due to death in the household.</i></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 2: Aug. 14-18</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">All</span>
+						<span class="conTabCell">Admin Week: No work given due to insufficient class materials.</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Aug. 14-18</span>
-				<span class="conTabCell">Admin Week: No work given due to insufficient class materials.</span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 3: Aug. 21-25</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">All</span>
+						<span class="conTabCell">Admin Week: No work given due to insufficient class materials.</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Aug. 21-25</span>
-				<span class="conTabCell">Admin Week: No work given due to insufficient class materials.</span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 4: Aug. 28-Sep. 01</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">
+							<ol>
+								<li>Draw 4 sets of lines of gradually increasing length. Each new set should start from a different direction (i.e. left to right, top to bottom, right to left, and bottom to top).</li>
+								<li>Draw 3 sets of lines, short, medium, and long, of gradually increasing pressure. Each set should consist of 4 to 5 lines and start with a light amount of pressure for the first and a heavy amount of pressure for the last.</li>
+							</ol>
+						</span>
+						<span class="conTabCell">
+							<b class="impt">Odd: 2023-09-06</b>
+							<br>
+							<b class="impt">Even: 2023-09-05</b>
+						</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">TBD</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell">TBD</span>
+						<span class="conTabCell">N/A</span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Aug. 28-Sep. 01</span>
-				<span class="conTabCell">
-					<b class="impt">DA I:</b> Practice Week
-					<ol>
-						<li>Draw 4 sets of lines of gradually increasing length. Each new set should start from a different direction (i.e. left to right, top to bottom, right to left, and bottom to top).</li>
-						<li>Draw 3 sets of lines, short, medium, and long, of gradually increasing pressure. Each set should consist of 4 to 5 lines and start with a light amount of pressure for the first and a heavy amount of pressure for the last.</li>
-					</ol>
-					<br>
-					<b class="impt">DA II: TBD</b>
-					<br>
-					<b class="impt">DA III: TBD</b>
-				</span>
-				<span class="conTabCell">
-					<b class="impt">Odd: 2023-09-06</b>
-					<br>
-					<b class="impt">Even: 2023-09-05</b>
-				</span>
+			<button class="accordion">Week 5: Sep. 4-8</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">
+							Workaround Week*
+							<ol>
+								<li>Download and install <b class="impt">Ibis Paint X</b> from your phone's respective app store. <b class="impt">IT IS FREE.</b> Have it by Thursday, 2023-09-07, so you can do the assigned work. <b class="impt">(Homework)</b></li>
+								<li>Obtain a sketchbook (legally, preferably 👀👍). If you can't buy one, there are resource links to YouTube videos on how to make one. It will come in handy as the school year progresses. <b class="impt">It doesn't have to be any larger than <i>approximately</i> 5.5" x 8". Any larger than that is <i>up to your personal preference.</i> (Homework)</b></li>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">
+						<ol>
+							<li>Decide on a subject for a photo series. You will be keeping a journal in the following weeks based on the assignment that is the come. <b class="impt">(Homework)</b></li>
+							<li>See number 2 for Digital Arts I. <b class="impt">(Homework)</b></li>
+						</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell">TBD</span>
+						<span class="conTabCell"></span>
+					</div>
+				</div>
+				<p><i class="impt">I've dubbed this week the "Workaround" week due to the fact that this is our first real week of assignments wherein we're working around the lack of sufficient resources in the classroom. While it is less than ideal, please keep up with the assignments and treat them as seriously as you would with any normal class assignment.</i></p>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Sep. 4-8</span>
-				<span class="conTabCell">
-					<b class="impt">DA I:</b> Workaround Week*
-					<ol>
-						<li>Download and install <b class="impt">Ibis Paint X</b> from your phone's respective app store. <b class="impt">IT IS FREE.</b> Have it by Thursday, 2023-09-07, so you can do the assigned work. <b class="impt">(Homework)</b></li>
-						<li>Obtain a sketchbook (legally, preferably 👀👍). If you can't buy one, there are resource links to YouTube videos on how to make one. It will come in handy as the school year progresses. <b class="impt">It doesn't have to be any larger than <i>approximately</i> 5.5" x 8". Any larger than that is <i>up to your personal preference.</i> (Homework)</b></li>
-					</ol>
-					<br>
-					<b class="impt">DA II:</b>
-					<ol>
-						<li>Decide on a subject for a photo series. You will be keeping a journal in the following weeks based on the assignment that is the come. <b class="impt">(Homework)</b></li>
-						<li>See number 2 for Digital Arts I. <b class="impt">(Homework)</b></li>
-					</ol>
-					<br>
-					<b class="impt">DA III: TBD</b>
-					<br>
-					<i class="impt">I've dubbed this week the "Workaround" week due to the fact that this is our first real week of assignments wherein we're working around the lack of sufficient resources in the classroom. While it is less than ideal, please keep up with the assignments and treat them as seriously as you would with any normal class assignment.</i>
-				</span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 6: Sep. 11-15</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">
+							Color Week
+							<ol>
+								<li>Create a color wheel based on the tutorial given in class.</li>
+								<ul>
+									<li>Be on the lookout for the video tutorial for the assignment in the <a href="#videos" onclick="showSecMobi('tabSec4')">Videos</a> tab of the website.</li>
+								</ul>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">
+							<ol>
+								<li>Take three (3) photos of your chosen subject from the previous week, and download <b class="impt">Ibis Paint X</b> to your mobile device in preparation for photo editing next week.</li>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Sep. 11-15</span>
-				<span class="conTabCell">
-					<b class="impt">DA I:</b> Color Week
-					<ol>
-						<li>Create a color wheel based on the tutorial given in class.</li>
-						<ul>
-							<li>Be on the lookout for the video tutorial for the assignment in the <a href="#videos" onclick="showSecMobi('tabSec4')">Videos</a> tab of the website.</li>
-						</ul>
-					</ol>
-					<br>
-					<b class="impt">DA II:</b> Photo Week
-					<ol>
-						<li>Take three (3) photos of your chosen subject from the previous week, and download <b class="impt">Ibis Paint X</b> to your mobile device in preparation for photo editing next week.</li>
-					</ol>
-				</span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 7: Sep. 18-22</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">
+							Intro to Design Week
+							<ol>
+								<li>Create an abstract design that can utilize three (3) different color schemes.</li>
+								<ul>
+									<li>Primary Colors</li>
+									<li>Seconddary Colors</li>
+									<li>Chromatic Grays</li>
+								</ul>
+								<li>Pick any color from the primaries or secondaries and research the psychological effects that color has on the human brain. Write or <b class="impt">type</b> (preferrably) a paragraph that summarizes what you discover about your chosen color.</li>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">
+							<ol>
+								<li>Utilizing the methods demonstrated in class, SWBAT apply filters and effects to their photos taken during the previous week.</li>
+								<ul>
+									<li>Depth of Field</li>
+									<li>Color Blend</li>
+									<li>Texture or Student Choice</li>
+								</ul>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell">
+							Intro to Animation
+							<p>After taking a vote in class and having an even split between animation and web design, I decided we would just do both. As such, your assignments from this week onward will be a mix of the two and how to apply them to a real world scenario, namely live streams.</p>
+							<ol>
+								<li>SWBAT create a simple 2 frame animation loop in CSS to be used as a PNG Tuber for videos.</li>
+								<li>SWBAT apply their 2 frame animation loop to an audio-linked, live preview of an active Discord conversation.</li>
+								<li>SWBAT implement their linked 2 frame animation into a video presentation, demonstrating its use.</li>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+				</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Sep. 18-22</span>
-				<span class="conTabCell">
-					<b class="impt">DA I:</b> Intro to Design Week
-					<ol>
-						<li>Create an abstract design that can utilize three (3) different color schemes.</li>
-						<ul>
-							<li>Primary Colors</li>
-							<li>Seconddary Colors</li>
-							<li>Chromatic Grays</li>
-						</ul>
-						<li>Pick any color from the primaries or secondaries and research the psychological effects that color has on the human brain. Write or <b class="impt">type</b> (preferrably) a paragraph that summarizes what you discover about your chosen color.</li>
-					</ol>
-					<br>
-					<b class="impt">DA II:</b> Filter Week
-					<ol>
-						<li>Utilizing the methods demonstrated in class, SWBAT apply filters and effects to their photos taken during the previous week.</li>
-						<ul>
-							<li>Depth of Field</li>
-							<li>Color Blend</li>
-							<li>Texture or Student Choice</li>
-						</ul>
-					</ol>
-					<br>
-					<b class="impt">DA III:</b> Intro to Animation
-					<p>After taking a vote in class and having an even split between animation and web design, I decided we would just do both. As such, your assignments from this week onward will be a mix of the two and how to apply them to a real world scenario, namely live streams.</p>
-					<ol>
-						<li>SWBAT create a simple 2 frame animation loop in CSS to be used as a PNG Tuber for videos.</li>
-						<li>SWBAT apply their 2 frame animation loop to an audio-linked, live preview of an active Discord conversation.</li>
-						<li>SWBAT implement their linked 2 frame animation into a video presentation, demonstrating its use.</li>
-					</ol>
-				</span>
-				<span class="conTabCell"></span>
-			</div>
-			<div class="conTabRow">
-				<span class="conTabCell">Sep. 25-29</span>
-				<span class="conTabCell">
+			<button class="accordion">Week 8: Sep. 25-29</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">
+							Color Week II
+							<ol>
+								<li>Finish the Abstract Design Assignment for the previous week, if you have not already.</li>
+								<li>Study for next week's quiz on color theory. Study materials will be supplied in the resources section by Wednesday, 2023-09-27.</li>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">
+							Filter Week II
+							<ol>
+								<li>Continuation of last week with an addition:</li>
+								<ul>
+									<li>Manga Filter (For those of you who are nerds like myself)</li>
+								</ul>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell">
+							Intro to Animation II
+							<ol>
+								<li>Create a Discord account for your 2 frame character loop.</li>
+								<li>Finish your two drawings for your two frame character loop.</li>
+								<ul>
+									<li>Remember that you only need to draw your character once, duplicate it, and draw an open mouth on the duplicate.</li>
+								</ul>
+							</ol>
+						</span>
+						<span class="conTabCell"></span>
+					</div>
+				</div>
 				<p>Grades will be updated this week on Thursday. Do not attempt to come to me, after all this time I've given you all to do the assignments, questioning me about why you have a failing grade if you are not paying attention in class. Remember, <b class="impt">the only way to fail this class is to do nothing at all or turn nothing in.</b></p>
-				<b class="impt">DA I:</b> Color Week II
-				<ol>
-					<li>Finish the Abstract Design Assignment for the previous week, if you have not already.</li>
-					<li>Study for next week's quiz on color theory. Study materials will be supplied in the resources section by Wednesday, 2023-09-27.</li>
-				</ol>
-				<br>
-				<b class="impt">DA II:</b> Filter Week II
-				<ol>
-					<li>Continuation of last week with an addition:</li>
-					<ul>
-						<li>Manga Filter (For those of you who are nerds like myself)</li>
-					</ul>
-				</ol>
-				<br>
-				<b class="impt">DA III:</b> Intro to Animation II
-				<ol>
-					<li>Create a Discord account for your 2 frame character loop.</li>
-					<li>Finish your two drawings for your two frame character loop.</li>
-					<ul>
-						<li>Remember that you only need to draw your character once, duplicate it, and draw an open mouth on the duplicate.</li>
-					</ul>
-				</ol>
-				</span>
-				<span class="conTabCell"></span>
 			</div>
-			<div class="conTabRow currentWk">
-				<span class="conTabCell">Oct. 2-6</span>
-				<span class="conTabCell">
-					<b class="impt">All Classes:</b> Round Out Week
-					<br>
-					<p>This week is dedicated to rounding out grades with simple to complete assignments. Should anyone not make use of this time, I will not have any sympathy to spare for you. While we have had to deal with the issue of not being able to setup our computers during the first few weeks, there has been work assigned to get around that particular inconvenience. For those of you who have done nothing, <b class="impt">by choice I might add</b>, this is your final opportunity to make up your grade for any outstanding assignments you have yet to get around to.</p>
-					<ol>
-						<li>Make use of the simple assignments given for the day to bring up your grade for any missing work.</li>
-						<li><b class="impt">DA I:</b></li>
-						<ul>
-							<li>Color Theory Quiz (Open Notes)</li>
-						</ul>
-						<li><b class="impt">DA II:</b></li>
-						<ul>
-							<li>Photo Editing Vocabulary Quiz (Open Notes)</li>
-						</ul>
-						<li><b class="impt">DA III:</b></li>
-						<ul>
-							<li>TBD</li>
-						</ul>
-					</ol>
-				</span>
-				<span class="conTabCell"></span>
+			<button class="accordion currentWk">Week 9: Oct. 2-6</button>
+			<div class="panel">
+				<div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell">Color Theory Quiz (Open Notes)</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell">Photo Editing Vocabulary Quiz (Open Notes)</span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell">Dual Enrollment students will complete TCAT Registration form.</span>
+						<span class="conTabCell"></span>
+					</div>
+				</div>
+				<p>This week is dedicated to rounding out grades with simple to complete assignments. Should anyone not make use of this time, I will not have any sympathy to spare for you. While we have had to deal with the issue of not being able to setup our computers during the first few weeks, there has been work assigned to get around that particular inconvenience. For those of you who have done nothing, <b class="impt">by choice I might add</b>, this is your final opportunity to make up your grade for any outstanding assignments you have yet to get around to.</p>
 			</div>
-        </div>
+			<button class="accordion">Fall Break: Oct. 9-13</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">All Classes</div>
+							<div class="conTabCell">Enjoy your Fall Break!</div>
+							<div class="conTabCell">N/A</div>
+						</div>
+					</div>
+			</div>
+			<!-- Accordion Template -->
+			<!-- <button class="accordion"></button>
+			<div class="panel"></div> -->
+		</div>
         
         <!-- Quarter 2 Table -->
         
-        <div class="contentTable tabCon" id="tabCon2">
-            <div class="conTabRow">
-				<span class="conTabCell titleCell">Date</span>
-				<span class="conTabCell titleCell">Description</span>
-				<span class="conTabCell titleCell">Due Date</span>
+        <div class="accContainer tabCon" id="tabCon2">
+			<button class="accordion">Week 1: Oct. 16-20</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 2: Oct. 23-27</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 3: Oct. 30-Nov. 3</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 4: Nov. 6-9</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 5: Nov. 13-17</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Thanksgiving Break: Nov. 20-24</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 6: Nov. 27-Dec. 1</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 7: Dec. 4-8</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 8: Dec. 11-15</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 9: Dec. 18-20</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-        </div>
+		</div>
         
         <!-- Quarter 3 Content -->
         
-        <div class="contentTable tabCon" id="tabCon3">
-            <div class="conTabRow">
-				<span class="conTabCell titleCell">Date</span>
-				<span class="conTabCell titleCell">Description</span>
-				<span class="conTabCell titleCell">Due Date</span>
+        <div class="accContainer tabCon" id="tabCon3">
+            <button class="accordion">Week 1:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 2:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 3:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 4:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 5:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 6:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 7:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 8:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 9:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
         </div>
         <!-- Quarter 4 Content -->
-        <div class="contentTable tabCon" id="tabCon4">
-            <div class="conTabRow">
-				<span class="conTabCell titleCell">Date</span>
-				<span class="conTabCell titleCell">Description</span>
-				<span class="conTabCell titleCell">Due Date</span>
+        <div class="accContainer tabCon" id="tabCon4">
+            <button class="accordion">Week 1:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 2:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 3:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 4:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 5:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 6:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 7:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 8:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-			</div>
-			<div class="conTabRow">
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
-				<span class="conTabCell"></span>
+			<button class="accordion">Week 9:</button>
+			<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">Class</div>
+							<div class="conTabCell titleCell">Assignment</div>
+							<div class="conTabCell titleCell">Due Date</div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA I</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA II</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+						<div class="conTabRow">
+							<div class="conTabCell titleCell">DA III</div>
+							<div class="conTabCell"></div>
+							<div class="conTabCell"></div>
+						</div>
+					</div>
 			</div>
         </div>
     </div>
@@ -593,7 +1302,44 @@
 		</div>
     </div>
 </div>
+<!-- Table Templates -->
+<!-- <div class="contentTable">
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">Class</span>
+						<span class="conTabCell titleCell">Assignment</span>
+						<span class="conTabCell titleCell">Due Date</span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA I</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA II</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+					<div class="conTabRow">
+						<span class="conTabCell titleCell">DA III</span>
+						<span class="conTabCell"></span>
+						<span class="conTabCell"></span>
+					</div>
+				</div> -->
     <script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
         function showSection(event, section) {
             var i,
 				x = document.getElementsByClassName('section'),
@@ -610,7 +1356,7 @@
 			}
             document.getElementById(section).style.display = "block";
             event.currentTarget.className += ' active';
-			if (y[0].classList.contains('active')) {
+			if (y[0].classList.contains(' active')) {
 				n[0].className += ' active';
 			} else if (y[1].classList.contains('active')) {
 				n[1].className += ' active';
@@ -636,7 +1382,7 @@
             for (i = 0; i < y.length; i++) {
                 y[i].className = y[i].className.replace(' active', '');
             }
-            document.getElementById(quarter).style.display = "table";
+            document.getElementById(quarter).style.display = "block";
             event.currentTarget.className += ' active';
         }
         document.getElementById('defQt').click();
