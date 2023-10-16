@@ -7,6 +7,7 @@
 	--bgTer: #63663E;
 	--bgQuat: #4F8254;
 	--bgQuin: #A39E64;
+	--bgSep: #241926;
 	--textMain: rgba(255 255 255 / 85%);
 	--textSec: rgba(255 255 255 / 65%);
 	--skillText: rgb(255 255 0 / 85%);
@@ -70,7 +71,7 @@ p {
 	text-align: justify;
 }
 
-ul {
+ul, ol {
 	padding: 0 2em;
 }
 
@@ -304,6 +305,9 @@ div.panel {
 .contentTable {
 	display: table;
 	margin: 0 auto;
+	width: 90%;
+}
+.panel .contentTable {
 	width: 100%;
 }
 .conTabRow {
@@ -331,7 +335,15 @@ div.panel {
 	background-color: var(--bgQuat);
 }
 
-.quote span {
+.stanQuote {
+	width: 90%;
+	margin: 0 auto;
+	border: .1em solid var(--textMain);
+	padding: 1em 0;
+	background-color: var(--bgSep);
+}
+
+span.qAuthor {
 	display: block;
 	text-align: right;
 	margin-right: 4em;
@@ -389,6 +401,19 @@ div.panel {
 	}
 	#wrapper {
 		top: 100vh;
+	}
+	ul, ol {
+		padding: 0 2em;
+	}
+	.conTabCell {
+		padding: 0 .5em;
+	}
+	p {
+		margin: 0 .75em;
+		text-indent: 1.5em;
+	}
+	span.qAuthor {
+		margin-right: 1.5em;
 	}
 }
 
