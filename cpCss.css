@@ -300,6 +300,12 @@ div.panel {
 	border: 1px var(--textMain) solid;
 }
 
+#sbProHead {
+	background-color: var(--bgTer);
+	width: 90%;
+	margin: 1em auto 0;
+}
+
 /* Table styling */
 
 .contentTable {
