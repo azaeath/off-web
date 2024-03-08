@@ -1,6 +1,5 @@
-/* CSS Document */
+/* Class page redesign style */
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-
 :root {
 	--bgPri: #212619;
 	--bgSec: #395232;
@@ -13,61 +12,29 @@
 	--skillText: rgb(255 255 0 / 85%);
     --knowText: rgb(255 0 255 / 85%);
 }
-
 * {
+	font-family: "Yusei Magic", sans-serif;
+}
+html, body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Yusei Magic', sans-serif;
-}
-
-html, body {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	background: url("./pics/moreRecent/AT with Azzy the Great_20200413031258.png") center 15%/cover no-repeat;
 	color: var(--textSec);
 }
-
-body:before {
-    content: url("./pics/moreRecent/logo05.png");
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.15);
-    background-color: #fff;
-    margin: 0;
-    padding: 3.5em;
-    border-radius: 50%;
-    border: solid 1.5em #2c2c2c;
-    box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
+body {
+	background-color: var(--bgPri);
 }
-
-h1, h2, h3, h4, h5, h6 {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: center;
-	padding: .5em 0;
-	flex: 1 1 auto;
-	color: var(--textMain);
-	min-width: fit-content;
-	width: 100%;
-	
-}
-
 a {
 	text-decoration: none;
 	color: deepskyblue;
 }
 
-a:hover {
+a:not(.navigation a):hover {
 	color: blue;
 }
 
 p {
 	text-indent: 3em;
-	margin: 1em 3.5em;
+	margin: 1em 2em;
 	text-align: justify;
 }
 
@@ -101,146 +68,55 @@ span.know {
 	background-color: var(--bgQuat);
 }
 
-/* Social Links */
-
-#socLinks {
-    display: inline-flex;
-    position: absolute;
-    top: -5em;
-    left: 50%;
-    padding: 0;
-    margin: 0;
-    transform: translateX(-50%);
-}
-
-#socLinks li {
-    list-style: none;
-}
-
-#socLinks li a {
-    position: relative;
-    display: block;
-    width: 4em;
-    height: 4em;
-    text-align: center;
-    margin: 0 0.5em;
-    background: linear-gradient(0deg, #0d1117, #2c2c2c);
-    border-radius: 50%;
-    padding: .4em;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 .7em 1em rgba(0, 0, 0, 0.8);
-    transition: .5s;
+h1, h2, h3, h4, h5, h6 {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	padding: .5em 0;
+	flex: 1 1 auto;
 	color: var(--textMain);
+	min-width: fit-content;
+	width: 100%;
+	
 }
-
-#socLinks > li > a .fa {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #2c2c2c, #0d1117);
-    border-radius: 50%;
-    line-height: 1.6em;
-    font-size: 2em;
-    color: var(--mainText);
-    transition: .5s;
-}
-
-#socLinks li a:hover {
-    box-shadow: 0 .2em .2em rgb(0 0 0 / 30%);
-}
-
-#socLinks .fa-instagram:hover {
-    color: #e4405f;
-}
-
-#socLinks .fa-twitch:hover {
-    color: #9147ff;
-}
-
-#socLinks .fa-envelope:hover {
-    color: #9eab80;
-}
-
-/* Page content */
-
 #wrapper {
-	width: 100%;
+	width: 100vw;
+	height: 90vh;
 	position: relative;
-	top: calc(100vh - 2em);
-	background-color: var(--bgPri);
-}
-
-/* Navigation */
-
-#navBar {
-	width: 100%;
-	background-color: var(--bgQuat);
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	margin-bottom: 2em;
-}
-.secLinks {
-	border: none;
-	outline: none;
-	background: transparent;
-	color: var(--textMain);
-	display: inline-flex;
-	flex: 1 1 auto;
-	justify-content: center;
-	padding: .5em 0;
-}
-.secLinks:hover {
-	background-color: var(--bgSec);
-}
-#navBar .active {
-	background-color: var(--bgPri);
-}
-
-/* Mobile Menu */
-
-#mobiMenu {
-	background-color: rgba(0 0 0 / 75%);
-	display: none;
-	flex-flow: row nowrap;
-	align-items: center;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
+	overflow-x: hidden;
 	top: 0;
-	z-index: 10;
 }
-#menuBtn {
-	min-width: 3em;
-	width: 3em;
-	text-align: center;
-	flex: 1 0 auto;
-}
-#mobiMenu a {
-	padding: .5em 0;
-	color: var(--textMain);
-}
-#mobiLinks {
+/* Navigation */
+.navigation {
+	position: fixed;
+	top: 0;
+	background-color: var(--bgQuat);
+	width: 100vw;
 	display: flex;
 	flex-flow: row nowrap;
-	transition: width .75s ease;
+	justify-content: space-evenly;
+	z-index: 1000;
+	height: 10%;
+	border-bottom: .1em solid;
 }
-#mobiLinks a {
-	display: inline-flex;
+.navigation a {
+	padding: .5em 0;
+	display: flex;
+	flex-flow: row nowrap;
+	min-width: fit-content;
 	flex: 1 1 auto;
 	justify-content: center;
-	transition: background .5s;
+	align-items: center;
+	color: var(--textSec);
 }
-#mobiLinks a:hover {
+.navigation a:hover {
 	background-color: var(--bgSec);
 }
-#mobiLinks a.active {
-	background-color: var(--bgQuat);
+.navigation a.active {
+	color: var(--textMain);
 }
-
 /* Section styling */
-
 .section {
 	width: 100%;
 	height: auto;
@@ -248,7 +124,6 @@ span.know {
 .infoSec {
 	margin: 2em 0;
 }
-
 /* Syllabus tab styling */
 .tab {
 	width: calc(90% - .2em);
@@ -381,63 +256,20 @@ span.qAuthor {
 	display: block;
 	margin: 1.5em auto;
 }
-
-/* Footer styling */
-
-#footer {
-	height: 6em;
-	width: 100vw;
-	background-color: var(--bgQuin);
-	margin-top: 4em;
-}
-#footerLinks {
-	display: flex;
-	flex-flow: row nowrap;
-	width: 100%;
-	height: 100%;
-	justify-content: space-evenly;
-	align-items: center;
-}
-#footerLinks a {
-	color: var(--textMain);
-	display: inline-flex;
-}
-#footerLinks a:hover {
-	color: var(--bgTer);
-}
-
-@media screen and (max-width: 880px) {
-	#mobiMenu {
-		display: flex;
+@media (max-width: 768px){
+	.navigation {
+		top: unset;
+		bottom: 0;
+		border-bottom: unset;
+		border-top: .1em solid;
 	}
-	#navBar {
-		display: none;
+	.navigation a {
+		flex-flow: column nowrap;
 	}
-	#wrapper {
-		top: 100vh;
+	.navigation a > span[class*="fa-"] {
+		font-size: 1.5em;
 	}
-	ul, ol {
-		padding: 0 2em;
-	}
-	.conTabCell {
-		padding: 0 .5em;
-	}
-	p {
-		margin: 0 .75em;
-		text-indent: 1.5em;
-	}
-	span.qAuthor {
-		margin-right: 1.5em;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	html, body {
-		font-size: 14px;
-	}
-}
-@media screen and (max-width: 325px) {
-	html, body {
-		font-size: 12px;
+	.navigation a > span:nth-of-type(2) {
+		font-size: .75em
 	}
 }
