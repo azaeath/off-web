@@ -256,7 +256,7 @@ span.qAuthor {
 	display: block;
 	margin: 1.5em auto;
 }
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
 	.navigation {
 		top: unset;
 		bottom: 0;
