@@ -1,0 +1,99 @@
+/* Default CSS */
+@font-face {
+    font-family: Modernista;
+    src: url('../fonts/BF_Modernista-Regular.ttf');
+}
+@font-face {
+    font-family: "Modernista Bold";
+    src: url('../fonts/BF_Modernista-Bold.ttf');
+}
+:root {
+    --ig: #ff0069;
+    --twitch: #6441a5;
+    --bfBlue: #22ffdf;
+    --bfGreen: #1de51b;
+    --bfBlueGlow: 1px 1px 10px var(--bfBlue);
+    --bfText: "Modernista", sans-serif;
+    --bfTextBold: "Modernista Bold", sans-serif;
+}
+@keyframes horiScroll {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+html, body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+#wrapper {
+    width: 1920px;
+    height: 1080px;
+    background: url('../pics/amir-briki-06-bf2042-loreart-camilablasco-01.jpg') center -3em/130% no-repeat;
+    margin: 0;
+    padding: 0;
+
+#header {
+    width: 100%;
+    color: white;
+    text-shadow: var(--bfBlueGlow);
+    font-family: var(--bfTextBold);
+    background: rgba(0 0 0 / .5);
+    padding: .5em 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.scrollText {
+    position: relative;
+    right: -100%;
+    animation: horiScroll 25s linear infinite;
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-wrap: nowrap;
+}
+#midSec {
+    width: 100%;
+    height: 100%;
+}
+#vidBox {
+    width: 1920px;
+    height: 1080px;
+    background: rgba(0 0 0 / .5);
+    position: absolute;
+    transform: scale(.65) translate(-29em, -15em);
+}
+#chatBox {
+    background: rgba(0 0 0 / .5);
+    width: 30%;
+    height: 84%;
+    position: absolute;
+    right: 2em;
+    top: 5.25em;
+}
+#footer {
+    background: rgba(0 0 0 / .5);
+    padding: .5em 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5em;
+    font-family: "Modernista Bold", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--bfBlue);
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+.fa-instagram {
+    color: var(--ig);
+}
+.fa-twitch {
+    color: var(--twitch);
+}
