@@ -89,8 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Navigation */
 .navigation {
-	position: fixed;
+	position: relative;
 	top: 0;
+	left: 0;
 	background-color: var(--bgQuat);
 	width: 100vw;
 	display: flex;
@@ -115,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navigation a.active {
 	color: var(--textMain);
+	background-color: var(--bgSec);
 }
 /* Section styling */
 .section {
@@ -262,6 +264,7 @@ span.qAuthor {
 		bottom: 0;
 		border-bottom: unset;
 		border-top: .1em solid;
+		position: absolute;
 	}
 	.navigation a {
 		flex-flow: column nowrap;

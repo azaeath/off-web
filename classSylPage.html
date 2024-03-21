@@ -12,10 +12,10 @@
 </head>
 <body>
 	<div class="navigation">
-		<a href="#" id="announceLink" class="active"><span class="fa fa-bullhorn"></span><span>Announcements</span></a>
-		<a href="#" id="syllabusLink"><span class="fa fa-file"></span><span>Syllabus</span></a>
-		<a href="#" id="resourceLink"><span class="fa fa-book"></span><span>Resources</span></a>
-		<a href="#" id="videoLink"><span class="fa fa-video-camera"></span><span>Videos</span></a>
+		<a href="#" id="defSec" class="secLinks active" onClick="showSection(event, 'announce')"><span class="fa fa-bullhorn"></span><span>Announcements</span></a>
+		<a href="#" id="syllabusLink" class="secLinks" onClick="showSection(event, 'syllabus')"><span class="fa fa-file"></span><span>Syllabus</span></a>
+		<a href="#" id="resourceLink" class="secLinks" onClick="showSection(event, 'resources')"><span class="fa fa-book"></span><span>Resources</span></a>
+		<a href="#" id="videoLink" class="secLinks" onClick="showSection(event, 'videos')"><span class="fa fa-video-camera"></span><span>Videos</span></a>
 	</div>
 	<div id="wrapper">
 		<div class="section" id="announce">
@@ -80,6 +80,54 @@
 			</ul>
         </div>
     </div>
+		<div class="section" id="syllabus">
+			<div class="accContainer">
+				<button class="accordion">Week 1: Mar. 18 - 22</button>
+				<div class="panel">
+					<div class="contentTable">
+						<div class="conTabRow">
+							<span class="conTabCell titleCell">Class</span>
+							<span class="conTabCell titleCell">Assignment</span>
+							<span class="conTabCell titleCell">Due Date</span>
+						</div>
+						<div class="conTabRow">
+							<span class="conTabCell titleCell">All Classes</span>
+							<span class="conTabCell">
+								<ol>
+									<li>Write 2 paragraphs with an accompanying drawing related to one or the other.</li>
+									<ul>
+										<li>The first paragraph should be about 1 or 2 notable things you did over Spring Break.</li>
+										<li>The second paragraph should be about something you plan to do by the time you graduate or afterward.</li>
+									</ul>
+									<li>Take a look in the resources section to find the tutorial document relevant to your class. It will be labeled under the DA I, DA II, or DA III section, respectively. <b class="impt">New resources are planned to go live by 8pm, Tuesday, 2024-03-19.</b></li>
+								</ol>
+							</span>
+							<span class="conTabCell">
+								<b class="impt">Odd:</b> 2024-03-27
+								<br>
+								<b class="impt">Even:</b> 2024-03-28
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="resources">
+			<p>This section is currently being repopulated with material relevant to the current quarter. Please remain on standby for the new material that will be given here as it is made available.</p>
+			<button class="accordion">Web Design Resources</button>
+			<div class="panel">
+				<ul>
+					<li><a href="./docs/Basic HTML Demo.html" target="_blank">Basic HTML Demo</a></li>
+					<ul>
+						<li>Save this page as an HTML document and open it in Notepad or Notepad++ to view the notes contained in the file.</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<div class="section" id="videos">
+			<p>While I <i>am</i> currently creating videos for the assignments, it's safer to seek out either the written instructions or simply research what you need to know on your own time. It's better that you all learn to obtain the info through your own effort than to continually rely on others in the future.</p>
+			<p>I say this out of genuine concern. Excessive dependence on other people can lead to you being manipulated by others more easily.</p>
+		</div>
 	</div>
 	<script>
 		var acc = document.getElementsByClassName("accordion");
@@ -99,35 +147,17 @@
 		function showSection(event, section) {
             var i,
 				x = document.getElementsByClassName('section'),
-				y = document.getElementsByClassName('secLinks'),
-				n = document.getElementsByClassName('mobiBtn');
+				y = document.getElementsByClassName('secLinks');
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
             for (i = 0; i < y.length; i++) {
                 y[i].className = y[i].className.replace(' active', '');
             }
-			for (i = 0; i < n.length; i++) {
-				n[i].className = n[i].className.replace(' active', '');
-			}
             document.getElementById(section).style.display = "block";
             event.currentTarget.className += ' active';
-			if (y[0].classList.contains(' active')) {
-				n[0].className += ' active';
-			} else if (y[1].classList.contains('active')) {
-				n[1].className += ' active';
-			} else if (y[2].classList.contains('active')) {
-				n[2].className += ' active';
-			} else if (y[3].classList.contains('active')) {
-				n[3].className += ' active';
-			}
         }
         document.getElementById('defSec').click();
-        
-		function showSecMobi(section) {
-			document.getElementById(section).click();
-		}
-		
         function showTable(event, quarter) {
             var i, x, y;
             var x = document.getElementsByClassName('tabCon');
