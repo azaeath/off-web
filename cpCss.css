@@ -21,7 +21,21 @@ html, body {
 	color: var(--textSec);
 }
 body {
-	background-color: var(--bgPri);
+	background: url('./pics/moreRecent/AT with Azzy the Great_20200413031258.png') center center/cover fixed no-repeat var(--bgPri);
+}
+body:before {
+	content: url('./pics/moreRecent/logo05.png');
+	display: block;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%) scale(0.15);
+    background-color: #fff;
+    margin: 0;
+    padding: 3.5em;
+    border-radius: 50%;
+    border: solid 1.5em #2c2c2c;
+    box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
 }
 a {
 	text-decoration: none;
@@ -82,10 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #wrapper {
 	width: 100vw;
-	height: 90vh;
+	height: 100%;
 	position: relative;
 	overflow-x: hidden;
-	top: 0;
+	top: 50vh;
+	background: var(--bgPri);
 }
 /* Navigation */
 .navigation {
@@ -264,7 +279,7 @@ span.qAuthor {
 		bottom: 0;
 		border-bottom: unset;
 		border-top: .1em solid;
-		position: absolute;
+		position: fixed;
 	}
 	.navigation a {
 		flex-flow: column nowrap;
@@ -274,6 +289,12 @@ span.qAuthor {
 	}
 	.navigation a > span:nth-of-type(2) {
 		font-size: .75em;
+	}
+	#wrapper {
+		padding-bottom: 10em;
+	}
+	body:before {
+		top: 27.5%;
 	}
 }
 
