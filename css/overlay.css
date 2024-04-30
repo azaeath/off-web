@@ -1,0 +1,87 @@
+/* Tutorial overlay CSS File */
+:root {
+    --bfBlue: #22ffdf;
+    --bfGreen: #1de51b;
+    --bfBlueGlow: 0 0 10px var(--bfBlue);
+}
+@font-face {
+    font-family: Modernista;
+    src: url('https://azaeath.art/streamAssets/fonts/BF_Modernista-Regular.ttf');
+}
+@font-face {
+    font-family: "Modernista Bold";
+    src: url('https://azaeath.art/streamAssets/fonts/BF_Modernista-Bold.ttf');
+}
+html, body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url('../pics/battle-pass-hero-bkground-xl.jpg.adapt_.320w.jpg') center center/cover no-repeat;
+}
+* {
+    font-family: Modernista, sans-serif;
+}
+#topBar, #footer {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0 0 0 / .5);
+    display: flex;
+    flex-flow: row nowrap;
+}
+#topScroll, #ftScrollText {
+    font-size: 1.5em;
+    padding: .5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+@keyframes textScroll {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+#topScroll {
+    text-shadow: var(--bfBlueGlow);
+    color: white;
+    animation: textScroll 25s linear infinite;
+}
+#midSec {
+    position: relative;
+}
+#vidBox {
+    width: 1920px;
+    height: 1080px;
+    background: rgba(0 0 0 / .5);
+    transform: scale(.65) translate(-29em, -15.25em);
+    position: absolute;
+}
+#chatBox {
+    width: calc(1920px * .3);
+    height: calc(1080px * .85);
+    background: rgba(0 0 0 / .5);
+    position: absolute;
+    right: 2em;
+    top: 1.9em
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+#ftScroll {
+    width: calc(1920px * .65);
+    display: flex;
+    flex-flow: row nowrap;
+}
+#ftScrollText {
+    color: var(--bfBlue);
+    padding: .5em 0;
+    animation: textScroll 10s linear infinite;
+}
+#musicBox {
+    background-color: var(--bfBlue);
+    width: calc(1920px * .35);
+}
