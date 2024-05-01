@@ -1,0 +1,23 @@
+#widgetVcPhBox {
+    width: calc(1920px * .5);
+    height: 10em;
+    /* background: rgba(0 0 0 / .5); */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    position: absolute;
+    left: 10em;
+    bottom: 5em;
+}
+.widgetVcPh {
+    height: 10em;
+    width: 10em;
+    background: rgba(0 0 0 / .75);
+    border-radius: 50%;
+}
+.widgetVcPh:first-of-type {
+    background: url("../pics/Azzy.png") center center/cover no-repeat rgba(0 0 0 / .75);
+    box-sizing: border-box;
+    border: solid .5em var(--zenGreenH);
+}

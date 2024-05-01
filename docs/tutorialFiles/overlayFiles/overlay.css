@@ -1,0 +1,99 @@
+/* Main Overlay CSS File */
+:root {
+    --bfBlue: #22ffdf;
+    --bfGreen: #1de51b;
+    --bfBlueGlow: 0 0 10px var(--bfBlue);
+    --zenGreen: #9da55e;
+    --zenGreenH: #fbf89b;
+    --zenGlow: 0 0 10px var(--zenGreenH);
+}
+@font-face {
+    font-family: Modernista;
+    src: url('https://azaeath.art/streamAssets/fonts/BF_Modernista-Regular.ttf');
+}
+@font-face {
+    font-family: "Modernista Bold";
+    src: url('https://azaeath.art/streamAssets/fonts/BF_Modernista-Bold.ttf');
+}
+html, body {
+    background: url("../pics/zzz-100k-followers-illustration.jpg") center center/cover no-repeat;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-family: Modernista, sans-serif;
+}
+/* The wrapper encloses all of the following elements: header, midSec, footer. */
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+.scrollText {
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+@keyframes scroll {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+/* Top bar */
+#header {
+    background: rgba(0 0 0 / .5);
+    font-size: 1.5em;
+    padding: .5em 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-shadow: var(--zenGlow);
+    color: white;
+}
+/* Middle section that consists of the video box and chat box locations */
+#midSec {
+    width: 100%;
+    height: 100%;
+}
+#vidBox {
+    width: 1920px;
+    height: 1080px;
+    background: rgba(0 0 0 / .5);
+    transform: scale(.65) translate(-29em, -15em);
+}
+#chatBox {
+    width: 30%;
+    height: 84%;
+    position: absolute;
+    background: rgba(0 0 0 / .5);
+    top: 5.3em;
+    right: 2em;
+}
+/* Bottom bar */
+#footer {
+    background: rgba(0 0 0 / .5);
+    font-size: 1.5em;
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    color: var(--zenGreenH);
+}
+#ftText {
+    width: calc(1920px * .65);
+}
+#standIn {
+    width: calc(1920px * .35);
+    height: calc(52px - 1em);
+    background: var(--zenGreen);
+}
