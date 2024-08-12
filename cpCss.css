@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Navigation */
 .navigation {
-	position: relative;
+	position: sticky;
 	top: 0;
 	left: 0;
 	background-color: var(--bgQuat);
@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .section {
 	width: 100%;
 	height: auto;
+	padding-bottom: 4em;
 }
 .infoSec {
 	margin: 2em 0;
