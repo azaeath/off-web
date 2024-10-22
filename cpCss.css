@@ -275,6 +275,28 @@ span.qAuthor {
 	display: block;
 	margin: 1.5em auto;
 }
+#vidSection {
+	width: 90%;
+	height: fit-content;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+}
+.vidFrameBox {
+	min-width: 25%;
+	width: 50%;
+	height: fit-content;
+	flex: 1 1 auto;
+}
+.vidFrameBox h3 {
+	text-align: center;
+	width: 100%;
+	white-space: nowrap;
+}
+.vidFrameBox iframe {
+	max-height: 480px;
+	width: 100%;
+}
 @media (max-width: 768px){
 	.navigation {
 		top: unset;
@@ -297,6 +319,14 @@ span.qAuthor {
 	}
 	body:before {
 		top: 27.5%;
+	}
+	.vidFrameBox {
+		width: 100%;
+		height: fit-content;
+		flex: 0 1 auto;
+	}
+	.vidFrameBox h3 {
+		white-space: normal;
 	}
 }
 
