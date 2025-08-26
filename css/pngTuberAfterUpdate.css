@@ -6,6 +6,25 @@
 	https://streamkit.discord.com/overlay/voice/812816799585271878/1067601270568915036?icon=true&online=true&logo=white&text_color=%23ffffff&text_size=14&text_outline_color=%23000000&text_outline_size=0&text_shadow_color=%23000000&text_shadow_size=0&bg_color=%231e2124&bg_opacity=0.95&bg_shadow_color=%23000000&bg_shadow_size=0&invite_code=&limit_speaking=false&small_avatars=false&hide_names=false&fade_chat=0
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+@font-face {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+	--semiTp: rgba(0 0 0 / .75);
+    --halfTp: rgba(0 0 0 / .5);
+    --azGrn: #b1dfb9;
+    --vidBg: #2c382e;
+    --leaf: #aac567;
+    --leafBg: #7f934d;
+    --semiWhite: rgba(255 255 255 / .75);
+    --halfWhite: rgba(255 255 255 / .5);
+    --leafGlow: 0px 0px 10px var(--leaf);
+}
 body {
     font-size: 16px !important;
     background-color: rgba(0, 0, 0, 0);
@@ -13,6 +32,7 @@ body {
     overflow: hidden;
 	height: 100vh;
 	width: 100vw;
+	padding: 0.25em !important;
 }
 ul[class*="voiceStates"] {
     display: flex;
@@ -67,7 +87,7 @@ li>img[class^="Voice_avatar"][src*="129332200171634688"] {
     display: block;
 }
 img[class^="Voice_avatar"][src*="129332200171634688"] {
-    content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+    content: url("https://azaeath.art/streamAssets/pics/Azzy.png");
     height: 10em !important;
     width: auto !important;
     border-radius: 0% !important;
@@ -78,7 +98,7 @@ img[class*="Speaking"][src*="129332200171634688"] {
     border-color: rgba(0,0,0,0) !important;
     position: relative;
     animation: speak-now 1s forwards, talkLoopAzzy .75s infinite;
-    content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+    content: url("https://azaeath.art/streamAssets/pics/AzzySpeaking.png");
 }
 
 /* Soup */
@@ -87,7 +107,7 @@ li>img[class^="Voice_avatar"][src*="671882898961596446"] {
     display: block;
 }
 img[class^="Voice_avatar"][src*="671882898961596446"] {
-    content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+    content: url("https://azaeath.art/streamAssets/pics/Soup.png");
     height: 10em !important;
     width: auto !important;
     border-radius: 0% !important;
@@ -98,7 +118,7 @@ img[class*="Speaking"][src*="671882898961596446"] {
     border-color: rgba(0,0,0,0) !important;
     position: relative;
     animation: speak-now 1s forwards, talkLoopSoup .75s infinite;
-    content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+    content: url("https://azaeath.art/streamAssets/pics/SoupSpeaking.png");
 }
 
 /* Mango */
@@ -132,6 +152,24 @@ img[class*="Speaking"][src*="1058571060842348574"] {
     border-color: pink;
     position: relative;
 }
+/* Justus */
+li>img[class^="Voice_avatar"][src*="124202936044748800"] {
+    display: block;
+}
+img[class^="Voice_avatar"][src*="124202936044748800"] {
+    content: url("https://azaeath.art/streamAssets/pics/Justus.png");
+    height: 10em !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(100%);
+}
+
+img[class*="Speaking"][src*="124202936044748800"] {
+    border-color: rgba(0,0,0,0) !important;
+    position: relative;
+    animation: speak-now 1s forwards, talkLoopTate .75s infinite;
+    content: url("https://azaeath.art/streamAssets/pics/JustusSpeaking.png");
+}
 /* Chat order */
 
 /* Azzy */
@@ -157,19 +195,19 @@ li:has(> :not([src*="129332200171634688"]):not([src*="671882898961596446"])) {
 	/* Remember to swap the images here. */
 	/* Open */
     0% {
-        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+        content: url("https://azaeath.art/streamAssets/pics/AzzySpeaking.png");
     }
 	/* Close */
     25% {
-        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+        content: url("https://azaeath.art/streamAssets/pics/Azzy.png");
     }
 	/* Open */
     50% {
-        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869972702232596/AzzySpeaking.png);
+        content: url("https://azaeath.art/streamAssets/pics/AzzySpeaking.png");
     }
 	/* Close */
     75% {
-        content: url(https://cdn.discordapp.com/attachments/825739144852144128/853869970126929930/Azzy.png);
+        content: url("https://azaeath.art/streamAssets/pics/Azzy.png");
     }
 }
 
@@ -177,19 +215,19 @@ li:has(> :not([src*="129332200171634688"]):not([src*="671882898961596446"])) {
 	/* Remember to swap the images here. */
 	/* Open */
     0% {
-        content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+        content: url("https://azaeath.art/streamAssets/pics/SoupSpeaking.png");
     }
 	/* Close */
     25% {
-        content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+        content: url("https://azaeath.art/streamAssets/pics/Soup.png");
     }
 	/* Open */
     50% {
-        content: url(https://media.discordapp.net/attachments/825739144852144128/853870008702861312/SoupSpeaking.png);
+        content: url("https://azaeath.art/streamAssets/pics/SoupSpeaking.png");
     }
 	/* Close */
     75% {
-        content: url(https://media.discordapp.net/attachments/825739144852144128/853870006205939722/Soup.png);
+        content: url("https://azaeath.art/streamAssets/pics/Soup.png");
     }
 }
 
@@ -210,6 +248,26 @@ li:has(> :not([src*="129332200171634688"]):not([src*="671882898961596446"])) {
 	/* Close */
     75% {
         content: url(https://media.discordapp.net/attachments/825739144852144128/853870040356880384/Mango.png);
+    }
+}
+
+@keyframes talkLoopTate {
+	/* Remember to swap the images here. */
+	/* Open */
+    0% {
+        content: url("https://azaeath.art/streamAssets/pics/JustusSpeaking.png");
+    }
+	/* Close */
+    25% {
+        content: url("https://azaeath.art/streamAssets/pics/Justus.png");
+    }
+	/* Open */
+    50% {
+        content: url("https://azaeath.art/streamAssets/pics/JustusSpeaking.png");
+    }
+	/* Close */
+    75% {
+        content: url("https://azaeath.art/streamAssets/pics/Justus.png");
     }
 }
 
