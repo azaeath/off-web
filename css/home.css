@@ -2,7 +2,9 @@
 
 * {
     font-family: 'Yusei Magic', sans-serif;
-    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -14,7 +16,6 @@ html, body {
     background: url("../pics/moreRecent/AT with Azzy the Great_20200413031258.png") center 15%/cover no-repeat;
     width: 100vw;
     height: 100vh;
-    margin: 0;
     overflow-X: hidden;
 }
 
@@ -23,7 +24,7 @@ body:before {
     display: block;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%) scale(0.15);
     background-color: #fff;
     margin: 0;
@@ -31,6 +32,18 @@ body:before {
     border-radius: 50%;
     border: solid 1.5em #2c2c2c;
     box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
+    opacity: 0;
+    animation: rotateIn 1s ease-in-out forwards;
+}
+@keyframes rotateIn {
+    from {
+        transform: translate(-50%, -50%) scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(0.15) rotate(360deg);
+        opacity: 1;
+    }
 }
 
 :root {
@@ -38,391 +51,140 @@ body:before {
     --secondaryBg: #161b22;
     --mainText: rgb(255 255 255 / 85%);
     --secondaryText: rgb(255 255 255 / 65%);
+    --bgPri: #212619;
+	--bgSec: #395232;
+	--bgTer: #63663E;
+	--bgQuat: #4F8254;
+	--bgQuin: #A39E64;
+	--bgSep: #241926;
+    --azGrn: #b1dfb9;
+    --vidBg: #2c382e;
+    --leaf: #aac567;
+    --leafBg: #7f934d;
 }
-
-p, .coPriDets {
-    color: var(--secondaryText);
+a {
+    color: #fff;
+    text-decoration: none;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--mainText);
-}
-
-h1 {
-    font-size: 2.2em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.8em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.3em;
-}
-
-h6 {
-    font-size: 1.2em;
-}
-
-#wrap {
+.navBar {
+    position: fixed;
+    top: 0;
     width: 100%;
     background-color: var(--primaryBg);
-    height: auto;
-    margin: 0;
-    padding: 0 0 3em 0;
-    position: relative;
-    top: calc(100vh - 3em);
-}
-
-.fa-bars {
-    display: none;
-}
-
-#siteNav {
     display: flex;
-    flex-flow: row no-wrap;
-    background-color: var(--secondaryBg);
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 1s;
 }
-
-#siteNav li {
-    display: inline-flex;
-    height: 100%;
-}
-
-#siteNav li a {
-    text-decoration: none;
-    color: var(--mainText);
-    padding: 1em;
-}
-
-#siteNav li a:hover {
-    background-color: #fff;
-    color: rgb(0 0 0 / 85%);
-}
-
-.sections {
-    width: 100%;
-}
-
-.sections h2 {
-    text-align: center;
-    font-size: 2em;
-    padding: 0;
-    color: var(--mainText);
-}
-
-.tabs {
-    flex: 1 0 auto;
-    width: 25%;
-    padding: 0 .5em;
-}
-
-.tabs img {
-    opacity: 0.8;
-    cursor: pointer;
-    height: 15em;
-    width: 100%;
-    object-fit: cover;
-}
-
-.tabs img:hover {
-    opacity: 1;
-}
-
-#imgRow {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0 1em;
-    overflow-x: scroll;
-    width: 100%;
-}
-
-#imgRow:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.expImgContain {
-    position: relative;
-    display: none;
-    text-align: center;
-}
-
-#expImg {
-	height: 100vh;
-}
-
-.closeBtn {
-    position: absolute;
-    top: 1em;
-    right: 2em;
-    color: var(--mainText);
-    font-size: 1em;
-    cursor: pointer;
-    background-color: rgb(13 17 23 / 65%);
-    padding: 0 .5em;
-    border-radius: 50%;
-}
-
-#imgText {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: var(--secondaryText);
-    font-size: 1em;
-    background-color: #0d1117;
-    padding: 0 .5em;
-}
-
-#mobiMenu {
-    display: none;
-}
-
-.infoSec p {
-    text-indent: 2em;
-    margin: 0;
-    padding: 0 4em;
-}
-
-#about p > i > a:hover {
-    text-decoration: underline;
-}
-
-#gallery p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-#about p, #gallery p {
-	color: var(--secondaryText);
-}
-
-#socLinks {
-    display: inline-flex;
-    position: absolute;
-    top: -5em;
-    left: 50%;
-    padding: 0;
-    margin: 0;
-    transform: translateX(-50%);
-}
-
-#socLinks li {
+.navLinks {
     list-style: none;
+    display: flex;
+    margin-left: auto;
 }
-
-#socLinks li a {
-    position: relative;
-    display: block;
-    width: 4em;
-    height: 4em;
-    text-align: center;
-    margin: 0 0.5em;
-    background: linear-gradient(0deg, #0d1117, #2c2c2c);
-    border-radius: 50%;
-    padding: .4em;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 .7em 1em rgba(0, 0, 0, 0.8);
-    transition: .5s;
+.navLinks a {
+    color: var(--mainText);
+    margin-left: 2em;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-
-#socLinks > li > a .fa {
+.navLinks .active a {
+    color: #58a6ff;
+}
+.navLinks a:hover {
+    color: #58a6ff;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#home {
     width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #2c2c2c, #0d1117);
-    border-radius: 50%;
-    line-height: 1.6em;
-    font-size: 2em;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--mainText);
-    transition: .5s;
-}
-
-#socLinks li a:hover {
-    box-shadow: 0 .2em .2em rgb(0 0 0 / 30%);
-}
-
-#socLinks .fa-instagram:hover {
-    color: #e4405f;
-}
-
-#socLinks .fa-twitch:hover {
-    color: #9147ff;
-}
-
-#socLinks .fa-envelope:hover {
-    color: #9eab80;
-}
-
-#commPrice {
-    height: 100vh;
+    padding: 0 2em;
     position: relative;
+    top: 50%;
+    /* visibility: hidden;
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 1.5s; */
+}
+#homeInfo {
+    background-color: rgb(13 17 23 / 85%);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 70%);
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+#homeInfo h2 {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+#homeInfo h2 span {
+    display: inline-block;
+    color: transparent;
+    position: relative;
+    animation: textReveal 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes textReveal {
+    25%, 100% {
+        display: none;
+    }
+}
+#homeInfo h2 span:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    margin-bottom: 2em;
+    width: 0;
+    overflow: hidden;
+    color: var(--leaf);
+    border-right: 2px solid white;
+    animation: typing 4s linear infinite, blinkCursor 0.75s step-end infinite;
+    animation-delay: calc(-4s * var(--i));
+    white-space: nowrap;
 }
-
-#commission {
-    position: relative;
-    height: fit-content;
+@keyframes typing {
+    0%, 20% {
+        width: 0;
+    }
+    25%, 80% {
+        width: 100%;
+    }
+    85%, 100% {
+        width: 0;
+    }
 }
-
-/* Table stuff for commission pricing. */
-.priceTable {
-    display: table;
+@keyframes blinkCursor {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+#homeInfo p {
     color: var(--secondaryText);
-    position: relative;
-    top: 0;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--secondaryBg);
+    line-height: 1.5;
+    text-indent: 3em;
+    text-align: left;
 }
-
-.coTabRow {
-    display: table-row;
-}
-
-.coTabCell {
-    display: table-cell;
-    border: solid .1em var(--mainText);
-    padding: .25em 1em;
-}
-
-.titleCell {
-    color: var(--mainText);
-}
-
-.coPriDets {
-    padding: 0 4em;
-}
-
-@media screen and (max-width: 1024px) {
-    #imgRow {
-        height: 15em;
-        overflow-y: hidden;
-    }
-    .tabs {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 880px) {
-    #expImg {
-        width: 100%;
-        height: auto;
-    }
-    .priceTable {
-        width: 95%;
-    }
-    #commPrice {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    * {
-        font-size: 12px;
-    }
-    #wrap {
-        top: 100%;
-    }
-    body:before {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(0.15);
-        background-color: #fff;
-        padding: 4em;
-        border-radius: 90em;
-        border: solid 3em #2c2c2c;
-    }
-    .tabs {
-        width: 50%;
-    }
-	#siteNav {
-		display: none;
-	}
-    #mobiMenu {
-        display: flex;
-        position: fixed;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(22 27 34 / 70%);
-        flex-flow: column wrap;
-        z-index: 1;
-        transition: left 1s ease;
-        list-style: none;
-    }
-    #mobiMenu li {
-        display: inline-flex;
-        height: min-content;
-        width: 100%;
-        position: relative;
-        top: 25%;
-        justify-content: center;
-    }
-    #mobiMenu li a {
-        font-size: 4em;
-        padding: .3em 0;
-        text-decoration: none;
-        color: var(--mainText);
-    }
-    .fa-bars {
-        display: block;
-        color: #fff;
-        position: fixed;
-        top: 0.7em;
-        left: 0.7em;
-        font-size: 4em;
-        z-index: 900;
-        padding: .1em .3em;
-    }
-	.closeBtn {
-        font-size: 3em;
-        top: 1.2em;
-        right: 1.2em;
-    }
-    .sections:first-of-type {
-        padding-top: .01em;
-    }
-    .infoSec p {
-        padding: 0 2em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    body:before {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(0.1);
-        background-color: #fff;
-        padding: 4em;
-        border-radius: 90em;
-        border: solid 3em #2c2c2c;
-    }
-    .fa-bars {
-        font-size: 3em;
-    }
-    .closeBtn {
-        font-size: 2em;
-    }
-}
+@media screen and (max-width: 768px) {}
