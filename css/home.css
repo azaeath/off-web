@@ -35,9 +35,12 @@ body {
     background: url("../pics/moreRecent/AT with Azzy the Great_20200413031258.png") center 15%/cover no-repeat;
     width: 100vw;
     height: 100vh;
-    overflow-X: hidden;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
 body:before {
     content: url("../pics/moreRecent/logo05.png");
     display: block;
@@ -51,8 +54,9 @@ body:before {
     border-radius: 50%;
     border: solid 1.5em #2c2c2c;
     box-shadow: 2em 3em 5em rgb(0 0 0 / 80%);
-    /* opacity: 0;
-    animation: rotateIn 1s ease-in-out forwards; */
+    opacity: 0;
+    animation: rotateIn 1s ease-in-out forwards;
+    z-index: 2;
 }
 
 @keyframes rotateIn {
@@ -71,6 +75,11 @@ body:before {
 a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #58a6ff;
 }
 
 .navBar {
@@ -83,10 +92,10 @@ a {
     padding: 1em 2em;
     box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
     z-index: 1000;
-    /* visibility: hidden;
+    visibility: hidden;
     opacity: 0;
     animation: fadeIn .5s ease-in-out forwards;
-    animation-delay: 1s; */
+    animation-delay: 1s;
 }
 
 .navLinks {
@@ -102,11 +111,11 @@ a {
     transition: color 0.3s;
 }
 
-.navLinks .active a {
+.navLinks a:hover {
     color: #58a6ff;
 }
 
-.navLinks a:hover {
+.navLinks li a.active {
     color: #58a6ff;
 }
 
@@ -131,11 +140,12 @@ a {
     color: var(--mainText);
     padding: 0 2em;
     position: absolute;
-    top: 50%;
-    /* visibility: hidden;
+    top: 44.5%;
+    visibility: hidden;
     opacity: 0;
     animation: fadeIn .5s ease-in-out forwards;
-    animation-delay: 1.5s; */
+    animation-delay: 1.5s;
+    z-index: 1;
 }
 
 #homeInfo {
@@ -152,9 +162,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1em 0;
     padding: 0;
 }
-
+#homeInfo h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
 #homeInfo h2 {
     display: inline-block;
+    margin-top: 0;
 }
 
 #homeInfo h2 span {
@@ -228,13 +242,14 @@ p {
     font-weight: bold;
 }
 
-.section:not([id="home"]) {
+.section:not(#home) {
     padding: 5em 2em;
     min-height: 100vh;
     background: var(--primaryBg);
     position: relative;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 #about img {

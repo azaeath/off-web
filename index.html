@@ -18,10 +18,10 @@
 	<div class="navBar">
 		<a href="#" class="logo">Azaeath's Portfolio</a>
 		<ul class="navLinks">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Services</a></li>
+			<li><a href="#" class="active" onclick="hideSections()">Home</a></li>
+			<li><a href="#" onclick="showSection(0)">About</a></li>
+			<li><a href="#" onclick="showSection(1)">Portfolio</a></li>
+			<li><a href="#" onclick="showSection(2)">Services</a></li>
 			<li><a href="mailto:azaeath@gmail.com">Contact</a></li>
 		</ul>
 	</div>
@@ -179,6 +179,39 @@
 		<p>I'm currently not accepting commissions, as I'm looking for full-time, remote work opportunities to help balance my personal and professional life. As stated in my about me section, I prioritize my mental health and well-being these days, and I may decline projects if I'm not feeling up to it or if I feel that I won't be able to deliver results.</p>
 		<p>I'd rather deliver my best work on fewer projects than take on too much and risk burnout. Thank you for your understanding!</p>
 	</div>
+	<script>
+		const sections = document.querySelectorAll('.section:not(#home)');
+		const navLinks = document.querySelectorAll('.navLinks li a');
+		let i;
+		for (i = 0; i < sections.length; i++) {
+			sections[i].style.display = 'none';
+		}
+		function updateActiveLink(index) {
+			for (i = 0; i < navLinks.length; i++) {
+				navLinks[i].classList.remove('active');
+			}
+			navLinks[index + 1].classList.add('active');
+		}
+		function clearActiveLinks() {
+			for (i = 0; i < navLinks.length; i++) {
+				navLinks[i].classList.remove('active');
+			}
+		}
+		function showSection(index) {
+			for (i = 0; i < sections.length; i++) {
+				sections[i].style.display = 'none';
+			}
+			sections[index].style.display = 'block';
+			updateActiveLink(index);
+		}
+		function hideSections() {
+			for (i = 0; i < sections.length; i++) {
+				sections[i].style.display = 'none';
+			}
+			clearActiveLinks();
+			navLinks[0].classList.add('active');
+		}
+	</script>
 </body>
 
 </html>
