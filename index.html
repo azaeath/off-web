@@ -218,6 +218,12 @@
 			clearActiveLinks();
 			navLinks[0].classList.add('active');
 		}
+		if (desktopQuery.matches) {
+			navBar.style.top = '0%';
+		}
+		if (mobileQuery.matches) {
+			navBar.style.top = '-100%';
+		}
 		desktopQuery.addEventListener('change', (e) => {
 			if (e.matches) {
 				navBar.style.top = '0%';
