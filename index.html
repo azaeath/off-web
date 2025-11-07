@@ -187,7 +187,8 @@
 		const sections = document.querySelectorAll('.section:not(#home)');
 		const navLinks = document.querySelectorAll('.navLinks li a');
 		const navBar = document.querySelector('.navBar');
-		const mediaQuery = window.matchMedia('(max-width: 768px)');
+		const mobileQuery = window.matchMedia('(max-width: 768px)');
+		const desktopQuery = window.matchMedia('(min-width: 769px)');
 		let i;
 		for (i = 0; i < sections.length; i++) {
 			sections[i].style.display = 'none';
@@ -217,11 +218,16 @@
 			clearActiveLinks();
 			navLinks[0].classList.add('active');
 		}
-		if (mediaQuery.matches) {
-			navBar.style.top = '-100%';
-		} else {
-			navBar.style.top = '0%';
-		}
+		desktopQuery.addEventListener('change', (e) => {
+			if (e.matches) {
+				navBar.style.top = '0%';
+			}
+		});
+		mobileQuery.addEventListener('change', (e) => {
+			if (e.matches) {
+				navBar.style.top = '-100%';
+			}
+		});
 		function toggleMenu() {
 			if (navBar.style.top === '0%') {
 				navBar.style.top = '-100%';
