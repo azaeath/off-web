@@ -222,6 +222,12 @@ p {
     text-indent: 3em;
     text-align: left;
 }
+
+.impt {
+    color: var(--mainText);
+    font-weight: bold;
+}
+
 .section:not([id="home"]) {
     padding: 5em 2em;
     min-height: 100vh;
@@ -230,19 +236,35 @@ p {
     top: 0;
     left: 0;
 }
-.section:not(:last-of-type) {
-    border-bottom: solid 5px white;
+
+#about img {
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 1em auto;
+    padding: .5em;
+    background: white;
 }
+
 .gallery {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
 }
 .gallery img {
     min-width: 33.33%;
     max-width: 50%;
+    height: 50vh;
     object-fit: cover;
+    cursor: pointer;
+    flex: 1 1 auto;
 }
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 .galModal {
     position: fixed;
     top: 0;
@@ -253,7 +275,7 @@ p {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    /* display: none; */
+    display: none;
 }
 .closeBtn {
     position: absolute;
@@ -307,9 +329,11 @@ p {
 }
 
 .imgCard img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 75vh;
     display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .imgCard .imgDes {
