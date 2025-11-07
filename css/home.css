@@ -352,10 +352,52 @@ p {
     color: #ddd;
     text-indent: 2em;
 }
+.menuBtn {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: var(--mainText);
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 600;
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .gallery img {
         min-width: 100%;
         max-width: 100%;
         height: auto;
     }
+    #tiText{
+        display: none;
+    }
+    .navBar {
+        flex-flow: column;
+        align-items: center;
+        transition: top 1s ease-in-out;
+    }
+    .menuBtn {
+        display: block;
+    }
+    .navLinks {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .navLinks a {
+        margin: 1em 0;
+        width: 100%;
+        font-size: 2em;
+    }
+    .section:not(#home) {
+        top: 0;
+    }
+    .imgCard img {
+        height: auto;
+        width: 100%;
+    }
 }
+        
