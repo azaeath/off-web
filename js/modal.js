@@ -5,6 +5,8 @@ const modalIn = document.querySelector('.modalIn');
 galleryImages.forEach(img => {
     img.addEventListener('click', () => {
         modal.style.display = 'block';
+        document.querySelector('.navBar').style.zIndex = '3';
+        document.querySelector('.menuBtn').style.zIndex = '3';
         const imgCards = modalIn.querySelectorAll('.imgCard');
         imgCards.forEach(card => {
             const modalImg = card.querySelector('img');
@@ -27,4 +29,6 @@ function scrollToCard(card) {
 
 function closeModal() {
     modal.style.display = 'none';
+    document.querySelector('.navBar').style.zIndex = '500';
+    document.querySelector('.menuBtn').style.zIndex = '600';
 }

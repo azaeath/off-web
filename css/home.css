@@ -64,6 +64,10 @@ a:hover {
     color: #58a6ff;
 }
 
+.emoji {
+    color: white;
+}
+
 .navBar {
     position: fixed;
     top: 0;
@@ -275,7 +279,7 @@ p {
 }
 
 .galModal {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -359,7 +363,7 @@ p {
     color: var(--mainText);
     cursor: pointer;
     padding: 0.2em 0.5em;
-    position: absolute;
+    position: fixed;
     top: 1em;
     left: 1em;
     z-index: 600;

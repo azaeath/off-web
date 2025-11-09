@@ -45,9 +45,9 @@
 		<h2>About Me</h2>
 		<p>Hello, hello! My name is Justin, but I go by the online handle Azaeath, or Azzy for short. I'm a graphic designer and illustrator based in Memphis, Tennessee. I specialize in creating digital art and designs for a variety of purposes, including branding, marketing, and personal projects.</p>
 		<p>I've been creating art since I was a kindergartner, and my passion for creativity has only grown over the years. I love exploring new techniques and styles, and I'm always looking for ways to improve my skills, particularly because I like the challenge of learning how to apply newly acquired skills in a way that enhances what I already know.</p>
-		<p>You can usually find me streaming on Twitch, where I share my creative process and connect with other artists and creatives. I'm also occasionally active on social media, where I share my work and try to avoid doom scrolling through other people's artwork because of how nice it all is. 😭</p>
+		<p>You can usually find me streaming on Twitch, where I share my creative process and connect with other artists and creatives. I'm also occasionally active on social media, where I share my work and try to avoid doom scrolling through other people's artwork because of how nice it all is. <span class="emoji">😭</span></p>
 		<p>As a military veteran with depression and PTSD, I understand and take very seriously the importance of mental health and self-care. I used to try to cope by throwing myself into my work, but I've learned that it's important to take breaks and prioritize my well-being, so I may decline commissions or collaborations if I'm not feeling up to it or if I feel that I won't be able to deliver my best work. I hope you can understand.</p>
-		<p>Aside from all that, I'm just a regular person who loves art and creativity. I enjoy spending time with friends and family, playing video games, and picking up new hobbies. I also like to keep things light-hearted, if I can help it, and I appreciate you taking the time to learn more about me! 😊</p>
+		<p>Aside from all that, I'm just a regular person who loves art and creativity. I enjoy spending time with friends and family, playing video games, and picking up new hobbies. I also like to keep things light-hearted, if I can help it, and I appreciate you taking the time to learn more about me! <span class="emoji">😊</span></p>
 		<img src="./pics/moreRecent/logo05.png" alt="Azzy's Logo">
 		<div style="text-align: center;">E-Mail: <a href="mailto:azaeath@gmail.com">azaeath@gmail.com</a></div>
 	</div>
@@ -83,7 +83,7 @@
 						<h3>This was actually my second attempt.</h3>
 					</div>
 					<img src="./pics/moreRecent/sGarciaRedo.png" alt="Image 1">
-					<div class="imgDes">I honestly don't remember who the subject was because I didn't save the file with anything other than the person's  last name. I found the model used as the subject when I was looking for some images on Pinterest for reference, and I really wanted to draw a portrait of someone for some practice because people and portraits are my favorite subject matter.</div>
+					<div class="imgDes">I honestly don't remember who the subject was because I didn't save the file with anything other than the person's last name. I believe I found the model used as the subject when I was looking for some images on Pinterest for reference, and I really wanted to draw a portrait of someone for some practice because people and portraits are one of my favorite subject matters.</div>
 				</div>
 				<div class="imgCard">
 					<div class="imgBan">
@@ -180,8 +180,8 @@
 	</div>
 	<div id="services" class="section">
 		<h2>Services</h2>
-		<p>I'm currently not accepting commissions, as I'm looking for full-time, remote work opportunities to help balance my personal and professional life. As stated in my about me section, I prioritize my mental health and well-being these days, and I may decline projects if I'm not feeling up to it or if I feel that I won't be able to deliver results.</p>
-		<p>I'd rather deliver my best work on fewer projects than take on too much and risk burnout. Thank you for your understanding!</p>
+		<p>I'm currently not accepting commissions, as I'm looking for full-time, remote work opportunities to help balance my personal and professional life. As stated in my about me section, I prioritize my mental health and well-being these days, and I may decline projects if I'm not feeling up to it or if I feel that I won't be able to deliver results. I'd rather deliver my best work on fewer projects than take on too much and risk burnout. Thank you for your understanding!</p>
+		<p>In the meantime, feel free to reach out to me by email if you have any questions or if you'd like to discuss potential collaborations in the future. My email is <a href="mailto:azaeath@gmail.com">azaeath@gmail.com</a>.</p>
 	</div>
 	<script>
 		const sections = document.querySelectorAll('.section:not(#home)');
@@ -223,6 +223,11 @@
 		}
 		if (mobileQuery.matches) {
 			navBar.style.top = '-100%';
+			navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					navBar.style.top = '-100%';
+				});
+			});
 		}
 		desktopQuery.addEventListener('change', (e) => {
 			if (e.matches) {
