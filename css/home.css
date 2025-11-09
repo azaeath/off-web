@@ -369,6 +369,7 @@ p {
     z-index: 600;
     display: none;
 }
+
 @media screen and (max-width: 768px) {
     .gallery img {
         min-width: 100%;
@@ -382,6 +383,9 @@ p {
         flex-flow: column;
         align-items: center;
         transition: top 1s ease-in-out;
+    }
+    .closeBtn {
+        right: 2em;
     }
     .menuBtn {
         display: block;
@@ -404,4 +408,12 @@ p {
         width: 100%;
     }
 }
-        
+
+@media screen and (max-width: 599px) {
+    .closeBtn {
+        font-size: 1em;
+        width: 25px;
+        height: 25px;
+        right: 3em;
+    }
+}
