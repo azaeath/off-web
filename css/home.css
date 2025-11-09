@@ -342,7 +342,7 @@ p {
 }
 
 .imgCard img {
-    width: auto;
+    width: 100%;
     height: 75vh;
     display: block;
     margin: 0 auto;
