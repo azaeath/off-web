@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Style Playlist</title>
+    <link rel="stylesheet" href="./css/trading.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="player-container">
+        <!-- Main Video Player -->
+        <div class="main-video">
+            <div class="video-wrapper">
+                <iframe id="video-frame" src="" allowfullscreen></iframe>
+            </div>
+            <h2 id="main-title">Loading video...</h2>
+            <div id="vid-description">Loading information...</div>
+        </div>
+
+        <!-- Playlist Sidebar -->
+        <div class="playlist" id="playlist-container"></div>
+    </div>
+
+    <script>
+        const videoFrame = document.getElementById('video-frame');
+            const mainTitle = document.getElementById('main-title');
+            const vidDescription = document.getElementById('vid-description');
+            const playlistContainer = document.getElementById('playlist-container');
+
+            let videos = [];
+
+            // 1. Fetch JSON data
+            async function loadPlaylist() {
+                try {
+                    const response = await fetch('./js/json/videos.json');
+                    videos = await response.json();
+
+                    renderPlaylist();
+
+                    // Auto-load the first video without autoplay
+                    if (videos.length > 0) {
+                        playVideo(0, false);
+                    }
+                } catch (error) {
+                    console.error('Error loading playlist JSON:', error);
+                }
+            }
+
+            // 2. Render playlist items in the sidebar
+            function renderPlaylist() {
+                playlistContainer.innerHTML = '';
+
+                videos.forEach((video, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'playlist-item';
+                    item.dataset.index = index;
+
+                    item.innerHTML = `
+      <img src="${video.thumbnail}" alt="${video.title}">
+      <div class="item-info">
+        <h4>${video.title}</h4>
+        <span>${video.duration}</span>
+      </div>
+    `;
+
+                    item.addEventListener('click', () => playVideo(index, true));
+                    playlistContainer.appendChild(item);
+                });
+            }
+
+            // 3. Play selected video and highlight active item
+            function playVideo(index, autoplay = true) {
+                const video = videos[index];
+                const autoplayParam = autoplay ? '?autoplay=1' : '';
+
+                // Update main player, title, and description
+                videoFrame.src = `https://youtube.com/embed/${video.id}${autoplayParam}`;
+                mainTitle.textContent = video.title;
+                vidDescription.textContent = video.description;
+
+                // Update active class in sidebar
+                document.querySelectorAll('.playlist-item').forEach((el, i) => {
+                    el.classList.toggle('active', i === index);
+                });
+            }
+
+            loadPlaylist();
+    </script>
+</body>
+
+</html>
