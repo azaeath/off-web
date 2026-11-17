@@ -72,9 +72,9 @@
             }
 
             // 3. Play selected video and highlight active item
-            function playVideo(index, autoplay = true) {
+            function playVideo(index, autoplay = false) {
                 const video = videos[index];
-                const autoplayParam = autoplay ? '?autoplay=1' : '';
+                const autoplayParam = autoplay ? '?autoplay=0' : '';
 
                 // Update main player, title, and description
                 videoFrame.src = `https://youtube.com/embed/${video.id}${autoplayParam}`;
